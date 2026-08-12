@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f4f8">
+  <title>H9 Factory · Des besoins métier aux applications H9</title>
+  <meta name="description" content="Découvrez H9 Factory et testez un parcours mock : besoin libre, préremplissage, validation humaine et livrables structurés.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="nav-shell" aria-label="Navigation principale">
+    <a class="brand" href="../" aria-label="Retour au portail Etorrent-Org">
+      <span class="brand-mark" aria-hidden="true">H9</span>
+      <span>H9 Factory</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="../">Portail</a>
+      <a class="nav-link" href="#factory">La Factory</a>
+      <a class="nav-link" href="#parcours">Parcours</a>
+      <a class="nav-link nav-link-accent" href="#mock">Mode mock</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">H9 App Factory · Framework local-first</p>
+        <h1>Du besoin métier à une application H9 structurée.</h1>
+        <p class="hero-lede">H9 Factory mutualise le cadrage, la génération et la validation des applications H9. Le besoin reste lisible, l’humain garde la décision et chaque résultat devient un livrable exploitable.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#mock">Tester le parcours mock</a>
+          <a class="button button-secondary" href="#factory">Comprendre la Factory</a>
+        </div>
+        <p class="hero-note"><span aria-hidden="true">●</span> Démonstration statique : aucune donnée envoyée, aucun compte requis.</p>
+      </div>
+
+      <aside class="status-card" aria-label="Caractéristiques de H9 Factory">
+        <div class="status-topline"><span class="status-dot"></span>Version présentée · 0.3</div>
+        <p class="status-title">Un socle commun.<br>Des apps métier.</p>
+        <dl class="status-list">
+          <div><dt>Déploiement</dt><dd>Docker local</dd></div>
+          <div><dt>Décision</dt><dd>Validation humaine</dd></div>
+          <div><dt>Source de vérité</dt><dd>Enveloppe JSON H9</dd></div>
+          <div><dt>Moteurs</dt><dd>Mock · Codex · Vibe</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" id="factory">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">La Factory</p>
+          <h2>Créer une app sans reconstruire toute la mécanique.</h2>
+        </div>
+        <p>Le framework sépare la définition métier, le parcours de validation et la production des livrables. Use Case IA, Story Mapper, H9 Bench et les futures apps H9 peuvent ainsi partager le même runtime.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-card-highlight">
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <h3>Définir visuellement</h3>
+          <p>Champs, critères pondérés, vues résultat et exports sont décrits dans une définition d’application importable.</p>
+          <ul class="tag-list" aria-label="Exemples de champs">
+            <li>Formulaires</li><li>Kanban</li><li>Mind map</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <h3>Valider à deux moments</h3>
+          <p>L’utilisateur corrige le préremplissage avant la génération, puis conserve la maîtrise des résultats et des passerelles entre apps.</p>
+          <ul class="tag-list" aria-label="Principes de validation">
+            <li>Correction</li><li>Approbation</li><li>Traçabilité</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <h3>Produire depuis le structuré</h3>
+          <p>La synthèse et les livrables sont validés par schéma. Les fichiers sont ensuite reconstruits sans demander à l’IA de fabriquer des binaires.</p>
+          <ul class="tag-list" aria-label="Formats d’export">
+            <li>MD</li><li>PDF</li><li>PPTX</li><li>XLSX</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="parcours">
+      <div class="section-heading">
+        <p class="eyebrow">Parcours commun</p>
+        <h2>Cinq étapes, une source de vérité.</h2>
+        <p>Le runtime orchestre la progression. PostgreSQL conserve les demandes et les jobs ; les runners CLI restent isolés dans l’environnement Docker.</p>
+      </div>
+
+      <ol class="steps-grid">
+        <li class="step-card"><span class="step-number">01</span><h3>Exprimer</h3><p>Décrire librement le besoin métier et le contexte de l’application.</p></li>
+        <li class="step-card"><span class="step-number">02</span><h3>Préremplir</h3><p>Transformer le brief en formulaire structuré avec le moteur choisi.</p></li>
+        <li class="step-card"><span class="step-number">03</span><h3>Valider</h3><p>Corriger les hypothèses et approuver explicitement les données.</p></li>
+        <li class="step-card"><span class="step-number">04</span><h3>Générer</h3><p>Produire la synthèse et les livrables dans l’enveloppe H9.</p></li>
+        <li class="step-card"><span class="step-number">05</span><h3>Exporter</h3><p>Reconstruire les formats utiles depuis les données validées.</p></li>
+      </ol>
+    </section>
+
+    <section class="section mock-section" id="mock">
+      <div class="mock-intro">
+        <div>
+          <p class="eyebrow">Démonstration interactive</p>
+          <h2>Essayez le parcours avec AI Process Studio.</h2>
+        </div>
+        <div>
+          <p>Ce mode reproduit la logique de « Cadrage Express » avec des données fictives. Il fonctionne entièrement dans votre navigateur : aucun appel IA, aucune API et aucun stockage.</p>
+          <div class="mock-legend"><span class="status-dot"></span>Mode simulation actif</div>
+        </div>
+      </div>
+
+      <div class="mock-shell" data-mock-app>
+        <div class="mock-toolbar">
+          <div class="mock-window-title"><span class="brand-mark brand-mark-small" aria-hidden="true">H9</span><span><strong>Cadrage Express</strong><small>Cas de démonstration</small></span></div>
+          <span class="mock-badge">Données locales</span>
+        </div>
+
+        <div class="mock-progress" role="tablist" aria-label="Étapes de la démonstration">
+          <button class="progress-step is-active" type="button" role="tab" aria-selected="true" aria-controls="mock-panel-1" id="mock-tab-1" data-step-target="1"><span>1</span>Besoin</button>
+          <button class="progress-step" type="button" role="tab" aria-selected="false" aria-controls="mock-panel-2" id="mock-tab-2" data-step-target="2"><span>2</span>Préremplissage</button>
+          <button class="progress-step" type="button" role="tab" aria-selected="false" aria-controls="mock-panel-3" id="mock-tab-3" data-step-target="3"><span>3</span>Validation</button>
+          <button class="progress-step" type="button" role="tab" aria-selected="false" aria-controls="mock-panel-4" id="mock-tab-4" data-step-target="4"><span>4</span>Résultat</button>
+          <button class="progress-step" type="button" role="tab" aria-selected="false" aria-controls="mock-panel-5" id="mock-tab-5" data-step-target="5"><span>5</span>Exports</button>
+        </div>
+
+        <div class="mock-content">
+          <section class="mock-panel is-active" id="mock-panel-1" role="tabpanel" aria-labelledby="mock-tab-1" data-step-panel="1">
+            <div class="panel-heading"><span class="panel-kicker">Étape 1 · Saisie libre</span><h3>Quel produit voulez-vous cadrer ?</h3><p>Le brief sert de matière de départ. Dans la vraie Factory, il est traité comme une donnée non fiable et reste séparé des règles du système.</p></div>
+            <div class="field-group">
+              <label for="mock-brief">Description du besoin</label>
+              <textarea id="mock-brief" rows="7">Créer AI Process Studio, une application locale qui aide un consultant à cartographier un processus, identifier les opportunités IA et produire une feuille de route validée. La V1 doit fonctionner sans API IA obligatoire : elle génère un prompt, l’utilisateur exécute ce prompt dans l’outil de son choix puis colle la réponse pour validation.</textarea>
+              <div class="field-meta"><span>Exemple préchargé · modifiable</span><span id="brief-count">0 caractère</span></div>
+            </div>
+            <div class="panel-actions panel-actions-end"><button class="button button-primary" type="button" data-next-step="2">Simuler le préremplissage <span aria-hidden="true">→</span></button></div>
+          </section>
+
+          <section class="mock-panel" id="mock-panel-2" role="tabpanel" aria-labelledby="mock-tab-2" data-step-panel="2" hidden>
+            <div class="panel-heading"><span class="panel-kicker">Étape 2 · Proposition simulée</span><h3>Un formulaire prérempli à relire.</h3><p>Le mode Mock restitue un exemple déterministe. Codex CLI et Mistral Vibe CLI sont disponibles dans l’environnement local de la Factory.</p></div>
+            <div class="provider-row" aria-label="Moteur de génération simulé">
+              <span class="provider-pill is-selected"><i></i>Simulation</span><span class="provider-pill">Codex CLI</span><span class="provider-pill">Mistral Vibe</span>
+            </div>
+            <div class="form-grid">
+              <div class="field-group"><label for="project-name">Nom de travail</label><input id="project-name" type="text" value="AI Process Studio"></div>
+              <div class="field-group"><label for="project-audience">Utilisateur principal</label><input id="project-audience" type="text" value="Consultant ou responsable de transformation"></div>
+              <div class="field-group field-span"><label for="project-goal">Objectif métier</label><textarea id="project-goal" rows="4">Comprendre un processus, identifier où l’IA apporte réellement de la valeur et structurer la transformation.</textarea></div>
+              <div class="field-group field-span"><label for="project-constraints">Contraintes structurantes</label><textarea id="project-constraints" rows="3">Local-first et Docker-first ; données JSON locales ; parcours manuel en V1 ; validation humaine avant toute capitalisation.</textarea></div>
+            </div>
+            <div class="panel-actions"><button class="button button-ghost" type="button" data-prev-step="1">← Revenir</button><button class="button button-primary" type="button" data-next-step="3">Soumettre à validation →</button></div>
+          </section>
+
+          <section class="mock-panel" id="mock-panel-3" role="tabpanel" aria-labelledby="mock-tab-3" data-step-panel="3" hidden>
+            <div class="panel-heading"><span class="panel-kicker">Étape 3 · Contrôle humain</span><h3>Les décisions restent explicites.</h3><p>Corrigez la proposition puis confirmez les trois garde-fous avant de simuler la génération finale.</p></div>
+            <div class="review-grid">
+              <div class="review-summary"><p class="review-label">Cadrage proposé</p><h4 id="review-name">AI Process Studio</h4><p id="review-goal">Comprendre un processus, identifier où l’IA apporte réellement de la valeur et structurer la transformation.</p><dl><div><dt>Public</dt><dd id="review-audience">Consultant ou responsable de transformation</dd></div><div><dt>Exécution</dt><dd>Locale, manuelle en V1</dd></div></dl></div>
+              <fieldset class="checks-card">
+                <legend>Points à approuver</legend>
+                <label class="check-row"><input type="checkbox" checked data-required-check><span><strong>Périmètre métier</strong><small>Le produit analyse et structure ; il ne décide pas à la place du consultant.</small></span></label>
+                <label class="check-row"><input type="checkbox" checked data-required-check><span><strong>Validation humaine</strong><small>Chaque réponse collée est relue avant de devenir un résultat.</small></span></label>
+                <label class="check-row"><input type="checkbox" checked data-required-check><span><strong>Architecture V1</strong><small>Aucune API IA n’est obligatoire pour terminer le parcours.</small></span></label>
+              </fieldset>
+            </div>
+            <div class="field-group review-notes"><label for="review-notes">Correction ou précision facultative</label><textarea id="review-notes" rows="3" placeholder="Ex. : commencer par le module Discover avant Map et Audit."></textarea></div>
+            <p class="inline-feedback" id="validation-feedback" role="status" aria-live="polite"></p>
+            <div class="panel-actions"><button class="button button-ghost" type="button" data-prev-step="2">← Corriger</button><button class="button button-primary" type="button" id="generate-result">Valider et générer →</button></div>
+          </section>
+
+          <section class="mock-panel" id="mock-panel-4" role="tabpanel" aria-labelledby="mock-tab-4" data-step-panel="4" hidden>
+            <div class="panel-heading"><span class="panel-kicker">Étape 4 · Enveloppe H9</span><h3>Un résultat lisible et structuré.</h3><p>La synthèse autonome et les données des livrables sont réunies dans le même contrat canonique.</p></div>
+            <div class="result-grid">
+              <article class="result-document"><div class="document-topline"><span>Synthèse Markdown</span><span class="quality-chip">Schéma valide</span></div><h4 id="result-name">AI Process Studio</h4><p id="result-summary">Application locale de diagnostic et de transformation des processus, conçue pour maintenir le consultant dans la boucle de décision.</p><h5>Décisions de cadrage</h5><ul><li>V1 manuelle, sans API IA obligatoire</li><li>Modules progressifs de Discover à Knowledge</li><li>Validation avant structuration et capitalisation</li></ul><div class="result-note" id="result-note" hidden></div></article>
+              <aside class="deliverable-preview"><p class="review-label">Livrables structurés</p><div class="deliverable-line"><span class="deliverable-icon">D</span><span><strong>Diagnostic</strong><small>Contexte, irritants, maturité</small></span><b>Prêt</b></div><div class="deliverable-line"><span class="deliverable-icon">M</span><span><strong>Cartographie</strong><small>Étapes, rôles, frictions</small></span><b>Prêt</b></div><div class="deliverable-line"><span class="deliverable-icon">R</span><span><strong>Roadmap</strong><small>Priorités et plan 90 jours</small></span><b>Prêt</b></div><details><summary>Voir un extrait des données JSON</summary><pre id="json-preview"></pre></details></aside>
+            </div>
+            <div class="panel-actions"><button class="button button-ghost" type="button" data-prev-step="3">← Revoir</button><button class="button button-primary" type="button" data-next-step="5">Préparer les exports →</button></div>
+          </section>
+
+          <section class="mock-panel" id="mock-panel-5" role="tabpanel" aria-labelledby="mock-tab-5" data-step-panel="5" hidden>
+            <div class="panel-heading"><span class="panel-kicker">Étape 5 · Fichiers locaux</span><h3>Téléchargez les livrables du mock.</h3><p>Ces trois fichiers sont reconstruits dans votre navigateur à partir du même résultat simulé. Ils ne quittent pas votre appareil.</p></div>
+            <div class="export-grid">
+              <button class="export-card" type="button" data-export="json"><span class="export-format">JSON</span><span><strong>Données canoniques</strong><small>Contrat H9 et livrables structurés</small></span><span aria-hidden="true">↓</span></button>
+              <button class="export-card" type="button" data-export="markdown"><span class="export-format">MD</span><span><strong>Synthèse autonome</strong><small>Décisions et feuille de route</small></span><span aria-hidden="true">↓</span></button>
+              <button class="export-card" type="button" data-export="html"><span class="export-format">HTML</span><span><strong>Rapport portable</strong><small>Mise en page lisible hors ligne</small></span><span aria-hidden="true">↓</span></button>
+            </div>
+            <p class="export-note">Le runtime complet prend aussi en charge PDF, PPTX, XLSX et PNG selon la définition de l’application.</p>
+            <p class="inline-feedback" id="export-feedback" role="status" aria-live="polite"></p>
+            <div class="panel-actions"><button class="button button-ghost" type="button" data-prev-step="4">← Résultat</button><button class="button button-secondary" type="button" id="restart-demo">Recommencer la démo</button></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principles-section" id="principes">
+      <div>
+        <p class="eyebrow">Cadre de confiance</p>
+        <h2>Local par conception.<br>Humain par décision.</h2>
+      </div>
+      <div class="principles-copy">
+        <p>Les applications H9 n’appellent pas directement les API OpenAI ou Mistral. Le runtime s’appuie sur des runners CLI internes authentifiés dans l’environnement Docker. Cette architecture est conçue pour un usage local et maîtrisé — pas pour une exposition publique en SaaS.</p>
+        <div class="principle-list"><span>Pas de secret dans cette page</span><span>Pas de données envoyées par le mock</span><span>Sorties validées par schéma</span></div>
+        <a class="text-link" href="privacy.html">Consulter la politique de confidentialité →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 R1-Torrent · H9 Factory</p>
+    <div>
+      <a href="https://github.com/R1-Torrent">Profil GitHub</a>
+      <a href="../">Portail Etorrent-Org</a>
+      <a href="https://github.com/Etorrent-Org/Etorrent-Org.github.io">Dépôt</a>
+      <a href="https://github.com/Etorrent-Org/Etorrent-Org.github.io/issues">Support</a>
+      <a href="privacy.html">Confidentialité</a>
+    </div>
+  </footer>
+</body>
+</html>
