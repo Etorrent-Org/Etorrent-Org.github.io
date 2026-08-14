@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b12"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#1b1030"/></linearGradient><radialGradient id="glow" cx="78%" cy="36%" r="55%"><stop stop-color="#8b5cf6" stop-opacity=".52"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="26"/></filter></defs>
+<rect width="1600" height="600" fill="url(#bg)"/><rect width="1600" height="600" fill="url(#glow)"/>
+<g opacity=".28" stroke="#60a5fa" fill="none"><path d="M80 420 C330 260 470 520 760 330 S1180 220 1510 390"/><path d="M50 475 C300 315 520 570 830 380 S1260 280 1540 450"/></g>
+<g opacity=".12" fill="#fff"><circle cx="1260" cy="140" r="90"/><circle cx="1400" cy="250" r="38"/><circle cx="1190" cy="310" r="24"/></g>
+<g transform="translate(1120 115)"><polygon points="180,0 335,90 335,270 180,360 25,270 25,90" fill="#0b1020" stroke="#a855f7" stroke-width="8"/><text x="180" y="225" fill="#d8b4fe" font-family="Inter,Segoe UI,Arial" font-size="150" font-weight="800" text-anchor="middle">E</text></g>
+<text x="110" y="245" fill="#f8fafc" font-family="Inter,Segoe UI,Arial" font-size="82" font-weight="800" letter-spacing="9">ETORRENT-ORG</text><text x="114" y="320" fill="#c084fc" font-family="Inter,Segoe UI,Arial" font-size="26" font-weight="700" letter-spacing="8">ENVIRONNEMENT LOCAL</text><text x="114" y="375" fill="#94a3b8" font-family="Inter,Segoe UI,Arial" font-size="22" letter-spacing="3">APPLICATIONS · SERVICES · INFRASTRUCTURE</text>
+</svg>
