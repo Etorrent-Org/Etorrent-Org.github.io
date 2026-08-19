@@ -36,7 +36,7 @@
 <body>
   <nav class="nav-shell" aria-label="Navigation principale">
     <a class="brand" href="../" aria-label="Retour au portail Etorrent-Org"><span class="brand-mark" aria-hidden="true">E9</span><span>Etorrent-Org</span></a>
-    <div class="nav-links"><a href="#fonctionnalites">Fonctionnalités</a><a href="#visuels">Visuels</a><a href="#installation">Installation</a><a class="nav-cta" href="https://github.com/Etorrent-Org/platform-infra/tree/main/infographic-lab">Voir le code</a></div>
+    <div class="nav-links"><a href="#fonctionnalites">Fonctionnalités</a><a href="#visuels">Visuels</a><a href="#installation">Installation</a><a class="nav-cta" href="https://github.com/Etorrent-Org/infographic-lab">Voir le code</a></div>
   </nav>
 
   <main>
@@ -45,9 +45,9 @@
         <p class="eyebrow">Produit actif · Version 1.0.0</p>
         <h1>Infographic Lab</h1>
         <p class="hero-lede">Transformer un texte en visuel clair, puis garder la main : structure IA avec Mistral Vibe, rendu AntV ou SVG local, édition bloc par bloc, templates, styles et exports.</p>
-        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/platform-infra/releases/tag/v1.0.0">Télécharger la V1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/platform-infra/tree/main/infographic-lab">Dépôt GitHub</a></div>
+        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/infographic-lab">Télécharger la V1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/infographic-lab">Dépôt GitHub</a></div>
       </div>
-      <div class="preview-frame"><img src="https://github.com/Etorrent-Org/platform-infra/releases/download/v1.0.0/infographic-lab-app.png" alt="Capture d'écran d'Infographic Lab 1.0.0"></div>
+      <div class="preview-frame"><img src="./assets/infographic-lab-app.svg" alt="Aperçu d'Infographic Lab 1.0.0"></div>
     </section>
 
     <section class="product-section" id="fonctionnalites">
@@ -76,16 +76,16 @@
         <div class="style-chip"><i></i><strong>Chalk</strong><small>Tableau sombre, craie et texture légère.</small></div>
       </div>
       <div class="shot-grid">
-        <figure><img src="https://github.com/Etorrent-Org/platform-infra/releases/download/v1.0.0/infographic-lab-iceberg.png" alt="Infographie Iceberg créée avec Infographic Lab"><figcaption>Iceberg · visible / sous la surface</figcaption></figure>
-        <figure><img src="https://github.com/Etorrent-Org/platform-infra/releases/download/v1.0.0/infographic-lab-cycle.png" alt="Infographie Cycle créée avec Infographic Lab"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure>
+        <figure><img src="./assets/infographic-lab-iceberg.svg" alt="Infographie Iceberg créée avec Infographic Lab"><figcaption>Iceberg · visible / sous la surface</figcaption></figure>
+        <figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle créée avec Infographic Lab"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure>
       </div>
     </section>
 
     <section class="product-section" id="installation">
       <p class="eyebrow">Installation locale</p>
-      <h2>Un ZIP, Docker Desktop et une clé Mistral Vibe.</h2>
-      <p class="lead">La release contient l'application complète. Aucun compte Infographic Lab, aucune base de données et aucun service de stockage ne sont nécessaires.</p>
-      <div class="install"><ol><li>Télécharger <code>Infographic-Lab-v1.0.0.zip</code> depuis GitHub Releases.</li><li>Extraire l'archive puis copier <code>.env.example</code> vers <code>.env</code>.</li><li>Renseigner <code>MISTRAL_API_KEY</code>.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div>
+      <h2>Docker Desktop et une clé Mistral Vibe.</h2>
+      <p class="lead">Le dépôt public contient les fichiers nécessaires à l'installation locale. Aucun compte Infographic Lab, aucune base de données et aucun service de stockage ne sont nécessaires.</p>
+      <div class="install"><ol><li>Ouvrir le dépôt public <code>Etorrent-Org/infographic-lab</code>.</li><li>Télécharger le dépôt puis extraire l'archive.</li><li>Copier <code>.env.example</code> vers <code>.env</code>.</li><li>Renseigner <code>MISTRAL_API_KEY</code>.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div>
     </section>
 
     <section class="product-section">
@@ -95,11 +95,11 @@
     </section>
 
     <section class="product-cta">
-      <div><p class="eyebrow" style="color:#dbe7ee">Infographic Lab 1.0.0</p><h2>Télécharger, tester, adapter.</h2><p>La V1 est distribuée avec son code source, un package ZIP, le changelog, les notes de release et la documentation d'installation.</p></div>
-      <div class="cta-actions"><a class="button button-light" href="https://github.com/Etorrent-Org/platform-infra/releases/tag/v1.0.0">GitHub Release <span aria-hidden="true">→</span></a><a class="button button-light" href="https://github.com/Etorrent-Org/platform-infra/tree/main/infographic-lab">Code source <span aria-hidden="true">↗</span></a></div>
+      <div><p class="eyebrow" style="color:#dbe7ee">Infographic Lab 1.0.0</p><h2>Télécharger, tester, adapter.</h2><p>La V1 est distribuée publiquement avec son code source et sa documentation d'installation.</p></div>
+      <div class="cta-actions"><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab">Dépôt public <span aria-hidden="true">→</span></a><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab">Code source <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
-  <footer class="footer"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="https://github.com/Etorrent-Org/platform-infra/tree/main/infographic-lab">Infographic Lab sur GitHub</a><a href="../ai-process-studio/">AI Process Studio</a><a href="../h9-factory/">H9 Legacy</a></div></footer>
+  <footer class="footer"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="https://github.com/Etorrent-Org/infographic-lab">Infographic Lab sur GitHub</a><a href="../ai-process-studio/">AI Process Studio</a><a href="../h9-factory/">H9 Legacy</a></div></footer>
 </body>
 </html>
