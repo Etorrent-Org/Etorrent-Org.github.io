@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etorrent-org.github.io/sitemap.xml
