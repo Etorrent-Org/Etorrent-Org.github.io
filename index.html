@@ -3,103 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f2f4f8">
-  <title>Etorrent-Org · Applications IA autonomes et maîtrisées</title>
-  <meta name="description" content="Etorrent-Org conçoit des applications IA autonomes et local-first : Visual AI Studio, AI Process Studio, Infographic Lab et IA-Art, avec H9 conservé en archive Legacy.">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .project-card-infographic .project-monogram{background:#e6eef2;color:#315a78}.project-card-infographic .card-kicker{color:#315a78}
-    .project-card-visual{background:linear-gradient(145deg,#0f1729,#17152f);border-color:#332a60;color:#f8f7ff}.project-card-visual .project-monogram{background:#281e50;border-color:#443578;color:#c4b5fd}.project-card-visual .card-kicker{color:#a78bfa}.project-card-visual .card-content>p:last-child{color:#c7c8d6}.project-card-visual .card-footer{border-color:#3b315d}.project-card-visual .card-footer>div span{background:#2b2348;color:#d8ccff}.project-card-visual .card-footer>a{color:#c4b5fd}
-  </style>
+  <meta name="theme-color" content="#08090e">
+  <title>Etorrent-Org · Practical AI products</title>
+  <meta name="description" content="Etorrent-Org conçoit des applications IA autonomes, local-first et orientées usages : AI Process Studio, Visual AI Studio, Infographic Lab et IA-Art.">
+  <link rel="stylesheet" href="v2.css">
 </head>
 <body>
-  <nav class="nav-shell" aria-label="Navigation principale">
-    <a class="brand" href="#top" aria-label="Etorrent-Org, retour en haut"><span class="brand-mark" aria-hidden="true">E9</span><span>Etorrent-Org</span></a>
-    <div class="nav-links"><a href="#projets">Projets</a><a href="#approche">Approche</a><a class="nav-cta" href="https://github.com/Etorrent-Org">Voir sur GitHub</a></div>
-  </nav>
+  <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="site-grid" aria-hidden="true"></div>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">AI Product Studio · Standalone apps</p>
-        <h1>Des applications IA utiles, autonomes et maîtrisées.</h1>
-        <p class="hero-lede">Etorrent-Org développe des applications indépendantes qui partent d’un besoin concret, structurent le travail et gardent l’utilisateur dans la boucle de décision. Chaque produit possède son propre cycle de vie et son environnement d’exécution.</p>
-        <div class="hero-actions"><a class="button button-primary" href="visual-ai-studio/">Découvrir Visual AI Studio</a><a class="button button-secondary" href="#projets">Explorer les projets</a></div>
-        <p class="signature">R1-Torrent · Consultant & builder of practical AI tools</p>
-      </div>
-      <aside class="hero-visual" aria-label="Écosystème Etorrent-Org">
-        <div class="visual-topline"><span class="live-dot"></span>Produits actifs</div>
-        <div class="system-stack">
-          <div class="system-card system-card-main"><span>Création visuelle</span><strong>Visual AI Studio</strong><small>Briefer · créer · valider · exporter</small></div>
-          <div class="system-row"><div class="system-card system-card-art"><span>Analyse métier</span><strong>AI Process Studio</strong><small>Analyser · structurer · prioriser</small></div><div class="system-card system-card-art"><span>Visualisation</span><strong>Infographic Lab</strong><small>Structurer · visualiser · exporter</small></div></div>
-          <div class="system-card system-card-legacy"><span>Archive</span><strong>H9</strong><small>Legacy · historique conservé</small></div>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="Etorrent-Org, retour en haut">
+      <span class="brand-mark">E9</span>
+      <span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#products">Produits</a>
+      <a href="#principles">Principes</a>
+      <a class="nav-cta" href="https://github.com/Etorrent-Org">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main class="shell" id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ETORRENT-ORG · LOCAL-FIRST · HUMAN CONTROL</p>
+        <h1>Des outils IA.<br><em>Une ligne claire.</em></h1>
+        <p class="hero-lede">Des applications autonomes pour analyser, créer et visualiser sans transformer chaque besoin en plateforme. Un produit, un usage, un contrôle explicite par l'utilisateur.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#products">Explorer les produits <span>↓</span></a>
+          <a class="button button-secondary" href="https://github.com/Etorrent-Org">Voir l'organisation GitHub ↗</a>
         </div>
-        <p class="visual-note">Une architecture simple : des applications autonomes, une infrastructure transverse minimale et aucun socle imposé entre les produits.</p>
-      </aside>
+      </div>
+      <div class="hero-visual" aria-label="Écosystème de produits Etorrent-Org">
+        <div class="hub-orbit">
+          <div class="orbit-core">E9</div>
+          <div class="orbit-node a"><strong>AI Process</strong><span>analyser</span></div>
+          <div class="orbit-node b"><strong>Visual AI</strong><span>créer</span></div>
+          <div class="orbit-node c"><strong>Infographic</strong><span>visualiser</span></div>
+          <div class="orbit-node d"><strong>IA-Art</strong><span>publier</span></div>
+        </div>
+      </div>
     </section>
 
-    <section class="section projects" id="projets">
-      <div class="section-heading"><p class="eyebrow">Les projets</p><h2>Des produits indépendants, chacun avec son propre rôle.</h2><p>Etorrent-Org évolue autour d’applications standalone. H9 reste disponible comme archive historique, mais n’est plus la base technique des nouveaux produits.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-card-featured" id="ai-process-studio">
-          <div class="card-topline"><span class="project-monogram">APS</span><span class="status status-live"><i></i>Actif · V1.0.0</span></div>
-          <div class="card-content"><p class="card-kicker">Analyse et transformation des processus</p><h3>AI Process Studio</h3><p>Une application standalone local-first pour analyser, structurer et prioriser les opportunités IA autour des processus métier.</p></div>
-          <div class="card-footer"><div><span>Local-first</span><span>Docker</span><span>Process</span><span>Human-in-the-loop</span></div><a href="ai-process-studio/">Découvrir le produit <b aria-hidden="true">↗</b></a></div>
+    <div class="status-strip" aria-label="Principes transverses">
+      <span class="status-chip"><i></i>Produits actifs</span>
+      <span class="status-chip">Standalone apps</span>
+      <span class="status-chip">Local-first quand pertinent</span>
+      <span class="status-chip">Validation humaine</span>
+    </div>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div><p class="section-kicker">PRODUCTS</p><h2>Quatre outils, quatre rôles.</h2><p class="lead">Chaque application possède son propre cycle de vie. Les pages produit expliquent la valeur et montrent le résultat ; le processus n'est décrit qu'une seule fois.</p></div>
+      </div>
+
+      <div class="cards">
+        <article class="product-card product-accent-process">
+          <div class="card-media"><img src="assets/notion-hub/ai-process-studio.svg" alt="AI Process Studio"><span class="card-monogram">APS</span><span class="card-state">Actif · 1.0.0</span></div>
+          <div class="card-body"><p class="card-kicker">Process intelligence</p><h3>AI Process Studio</h3><p>Comprendre un processus métier, qualifier les opportunités IA et transformer l'analyse en priorités exploitables.</p><div class="card-meta"><div class="tags"><span class="tag">Local-first</span><span class="tag">Docker</span><span class="tag">Process</span></div><a class="card-link" href="ai-process-studio/">Découvrir ↗</a></div></div>
         </article>
 
-        <article class="project-card project-card-visual" id="visual-ai-studio">
-          <div class="card-topline"><span class="project-monogram">VAS</span><span class="status status-online"><i></i>Public · v0.1.0</span></div>
-          <div class="card-content"><p class="card-kicker">Création visuelle assistée</p><h3>Visual AI Studio</h3><p>Une application Windows local-first pour structurer un brief, travailler avec Studio Visuel dans ChatGPT, contrôler les créations puis exporter les livrables.</p></div>
-          <div class="card-footer"><div><span>Windows</span><span>Local-first</span><span>MIT</span><span>Human-in-the-loop</span></div><a href="visual-ai-studio/">Découvrir Visual AI Studio <b aria-hidden="true">↗</b></a></div>
+        <article class="product-card product-accent-visual">
+          <div class="card-media"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/projets.png" alt="Visual AI Studio"><span class="card-monogram">VAS</span><span class="card-state">Public · 0.1.1</span></div>
+          <div class="card-body"><p class="card-kicker">Visual workflow</p><h3>Visual AI Studio</h3><p>Structurer un brief, travailler avec Studio Visuel dans ChatGPT, contrôler les créations puis exporter localement.</p><div class="card-meta"><div class="tags"><span class="tag">Windows</span><span class="tag">MIT</span><span class="tag">Local-first</span></div><a class="card-link" href="visual-ai-studio/">Découvrir ↗</a></div></div>
         </article>
 
-        <article class="project-card project-card-infographic" id="infographic-lab">
-          <div class="card-topline"><span class="project-monogram">IL</span><span class="status status-live"><i></i>Actif · V1.0.0</span></div>
-          <div class="card-content"><p class="card-kicker">Infographies et communication visuelle</p><h3>Infographic Lab</h3><p>Transformer un texte en infographie éditable avec Vibe, AntV et un moteur SVG local. Templates, styles, pictogrammes, Iceberg, Cycle, Sankey simple et exports SVG/PNG/HTML.</p></div>
-          <div class="card-footer"><div><span>Local-first</span><span>Vibe</span><span>AntV</span><span>SVG</span></div><a href="infographic-lab/">Découvrir Infographic Lab <b aria-hidden="true">↗</b></a></div>
+        <article class="product-card product-accent-infographic">
+          <div class="card-media"><img src="infographic-lab/assets/infographic-lab-app.svg" alt="Infographic Lab"><span class="card-monogram">IL</span><span class="card-state">Actif · 1.0.0</span></div>
+          <div class="card-body"><p class="card-kicker">Structured visuals</p><h3>Infographic Lab</h3><p>Transformer un texte en infographie éditable : Vibe structure, l'application valide, AntV ou le moteur SVG dessine.</p><div class="card-meta"><div class="tags"><span class="tag">Vibe</span><span class="tag">AntV</span><span class="tag">SVG</span></div><a class="card-link" href="infographic-lab/">Découvrir ↗</a></div></div>
         </article>
 
-        <article class="project-card project-card-art">
-          <div class="card-topline"><span class="project-monogram project-monogram-art">IA</span><span class="status status-online"><i></i>En ligne</span></div>
-          <div class="card-content"><p class="card-kicker">Création et publication</p><h3>IA‑Art Automation</h3><p>Un workflow personnel qui prépare, contrôle et publie les créations IA‑Art vers Pinterest après validation humaine explicite.</p></div>
-          <div class="card-footer"><div><span>Visuels</span><span>Notion</span><span>n8n</span></div><a href="https://etorrent-org.github.io/ia-art-automation/">Voir IA‑Art <b aria-hidden="true">↗</b></a></div>
-        </article>
-
-        <article class="project-card project-card-legacy">
-          <div class="card-topline"><span class="project-monogram project-monogram-legacy">H9</span><span class="status status-legacy">Legacy</span></div>
-          <div class="card-content"><p class="card-kicker">Archive historique</p><h3>H9 Consultant OS / Factory</h3><p>H9 a servi de laboratoire pour explorer les applications locales, les workflows métier, Docker et les usages IA. Le projet est désormais gelé et conservé comme référence historique.</p></div>
-          <div class="card-footer"><div><span>Archive</span><span>Portfolio</span><span>Historique</span></div><a href="h9-factory/">Voir l’archive H9 <b aria-hidden="true">↗</b></a></div>
+        <article class="product-card product-accent-art">
+          <div class="card-media"><img src="assets/notion-hub/ia-art-studio.svg" alt="IA-Art"><span class="card-monogram">IA</span><span class="card-state">En ligne</span></div>
+          <div class="card-body"><p class="card-kicker">Visual publishing</p><h3>IA-Art</h3><p>Préparer, contrôler et publier des créations visuelles avec une validation humaine explicite avant automatisation.</p><div class="card-meta"><div class="tags"><span class="tag">Visuels</span><span class="tag">Pinterest</span><span class="tag">Automation</span></div><a class="card-link" href="https://etorrent-org.github.io/ia-art-automation/">Voir le projet ↗</a></div></div>
         </article>
       </div>
     </section>
 
-    <section class="section approach" id="approche">
-      <div class="approach-title"><p class="eyebrow">Principes de conception</p><h2>Des produits plus simples, sans dépendance inutile.</h2></div>
+    <section class="section" id="principles">
+      <div class="section-heading"><div><p class="section-kicker">DESIGN PRINCIPLES</p><h2>Trois règles suffisent.</h2></div></div>
       <div class="principles">
-        <article><span>01</span><div><h3>Une application, un besoin</h3><p>Chaque produit répond à un problème identifiable et conserve son propre cycle de vie.</p></div></article>
-        <article><span>02</span><div><h3>Garder l’humain dans la boucle</h3><p>L’IA assiste, structure et propose ; les décisions importantes restent validées par l’utilisateur.</p></div></article>
-        <article><span>03</span><div><h3>Local-first lorsque pertinent</h3><p>Les données, sauvegardes et composants critiques restent maîtrisables sans dépendance obligatoire à une plateforme centrale.</p></div></article>
-        <article><span>04</span><div><h3>Éviter le socle unique</h3><p>Les nouveaux produits restent indépendants : pas de monolithe commun à maintenir avant de pouvoir faire évoluer une application.</p></div></article>
+        <article class="signal-card"><span>01</span><h3>Un besoin, un produit</h3><p>Pas de socle imposé avant de résoudre le problème. Chaque application reste simple à comprendre, tester et faire évoluer.</p></article>
+        <article class="signal-card"><span>02</span><h3>Local-first lorsque pertinent</h3><p>Les données et composants critiques restent maîtrisables localement ; les services externes n'interviennent que lorsqu'ils apportent une valeur claire.</p></article>
+        <article class="signal-card"><span>03</span><h3>Humain dans la boucle</h3><p>L'IA structure, propose ou accélère. Les validations importantes restent visibles et assumées par l'utilisateur.</p></article>
       </div>
     </section>
 
-    <section class="section roadmap">
-      <div><p class="eyebrow">Trajectoire</p><h2>La nouvelle génération Etorrent-Org.</h2></div>
-      <ol>
-        <li class="is-current"><span>Nouvelle version publique</span><strong>Visual AI Studio</strong><p>Version 0.1.0 Windows, local-first, Studio Visuel séparé et validation humaine.</p></li>
-        <li class="is-current"><span>Produit actif</span><strong>Infographic Lab</strong><p>Version 1.0.0 local-first pour transformer du texte en visuels éditables et exportables.</p></li>
-        <li class="is-current"><span>Produit actif</span><strong>AI Process Studio</strong><p>Version 1.0.0 autonome, exécution Docker et stockage local.</p></li>
-        <li><span>Projet spécialisé</span><strong>IA‑Art</strong><p>Création, validation et automatisation de publication autour des contenus visuels.</p></li>
-        <li><span>Legacy</span><strong>H9</strong><p>Architecture historique gelée et conservée comme archive de conception et de développement.</p></li>
-      </ol>
-    </section>
-
-    <section class="section final-cta">
-      <div><p class="eyebrow">Nouvelle release publique</p><h2>Visual AI Studio v0.1.0 est disponible.</h2><p>Une application Windows locale pour passer du brief à la création visuelle avec Studio Visuel, garder une validation humaine explicite et exporter les livrables sans API OpenAI imposée.</p></div>
-      <a class="button button-light" href="visual-ai-studio/">Voir Visual AI Studio <span aria-hidden="true">→</span></a>
+    <section class="final-cta">
+      <div><p class="section-kicker">OPEN DEVELOPMENT</p><h2>Le code et les releases restent visibles.</h2><p>Les projets publics sont documentés séparément, avec leurs versions, leurs contraintes et leurs modes d'installation.</p></div>
+      <a class="button button-light" href="https://github.com/Etorrent-Org">Etorrent-Org sur GitHub ↗</a>
     </section>
   </main>
 
-  <footer class="footer"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="https://github.com/R1-Torrent">Profil GitHub</a><a href="https://github.com/Etorrent-Org">Organisation</a><a href="visual-ai-studio/">Visual AI Studio</a><a href="infographic-lab/">Infographic Lab</a><a href="https://etorrent-org.github.io/ia-art-automation/">IA‑Art</a><a href="h9-factory/">H9 Legacy</a></div></footer>
+  <footer class="footer shell"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="visual-ai-studio/">Visual AI Studio</a><a href="infographic-lab/">Infographic Lab</a><a href="ai-process-studio/">AI Process Studio</a><a href="https://github.com/Etorrent-Org">GitHub</a></div></footer>
 </body>
 </html>

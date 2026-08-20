@@ -2,113 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eef2f5">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090e">
   <title>Infographic Lab · Etorrent-Org</title>
-  <meta name="description" content="Infographic Lab 1.0.0 transforme un texte en infographies éditables avec Mistral Vibe, AntV et un moteur SVG local.">
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    .product-hero{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:88px 0 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-    .product-hero h1{margin:0;font-size:clamp(52px,6vw,82px);line-height:.98;letter-spacing:-.06em}
-    .product-hero .hero-lede{max-width:720px}
-    .preview-frame{overflow:hidden;border:1px solid var(--line);border-radius:28px;background:#fff;box-shadow:var(--shadow)}
-    .preview-frame img{display:block;width:100%;height:auto}
-    .product-section{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:76px 0;border-top:1px solid var(--line)}
-    .product-section h2{margin:0;font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.05em}
-    .lead{max-width:780px;margin:20px 0 0;color:var(--muted);font-size:18px;line-height:1.7}
-    .infographic-frame{margin-top:38px;padding:20px;border:1px solid var(--line);border-radius:28px;background:#fbf8f0;box-shadow:var(--shadow)}
-    .infographic-frame img{display:block;width:100%;height:auto;border-radius:18px}
-    .feature-grid{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .feature{padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.76)}
-    .feature span{color:var(--accent);font-size:10px;font-weight:850;letter-spacing:.1em}
-    .feature h3{margin:12px 0 8px;font-size:19px;letter-spacing:-.03em}
-    .feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
-    .style-row{margin-top:36px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-    .style-chip{padding:18px;border:1px solid var(--line);border-radius:18px;background:#fff}
-    .style-chip i{display:block;width:22px;height:22px;margin-bottom:14px;border-radius:50%;background:#315a78}
-    .style-chip:nth-child(2) i{background:#7b6751}.style-chip:nth-child(3) i{background:#111827}.style-chip:nth-child(4) i{background:#4f5b66}.style-chip:nth-child(5){background:#27302e;color:#f4f0dc}.style-chip:nth-child(5) i{background:#f4f0dc}
-    .style-chip strong{display:block;font-size:15px}.style-chip small{display:block;margin-top:5px;color:var(--muted);line-height:1.45}.style-chip:nth-child(5) small{color:#b9c8c4}
-    .shot-grid{margin-top:38px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.shot-grid figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#fff}.shot-grid img{display:block;width:100%;height:auto}.shot-grid figcaption{padding:14px 18px;color:var(--muted);font-size:12px}
-    .install{margin-top:36px;padding:28px;border-radius:24px;background:#182238;color:#f8faff}.install ol{margin:0;padding-left:22px;line-height:1.9;color:#d3dbeb}.install code{color:#fff}
-    .product-cta{width:min(1180px,calc(100% - 40px));margin:0 auto 80px;padding:52px;border-radius:30px;background:linear-gradient(135deg,#315a78,#233f55);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:36px}.product-cta h2{margin:0;font-size:clamp(32px,4vw,48px);letter-spacing:-.05em}.product-cta p{max-width:690px;margin:12px 0 0;color:#dbe7ee;line-height:1.65}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
-    @media(max-width:900px){.product-hero{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr 1fr}.style-row{grid-template-columns:1fr 1fr}.shot-grid{grid-template-columns:1fr}.product-cta{align-items:flex-start;flex-direction:column}}
-    @media(max-width:600px){.product-hero,.product-section,.product-cta{width:min(100% - 28px,1180px)}.feature-grid,.style-row{grid-template-columns:1fr}.product-cta{padding:36px 24px}}
-  </style>
+  <meta name="description" content="Infographic Lab 1.0.0 transforme un texte en infographie éditable avec Mistral Vibe, AntV et un moteur SVG local.">
+  <link rel="stylesheet" href="../v2.css">
 </head>
 <body>
-  <nav class="nav-shell" aria-label="Navigation principale">
-    <a class="brand" href="../" aria-label="Retour au portail Etorrent-Org"><span class="brand-mark" aria-hidden="true">E9</span><span>Etorrent-Org</span></a>
-    <div class="nav-links"><a href="#vue-ensemble">Vue d’ensemble</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#visuels">Visuels</a><a href="#installation">Installation</a><a class="nav-cta" href="https://github.com/Etorrent-Org/infographic-lab">Voir le code</a></div>
-  </nav>
+  <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div><div class="site-grid" aria-hidden="true"></div>
+  <header class="topbar shell">
+    <a class="brand" href="../"><span class="brand-mark">E9</span><span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span></a>
+    <nav class="nav-links"><a href="#overview">Vue d'ensemble</a><a href="#capabilities">Capacités</a><a href="#visuals">Visuels</a><a class="nav-cta" href="https://github.com/Etorrent-Org/infographic-lab">GitHub ↗</a></nav>
+  </header>
 
-  <main>
+  <main class="shell product-accent-infographic">
     <section class="product-hero">
-      <div>
-        <p class="eyebrow">Produit actif · Version 1.0.0</p>
-        <h1>Infographic Lab</h1>
-        <p class="hero-lede">Transformer un texte en visuel clair, puis garder la main : structure IA avec Mistral Vibe, rendu AntV ou SVG local, édition bloc par bloc, templates, styles et exports.</p>
-        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/infographic-lab/archive/refs/heads/main.zip">Télécharger la V1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/infographic-lab">Dépôt GitHub</a></div>
-      </div>
-      <div class="preview-frame"><img src="./assets/infographic-lab-app.svg" alt="Aperçu d'Infographic Lab 1.0.0"></div>
+      <div><p class="eyebrow">LOCAL-FIRST · VIBE · ANTV · 1.0.0</p><h1>Infographic<br><em>Lab.</em></h1><p class="hero-lede">Du texte à une infographie éditable : l'IA structure l'information, l'application valide le JSON, puis le rendu et l'édition restent sous contrôle local.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/infographic-lab/releases/latest">Télécharger la V1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/infographic-lab">Code source ↗</a></div></div>
+      <div class="product-visual"><img src="./assets/infographic-lab-app.svg" alt="Aperçu d'Infographic Lab 1.0.0"><div class="visual-shade"></div><span class="visual-label">Studio local · édition visuelle</span></div>
     </section>
 
-    <section class="product-section" id="vue-ensemble">
-      <p class="eyebrow">Vue d’ensemble</p>
-      <h2>Du texte au visuel, avec une IA cadrée.</h2>
-      <p class="lead">L’infographie résume la chaîne de valeur : décrire l’idée, structurer avec Vibe, valider le JSON, construire le visuel localement, garder la main sur l’édition puis sauvegarder et exporter.</p>
-      <div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie du workflow Infographic Lab"></div>
+    <div class="status-strip"><span class="status-chip"><i></i>Actif</span><span class="status-chip">Docker</span><span class="status-chip">MIT</span><span class="status-chip">Mistral requis pour les opérations IA</span></div>
+
+    <section class="section" id="overview"><div class="section-heading"><div><p class="section-kicker">OVERVIEW</p><h2>Une seule vue pour comprendre la chaîne.</h2><p class="lead">Le processus complet n'est plus répété ailleurs sur la page : cette infographie résume la séparation entre structuration IA, validation, rendu local, édition et export.</p></div></div><div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie du workflow Infographic Lab"></div></section>
+
+    <section class="section" id="capabilities"><div class="section-heading"><div><p class="section-kicker">CAPABILITIES</p><h2>Trois choix de conception font la différence.</h2></div></div><div class="capabilities">
+      <article class="capability-card"><span class="num">01</span><h3>IA cadrée</h3><p>Vibe ne dessine pas la page : il produit une structure JSON courte et contrôlée. La passerelle locale la valide avant tout rendu.</p></article>
+      <article class="capability-card"><span class="num">02</span><h3>Rendu local</h3><p>AntV Infographic ou le moteur SVG local transforme la structure validée en visuel, sans confier à l'IA du HTML ou du SVG libre.</p></article>
+      <article class="capability-card"><span class="num">03</span><h3>Édition libre</h3><p>Titres, blocs, ordre, pictogrammes, couleurs et densité restent modifiables localement sans nouvel appel IA.</p></article>
+    </div></section>
+
+    <section class="section" id="visuals"><div class="section-heading"><div><p class="section-kicker">VISUAL SYSTEM</p><h2>Quelques styles, plusieurs formes utiles.</h2><p class="lead">La V1 privilégie un catalogue court et exploitable plutôt qu'une galerie infinie.</p></div></div>
+      <div class="style-row"><div class="style-chip" style="--chip:#315a78"><i></i><strong>Clean</strong><small>net</small></div><div class="style-chip" style="--chip:#8a6d55"><i></i><strong>Soft</strong><small>chaud</small></div><div class="style-chip" style="--chip:#111827"><i></i><strong>Dark</strong><small>contrasté</small></div><div class="style-chip" style="--chip:#596575"><i></i><strong>Sketch</strong><small>organique</small></div><div class="style-chip" style="--chip:#d9d2b7"><i></i><strong>Chalk</strong><small>texturé</small></div></div>
+      <div class="gallery"><figure><img src="./assets/infographic-lab-iceberg.svg" alt="Infographie Iceberg"><figcaption>Iceberg · visible / sous la surface</figcaption></figure><figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure><figure><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie processus"><figcaption>Processus · vue de synthèse</figcaption></figure></div>
     </section>
 
-    <section class="product-section" id="fonctionnalites">
-      <p class="eyebrow">V1 complète</p>
-      <h2>Une chaîne courte : texte, structure, visuel, édition, export.</h2>
-      <p class="lead">Infographic Lab reste local-first et évite la logique de plateforme. Le moteur IA ne dessine pas du HTML libre : il renvoie un JSON contrôlé, puis l'application décide du rendu.</p>
-      <div class="feature-grid">
-        <article class="feature"><span>01</span><h3>Structurer avec Vibe</h3><p>Le texte source devient un JSON canonique court, validé avant rendu et réutilisable pour plusieurs variantes.</p></article>
-        <article class="feature"><span>02</span><h3>Choisir le bon visuel</h3><p>Processus, timeline, liste, comparaison, pyramide, entonnoir, Iceberg, Cycle, Sankey simple et autres variantes compatibles.</p></article>
-        <article class="feature"><span>03</span><h3>Éditer localement</h3><p>Titre, sous-titre, blocs, ordre, pictogrammes, couleurs et densité peuvent être modifiés sans nouvel appel IA.</p></article>
-        <article class="feature"><span>04</span><h3>Retoucher un bloc</h3><p>Vibe peut réécrire uniquement l'élément ciblé, avec avant/après et annulation locale en une étape.</p></article>
-        <article class="feature"><span>05</span><h3>Sauvegarder le projet</h3><p>Le JSON projet conserve le texte source, le style, la variante, les pictogrammes et l'apparence sans base de données.</p></article>
-        <article class="feature"><span>06</span><h3>Exporter</h3><p>SVG vectoriel, PNG haute résolution ou HTML autonome contenant le visuel final.</p></article>
-      </div>
-    </section>
+    <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Docker Desktop et une clé Mistral.</h2><p class="lead">Aucun compte Infographic Lab ni base de données ne sont nécessaires. Le runner Vibe reste derrière l'application sur le réseau Docker interne.</p></div></div><div class="install-panel"><ol><li>Télécharger la dernière release publique.</li><li>Copier <code>.env.example</code> vers <code>.env</code>.</li><li>Renseigner <code>MISTRAL_API_KEY</code>.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div></section>
 
-    <section class="product-section" id="visuels">
-      <p class="eyebrow">Styles & visuels</p>
-      <h2>Des rendus utiles plutôt qu'une galerie infinie.</h2>
-      <p class="lead">La V1 retient cinq styles lisibles et ajoute trois rendus SVG dédiés lorsque les gabarits AntV ne suffisent pas.</p>
-      <div class="style-row">
-        <div class="style-chip"><i></i><strong>Clean</strong><small>Éditorial, net, professionnel.</small></div>
-        <div class="style-chip"><i></i><strong>Soft</strong><small>Chaud, doux et discret.</small></div>
-        <div class="style-chip"><i></i><strong>Dark</strong><small>Contraste sombre et accents lumineux.</small></div>
-        <div class="style-chip"><i></i><strong>Sketch</strong><small>Une sensation plus dessinée et organique.</small></div>
-        <div class="style-chip"><i></i><strong>Chalk</strong><small>Tableau sombre, craie et texture légère.</small></div>
-      </div>
-      <div class="shot-grid">
-        <figure><img src="./assets/infographic-lab-iceberg.svg" alt="Infographie Iceberg créée avec Infographic Lab"><figcaption>Iceberg · visible / sous la surface</figcaption></figure>
-        <figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle créée avec Infographic Lab"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="product-section" id="installation">
-      <p class="eyebrow">Installation locale</p>
-      <h2>Docker Desktop et une clé Mistral Vibe.</h2>
-      <p class="lead">Le dépôt public contient les fichiers nécessaires à l'installation locale. Aucun compte Infographic Lab, aucune base de données et aucun service de stockage ne sont nécessaires.</p>
-      <div class="install"><ol><li>Télécharger le ZIP public de la V1 puis extraire l'archive.</li><li>Ouvrir PowerShell dans le dossier extrait.</li><li>Copier <code>.env.example</code> vers <code>.env</code>.</li><li>Renseigner <code>MISTRAL_API_KEY</code>.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div>
-    </section>
-
-    <section class="product-section">
-      <p class="eyebrow">Architecture maîtrisée</p>
-      <h2>Le runner Vibe reste derrière l'application.</h2>
-      <p class="lead">Le navigateur parle uniquement à la passerelle locale. Le runner Vibe reste sur le réseau Docker interne, son port 7020 n'est pas publié et les réponses IA sont validées avant d'atteindre le moteur de rendu.</p>
-    </section>
-
-    <section class="product-cta">
-      <div><p class="eyebrow" style="color:#dbe7ee">Infographic Lab 1.0.0</p><h2>Télécharger, tester, adapter.</h2><p>La V1 est distribuée publiquement avec son code source et sa documentation d'installation.</p></div>
-      <div class="cta-actions"><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab/archive/refs/heads/main.zip">Télécharger le ZIP <span aria-hidden="true">→</span></a><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab">Code source <span aria-hidden="true">↗</span></a></div>
-    </section>
+    <section class="final-cta"><div><p class="section-kicker">INFOGRAPHIC LAB 1.0.0</p><h2>L'IA structure. Le produit dessine.</h2><p>Cette séparation garde l'expérience éditable, prévisible et compréhensible sans transformer le moteur IA en générateur de code visuel libre.</p></div><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab/releases/latest">Dernière release ↗</a></section>
   </main>
 
-  <footer class="footer"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="https://github.com/Etorrent-Org/infographic-lab">Infographic Lab sur GitHub</a><a href="../ai-process-studio/">AI Process Studio</a><a href="../h9-factory/">H9 Legacy</a></div></footer>
+  <footer class="footer shell"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="../visual-ai-studio/">Visual AI Studio</a><a href="../ai-process-studio/">AI Process Studio</a></div></footer>
 </body>
 </html>

@@ -2,101 +2,42 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2f4f8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090e">
   <title>AI Process Studio · Etorrent-Org</title>
   <meta name="description" content="AI Process Studio est une application standalone local-first pour analyser, structurer et prioriser les opportunités IA autour des processus métier.">
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    .product-hero{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:88px 0 72px;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
-    .product-hero h1{margin:0;font-size:clamp(52px,6vw,82px);line-height:.98;letter-spacing:-.06em}
-    .product-hero .hero-lede{max-width:720px}
-    .product-panel{padding:28px;border-radius:28px;background:#182238;color:#f8faff;box-shadow:var(--shadow)}
-    .product-panel .panel-status{display:flex;align-items:center;gap:9px;color:#b7c0d3;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .product-panel h2{margin:26px 0 8px;font-size:28px;letter-spacing:-.04em}
-    .product-panel p{margin:0;color:#b9c3d6;font-size:13px;line-height:1.7}
-    .metric-grid{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .metric{padding:17px;border:1px solid #3b4861;border-radius:17px;background:#202c44}
-    .metric span{display:block;color:#9eabc2;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-    .metric strong{display:block;margin-top:7px;font-size:16px}
-    .product-section{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:78px 0;border-top:1px solid var(--line)}
-    .product-section h2{margin:0;font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.05em}
-    .lead{max-width:760px;margin:20px 0 0;color:var(--muted);font-size:18px;line-height:1.7}
-    .feature-grid{margin-top:42px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .feature{padding:25px;border:1px solid var(--line);border-radius:23px;background:rgba(255,255,255,.72)}
-    .feature span{color:var(--accent);font-size:10px;font-weight:850;letter-spacing:.1em}
-    .feature h3{margin:13px 0 8px;font-size:19px;letter-spacing:-.03em}
-    .feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
-    .flow{margin-top:42px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-    .flow div{min-height:145px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);border-radius:20px;background:#fff}
-    .flow span{color:#8a93a6;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-    .flow strong{font-size:16px;letter-spacing:-.02em}
-    .product-cta{width:min(1180px,calc(100% - 40px));margin:0 auto 80px;padding:54px;border-radius:30px;background:linear-gradient(135deg,#5059d0,#3f48bb);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:36px}
-    .product-cta h2{margin:0;font-size:clamp(32px,4vw,48px);letter-spacing:-.05em}
-    .product-cta p{max-width:650px;margin:13px 0 0;color:#dfe1ff;line-height:1.65}
-    @media(max-width:900px){.product-hero{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.product-cta{align-items:flex-start;flex-direction:column}}
-    @media(max-width:600px){.product-hero,.product-section,.product-cta{width:min(100% - 28px,1180px)}.flow{grid-template-columns:1fr}.product-cta{padding:36px 24px}}
-  </style>
+  <link rel="stylesheet" href="../v2.css">
 </head>
 <body>
-  <nav class="nav-shell" aria-label="Navigation principale">
-    <a class="brand" href="../" aria-label="Retour au portail Etorrent-Org"><span class="brand-mark" aria-hidden="true">E9</span><span>Etorrent-Org</span></a>
-    <div class="nav-links"><a href="#fonctionnement">Fonctionnement</a><a href="#principes">Principes</a><a class="nav-cta" href="../">Retour au portail</a></div>
-  </nav>
+  <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div><div class="site-grid" aria-hidden="true"></div>
+  <header class="topbar shell">
+    <a class="brand" href="../"><span class="brand-mark">E9</span><span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span></a>
+    <nav class="nav-links"><a href="#journey">Parcours</a><a href="#decisions">Décisions</a><a href="#architecture">Architecture</a><a class="nav-cta" href="../">Portail</a></nav>
+  </header>
 
-  <main>
+  <main class="shell product-accent-process">
     <section class="product-hero">
-      <div>
-        <p class="eyebrow">Produit actif · Version 1.0.0</p>
-        <h1>AI Process Studio</h1>
-        <p class="hero-lede">Comprendre un processus métier, identifier où l’IA peut créer de la valeur et transformer cette analyse en priorités exploitables — sans automatiser à l’aveugle.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#fonctionnement">Voir le fonctionnement</a><a class="button button-secondary" href="../">Retour Etorrent-Org</a></div>
-      </div>
-      <aside class="product-panel">
-        <div class="panel-status"><span class="live-dot"></span>Application standalone</div>
-        <h2>Local-first, simple à exploiter</h2>
-        <p>AI Process Studio fonctionne localement avec Docker, conserve ses données dans un stockage local et reste indépendant des anciens composants H9.</p>
-        <div class="metric-grid">
-          <div class="metric"><span>Version</span><strong>1.0.0</strong></div>
-          <div class="metric"><span>Stockage</span><strong>Local JSON</strong></div>
-          <div class="metric"><span>Runtime</span><strong>Docker</strong></div>
-          <div class="metric"><span>Approche</span><strong>Human-in-the-loop</strong></div>
-        </div>
-      </aside>
+      <div><p class="eyebrow">PROCESS INTELLIGENCE · LOCAL-FIRST · 1.0.0</p><h1>AI Process<br><em>Studio.</em></h1><p class="hero-lede">Comprendre un processus métier avant de parler technologie : clarifier le fonctionnement réel, isoler les irritants et transformer les opportunités IA en décisions priorisées.</p><div class="hero-actions"><a class="button button-primary" href="#journey">Voir le parcours</a><a class="button button-secondary" href="../">Retour au portail</a></div></div>
+      <div class="product-visual"><img src="../assets/notion-hub/ai-process-studio.svg" alt="AI Process Studio"><div class="visual-shade"></div><span class="visual-label">Analyse métier · opportunités IA</span></div>
     </section>
 
-    <section class="product-section" id="fonctionnement">
-      <p class="eyebrow">Parcours produit</p>
-      <h2>Du processus existant à une feuille de route IA.</h2>
-      <p class="lead">L’objectif n’est pas de chercher une IA à placer partout. Le produit aide d’abord à comprendre le fonctionnement réel, puis à isoler les opportunités qui méritent d’être approfondies.</p>
-      <div class="flow">
-        <div><span>01</span><strong>Décrire le processus</strong></div>
-        <div><span>02</span><strong>Structurer les étapes</strong></div>
-        <div><span>03</span><strong>Identifier les irritants</strong></div>
-        <div><span>04</span><strong>Qualifier les opportunités IA</strong></div>
-        <div><span>05</span><strong>Prioriser la transformation</strong></div>
-      </div>
-    </section>
+    <div class="status-strip"><span class="status-chip"><i></i>Actif</span><span class="status-chip">Docker</span><span class="status-chip">Stockage local JSON</span><span class="status-chip">Human-in-the-loop</span></div>
 
-    <section class="product-section" id="principes">
-      <p class="eyebrow">Ce que le produit apporte</p>
-      <h2>Une lecture métier avant la technologie.</h2>
-      <div class="feature-grid">
-        <article class="feature"><span>01</span><h3>Cartographier</h3><p>Formaliser les étapes, acteurs et enchaînements d’un processus pour disposer d’une base de travail claire.</p></article>
-        <article class="feature"><span>02</span><h3>Qualifier</h3><p>Repérer les irritants, tâches répétitives, points de décision et zones où une assistance IA peut être pertinente.</p></article>
-        <article class="feature"><span>03</span><h3>Prioriser</h3><p>Éviter la liste d’idées sans suite et construire une trajectoire ordonnée autour de la valeur, du risque et de la faisabilité.</p></article>
-        <article class="feature"><span>04</span><h3>Valider</h3><p>Conserver des points de décision explicites : l’utilisateur garde le contrôle sur ce qui est retenu ou rejeté.</p></article>
-        <article class="feature"><span>05</span><h3>Conserver localement</h3><p>Les données de travail restent dans l’environnement local de l’application et peuvent être sauvegardées indépendamment.</p></article>
-        <article class="feature"><span>06</span><h3>Rester autonome</h3><p>AI Process Studio possède son propre dépôt, son propre cycle de version et son propre environnement Docker.</p></article>
-      </div>
-    </section>
+    <section class="section" id="journey"><div class="section-heading"><div><p class="section-kicker">PRODUCT JOURNEY</p><h2>Un seul parcours, cinq décisions successives.</h2><p class="lead">Cette séquence est la seule description du processus sur la page. Elle part du métier et aboutit à une trajectoire de transformation ordonnée.</p></div></div><div class="process-flow">
+      <div><span>01</span><strong>Décrire le processus réel</strong></div><div><span>02</span><strong>Structurer les étapes et acteurs</strong></div><div><span>03</span><strong>Identifier les irritants</strong></div><div><span>04</span><strong>Qualifier les opportunités IA</strong></div><div><span>05</span><strong>Prioriser la transformation</strong></div>
+    </div></section>
 
-    <section class="product-cta">
-      <div><p class="eyebrow" style="color:#dfe1ff">Nouvelle génération Etorrent-Org</p><h2>Un produit autonome, pas un nouveau socle.</h2><p>AI Process Studio ouvre une trajectoire où chaque application reste indépendante. H9 est désormais conservé uniquement comme archive Legacy.</p></div>
-      <a class="button button-light" href="../">Retour au portail <span aria-hidden="true">→</span></a>
-    </section>
+    <section class="section" id="decisions"><div class="section-heading"><div><p class="section-kicker">DECISION LENS</p><h2>La sortie utile n'est pas une liste d'idées.</h2><p class="lead">Le produit sert à décider quoi approfondir, quoi différer et quoi écarter.</p></div></div><div class="decision-grid">
+      <article class="decision-card"><b>Valeur</b><h3>Quel impact métier ?</h3><p>Relier chaque opportunité à un problème concret, un gain attendu ou une amélioration du service.</p></article>
+      <article class="decision-card"><b>Faisabilité</b><h3>Peut-on réellement le faire ?</h3><p>Tenir compte des données disponibles, des dépendances, de l'effort et du contexte opérationnel.</p></article>
+      <article class="decision-card"><b>Contrôle</b><h3>Que doit valider l'humain ?</h3><p>Rendre visibles les points de décision, les risques et les situations où l'automatisation ne doit pas décider seule.</p></article>
+    </div></section>
+
+    <section class="section" id="architecture"><div class="section-heading"><div><p class="section-kicker">OPERATING MODEL</p><h2>Une application autonome, sans plateforme autour.</h2></div></div><div class="mini-architecture"><div><span>Runtime</span><strong>Docker local</strong></div><div><span>Stockage</span><strong>JSON local</strong></div><div><span>Cycle de vie</span><strong>Produit indépendant</strong></div></div></section>
+
+    <section class="final-cta"><div><p class="section-kicker">AI PROCESS STUDIO 1.0.0</p><h2>Lire le métier avant de choisir l'IA.</h2><p>Le produit met l'analyse du processus, la valeur et le contrôle humain avant le choix d'une technologie ou d'une automatisation.</p></div><a class="button button-light" href="../">Retour Etorrent-Org →</a></section>
   </main>
 
-  <footer class="footer"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="https://github.com/Etorrent-Org">Organisation GitHub</a><a href="../h9-factory/">H9 Legacy</a></div></footer>
+  <footer class="footer shell"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="../visual-ai-studio/">Visual AI Studio</a><a href="../infographic-lab/">Infographic Lab</a></div></footer>
 </body>
 </html>
