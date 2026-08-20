@@ -25,6 +25,179 @@
   padding-top:18px;
 }
 
+/* Public vs personal product landscape. */
+.home-page .product-group-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin:30px 0 12px;
+  padding:0 2px;
+}
+.home-page .product-group-title span{
+  color:#8fdcff;
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.16em;
+}
+.home-page .product-group-title small{
+  color:#687387;
+  font-size:9px;
+}
+.home-page .personal-group-title{
+  margin-top:30px;
+  padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.home-page .personal-group-title span{color:#d39cff}
+.home-page .public-product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.home-page .public-cover{height:182px}
+.home-page .public-cover img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.home-page .card-state.state-public{
+  color:#b7e7ff;
+  border-color:rgba(121,221,255,.22);
+  background:rgba(7,21,31,.82);
+}
+.home-page .card-state.state-free-pro{
+  color:#ece4ff;
+  border-color:rgba(173,134,255,.34);
+  background:linear-gradient(135deg,rgba(60,43,109,.92),rgba(25,43,77,.92));
+  box-shadow:0 8px 28px rgba(116,84,255,.18);
+}
+.home-page .visual-product-cover{
+  height:182px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:
+    radial-gradient(380px 180px at 86% 12%,rgba(173,134,255,.28),transparent 64%),
+    radial-gradient(300px 160px at 5% 100%,rgba(121,221,255,.16),transparent 65%),
+    linear-gradient(145deg,#13182a,#1b1731 58%,#121b2b);
+}
+.home-page .visual-product-cover:after{display:none}
+.home-page .visual-cover-brand{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+.home-page .visual-cover-brand img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+  filter:none;
+  border-radius:14px;
+  box-shadow:0 12px 32px rgba(87,70,180,.22);
+}
+.home-page .visual-cover-brand span,
+.home-page .visual-cover-brand strong{display:block}
+.home-page .visual-cover-brand span{
+  color:#9aa7bf;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.18em;
+}
+.home-page .visual-cover-brand strong{
+  margin-top:3px;
+  color:#f5f2ff;
+  font-size:20px;
+  letter-spacing:.02em;
+}
+.home-page .visual-cover-flow{
+  display:grid;
+  grid-template-columns:auto 1fr auto 1fr auto;
+  align-items:center;
+  gap:8px;
+  margin-top:18px;
+}
+.home-page .visual-cover-flow span{
+  min-width:58px;
+  padding:7px 9px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:9px;
+  background:rgba(255,255,255,.04);
+  color:#c9d1e1;
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+.home-page .visual-cover-flow span b{
+  display:block;
+  margin-bottom:2px;
+  color:#a98cff;
+  font-size:7px;
+}
+.home-page .visual-cover-flow i{
+  height:1px;
+  background:linear-gradient(90deg,rgba(121,221,255,.45),rgba(173,134,255,.42));
+}
+.home-page .private-studio-card{
+  display:grid;
+  grid-template-columns:minmax(280px,.82fr) minmax(0,1.18fr);
+  overflow:hidden;
+  border:1px solid rgba(208,144,255,.20);
+  border-radius:22px;
+  background:
+    radial-gradient(550px 260px at 4% 30%,rgba(175,92,255,.13),transparent 62%),
+    linear-gradient(145deg,rgba(41,21,56,.72),rgba(17,20,29,.94) 52%);
+  box-shadow:0 22px 54px rgba(0,0,0,.16);
+}
+.home-page .private-studio-media{
+  min-height:260px;
+  position:relative;
+  overflow:hidden;
+  border-right:1px solid rgba(255,255,255,.07);
+  background:#160b20;
+}
+.home-page .private-studio-media img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  filter:saturate(.92) brightness(.92);
+}
+.home-page .private-studio-media:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,transparent 55%,rgba(15,17,24,.52));
+}
+.home-page .private-studio-media .card-state{z-index:2}
+.home-page .card-state.state-private{
+  color:#f0d9ff;
+  border-color:rgba(211,156,255,.28);
+  background:rgba(43,20,58,.86);
+}
+.home-page .private-studio-body{
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.home-page .private-studio-body h3{
+  margin:0;
+  font-size:28px;
+  letter-spacing:-.035em;
+}
+.home-page .private-studio-body>p:last-of-type{
+  max-width:650px;
+  margin:12px 0 0;
+  color:#a7afbf;
+  font-size:13px;
+  line-height:1.7;
+}
+.home-page .private-studio-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-top:24px;
+}
+
 /* Infographic Lab: fewer examples, but much larger and easier to judge. */
 .infographic-page .gallery{
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -55,9 +228,7 @@ body.visual-ai-page{
     radial-gradient(850px 620px at 96% 8%,rgba(154,105,255,.16),transparent 60%),
     linear-gradient(180deg,#121724,#0e131e 62%,#0c1119);
 }
-.visual-ai-page .site-grid{
-  opacity:.58;
-}
+.visual-ai-page .site-grid{opacity:.58}
 .visual-ai-page .product-visual{
   background:#151c2a;
   border-color:rgba(167,139,250,.24);
@@ -68,9 +239,7 @@ body.visual-ai-page{
   background:#151c2a;
   filter:brightness(1.08) contrast(.98) saturate(.96);
 }
-.visual-ai-page .visual-shade{
-  background:linear-gradient(180deg,transparent 76%,rgba(7,9,14,.24));
-}
+.visual-ai-page .visual-shade{background:linear-gradient(180deg,transparent 76%,rgba(7,9,14,.24))}
 .visual-ai-page .capability-card,
 .visual-ai-page .install-panel{
   background:linear-gradient(145deg,rgba(31,40,58,.82),rgba(20,27,41,.78));
@@ -103,9 +272,22 @@ body.visual-ai-page{
   font-size:11px;
   background:#111721;
 }
+.visual-ai-page .status-strip .status-chip:first-child{
+  color:#e5dcff;
+  border-color:rgba(173,134,255,.26);
+  background:rgba(72,52,125,.16);
+}
 
+@media(max-width:900px){
+  .home-page .public-product-grid{grid-template-columns:1fr}
+  .home-page .private-studio-card{grid-template-columns:1fr}
+  .home-page .private-studio-media{min-height:210px;border-right:0;border-bottom:1px solid rgba(255,255,255,.07)}
+}
 @media(max-width:820px){
   .home-page .card-media{height:140px}
+  .home-page .public-cover,.home-page .visual-product-cover{height:170px}
+  .home-page .product-group-title{align-items:flex-start;flex-direction:column;gap:5px}
+  .home-page .private-studio-footer{align-items:flex-start;flex-direction:column}
   .infographic-page .gallery{grid-template-columns:1fr}
   .infographic-page .gallery img{height:auto;min-height:250px}
 }
