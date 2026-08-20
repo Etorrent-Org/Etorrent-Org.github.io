@@ -7,8 +7,9 @@
   <title>Infographic Lab · Etorrent-Org</title>
   <meta name="description" content="Infographic Lab 1.0.0 transforme un texte en infographie éditable avec Mistral Vibe, AntV et un moteur SVG local.">
   <link rel="stylesheet" href="../v2.css">
+  <link rel="stylesheet" href="../v2-adjustments.css">
 </head>
-<body>
+<body class="infographic-page">
   <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div><div class="site-grid" aria-hidden="true"></div>
   <header class="topbar shell">
     <a class="brand" href="../"><span class="brand-mark">E9</span><span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span></a>
@@ -33,7 +34,7 @@
 
     <section class="section" id="visuals"><div class="section-heading"><div><p class="section-kicker">VISUAL SYSTEM</p><h2>Quelques styles, plusieurs formes utiles.</h2><p class="lead">La V1 privilégie un catalogue court et exploitable plutôt qu'une galerie infinie.</p></div></div>
       <div class="style-row"><div class="style-chip" style="--chip:#315a78"><i></i><strong>Clean</strong><small>net</small></div><div class="style-chip" style="--chip:#8a6d55"><i></i><strong>Soft</strong><small>chaud</small></div><div class="style-chip" style="--chip:#111827"><i></i><strong>Dark</strong><small>contrasté</small></div><div class="style-chip" style="--chip:#596575"><i></i><strong>Sketch</strong><small>organique</small></div><div class="style-chip" style="--chip:#d9d2b7"><i></i><strong>Chalk</strong><small>texturé</small></div></div>
-      <div class="gallery"><figure><img src="./assets/infographic-lab-iceberg.svg" alt="Infographie Iceberg"><figcaption>Iceberg · visible / sous la surface</figcaption></figure><figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure><figure><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie processus"><figcaption>Processus · vue de synthèse</figcaption></figure></div>
+      <div class="gallery"><figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure><figure><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie processus"><figcaption>Processus · vue de synthèse</figcaption></figure></div>
     </section>
 
     <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Docker Desktop et une clé Mistral.</h2><p class="lead">Aucun compte Infographic Lab ni base de données ne sont nécessaires. Le runner Vibe reste derrière l'application sur le réseau Docker interne.</p></div></div><div class="install-panel"><ol><li>Télécharger la dernière release publique.</li><li>Copier <code>.env.example</code> vers <code>.env</code>.</li><li>Renseigner <code>MISTRAL_API_KEY</code>.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div></section>
