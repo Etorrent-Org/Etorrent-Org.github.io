@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b1020">
   <title>Visual AI Studio · Etorrent-Org</title>
-  <meta name="description" content="Visual AI Studio v0.1.0 est une application Windows local-first pour structurer un brief, travailler avec Studio Visuel dans ChatGPT, valider les créations et exporter les livrables.">
+  <meta name="description" content="Visual AI Studio v0.1.1 est une application Windows local-first pour structurer un brief, travailler avec Studio Visuel dans ChatGPT, valider les créations et exporter les livrables.">
   <link rel="stylesheet" href="../styles.css">
   <style>
     body{background:#eef1f6}
@@ -17,6 +17,8 @@
     .vas-section{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:76px 0;border-top:1px solid var(--line)}
     .vas-section h2{margin:0;font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.05em}
     .lead{max-width:820px;margin:20px 0 0;color:var(--muted);font-size:18px;line-height:1.7}
+    .infographic-frame{margin-top:38px;padding:20px;border:1px solid var(--line);border-radius:28px;background:#eef1f6;box-shadow:var(--shadow)}
+    .infographic-frame img{display:block;width:100%;height:auto;border-radius:18px}
     .feature-grid{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .feature{padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.78)}
     .feature span{color:#7c3aed;font-size:10px;font-weight:850;letter-spacing:.1em}
@@ -28,25 +30,32 @@
     .release-box{margin-top:34px;padding:28px;border:1px solid #d7d0ff;border-radius:24px;background:#f5f2ff}.release-box strong{display:block;font-size:18px}.release-box p{margin:8px 0 0;color:#5f5b70;line-height:1.6}.release-box code{font-size:12px}
     .vas-cta{width:min(1180px,calc(100% - 40px));margin:0 auto 80px;padding:52px;border-radius:30px;background:linear-gradient(135deg,#17152f,#3b226c);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:36px}.vas-cta h2{margin:0;font-size:clamp(32px,4vw,48px);letter-spacing:-.05em}.vas-cta p{max-width:700px;margin:12px 0 0;color:#d8d1ef;line-height:1.65}.cta-actions{display:flex;gap:10px;flex-wrap:wrap}
     @media(max-width:900px){.vas-hero{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.shot-grid{grid-template-columns:1fr}.vas-cta{align-items:flex-start;flex-direction:column}}
-    @media(max-width:600px){.vas-hero,.vas-section,.vas-cta{width:min(100% - 28px,1180px)}.feature-grid,.flow{grid-template-columns:1fr}.vas-cta{padding:36px 24px}}
+    @media(max-width:600px){.vas-hero,.vas-section,.vas-cta{width:min(100% - 28px,1180px)}.feature-grid,.flow{grid-template-columns:1fr}.vas-cta{padding:36px 24px}.infographic-frame{padding:10px}}
   </style>
 </head>
 <body>
   <nav class="nav-shell" aria-label="Navigation principale">
     <a class="brand" href="../" aria-label="Retour au portail Etorrent-Org"><span class="brand-mark" aria-hidden="true">E9</span><span>Etorrent-Org</span></a>
-    <div class="nav-links"><a href="#fonctionnalites">Fonctionnalités</a><a href="#workflow">Workflow</a><a href="#captures">Captures</a><a href="#installation">Installation</a><a class="nav-cta" href="https://github.com/Etorrent-Org/visual-ai-studio">Voir le code</a></div>
+    <div class="nav-links"><a href="#vue-ensemble">Vue d’ensemble</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#workflow">Workflow</a><a href="#captures">Captures</a><a href="#installation">Installation</a><a class="nav-cta" href="https://github.com/Etorrent-Org/visual-ai-studio">Voir le code</a></div>
   </nav>
 
   <main>
     <section class="vas-hero">
       <div>
-        <p class="eyebrow">Windows · Local-first · v0.1.0</p>
+        <p class="eyebrow">Windows · Local-first · v0.1.1</p>
         <h1>Visual AI Studio</h1>
         <p class="hero-lede">Du brief à la création visuelle, avec Studio Visuel dans ChatGPT et une validation humaine explicite avant l’export.</p>
-        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/tag/v0.1.0">Télécharger v0.1.0</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/visual-ai-studio">Dépôt GitHub</a></div>
+        <div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/latest">Télécharger v0.1.1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/visual-ai-studio">Dépôt GitHub</a></div>
         <p class="signature">Licence MIT · Aucun appel direct à une API OpenAI</p>
       </div>
       <div class="preview-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/projets.png" alt="Écran Projets de Visual AI Studio"></div>
+    </section>
+
+    <section class="vas-section" id="vue-ensemble">
+      <p class="eyebrow">Vue d’ensemble</p>
+      <h2>Du brief à l’export, avec l’humain au centre.</h2>
+      <p class="lead">L’infographie résume le rôle de Visual AI Studio : cadrer le brief, préparer Studio Visuel, créer dans ChatGPT, contrôler les résultats puis valider et exporter localement.</p>
+      <div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/visual-ai-studio-infographic.svg" alt="Infographie du workflow Visual AI Studio"></div>
     </section>
 
     <section class="vas-section" id="fonctionnalites">
@@ -79,7 +88,7 @@
     <section class="vas-section" id="captures">
       <p class="eyebrow">Interface</p>
       <h2>Une interface métier sombre, compacte et orientée action.</h2>
-      <p class="lead">La v0.1.0 privilégie quelques écrans explicites plutôt qu’une console technique : projets, brief, préparation Studio Visuel, validation et paramètres.</p>
+      <p class="lead">La v0.1.1 privilégie quelques écrans explicites plutôt qu’une console technique : projets, brief, préparation Studio Visuel, validation et paramètres.</p>
       <div class="shot-grid">
         <figure><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/brief.png" alt="Brief créatif dans Visual AI Studio"><figcaption>Brief créatif · cadrer la demande avant génération</figcaption></figure>
         <figure><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/studio-visuel.png" alt="Préparation Studio Visuel"><figcaption>Préparation Studio Visuel · prompt de lancement prêt à copier</figcaption></figure>
@@ -92,8 +101,8 @@
       <p class="eyebrow">Installation Windows</p>
       <h2>Un installateur, pas d’environnement technique à préparer.</h2>
       <p class="lead">La Release officielle fournit l’installateur Windows, le package Studio Visuel et les empreintes SHA-256.</p>
-      <div class="install"><ol><li>Télécharger <code>Visual-AI-Studio-Setup-0.1.0.exe</code>.</li><li>Lancer l’installateur Windows.</li><li>Installer ou préparer séparément Studio Visuel dans ChatGPT à partir de <code>studio-visuel-agent.zip</code>.</li><li>Lancer Visual AI Studio depuis le menu Démarrer.</li><li>Créer un premier brief puis utiliser « Préparer pour Studio Visuel ».</li></ol></div>
-      <div class="release-box"><strong>Release v0.1.0</strong><p>Le dépôt est public, le projet est sous licence MIT et la Release contient également <code>SHA256SUMS.txt</code> pour vérifier l’intégrité des téléchargements.</p></div>
+      <div class="install"><ol><li>Télécharger <code>Visual-AI-Studio-Setup-0.1.1.exe</code>.</li><li>Lancer l’installateur Windows.</li><li>Installer ou préparer séparément Studio Visuel dans ChatGPT à partir de <code>studio-visuel-agent.zip</code>.</li><li>Lancer Visual AI Studio depuis le menu Démarrer.</li><li>Créer un premier brief puis utiliser « Préparer pour Studio Visuel ».</li></ol></div>
+      <div class="release-box"><strong>Release v0.1.1</strong><p>Le dépôt est public, le projet est sous licence MIT et la Release contient également <code>SHA256SUMS.txt</code> pour vérifier l’intégrité des téléchargements.</p></div>
     </section>
 
     <section class="vas-section">
@@ -103,8 +112,8 @@
     </section>
 
     <section class="vas-cta">
-      <div><p class="eyebrow" style="color:#d8d1ef">Visual AI Studio v0.1.0</p><h2>Télécharger, tester, adapter.</h2><p>La première version publique Windows est disponible avec son installateur, Studio Visuel et la documentation complète du workflow.</p></div>
-      <div class="cta-actions"><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/tag/v0.1.0">GitHub Release <span aria-hidden="true">→</span></a><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio">Code source <span aria-hidden="true">↗</span></a></div>
+      <div><p class="eyebrow" style="color:#d8d1ef">Visual AI Studio v0.1.1</p><h2>Télécharger, tester, adapter.</h2><p>La version publique Windows est disponible avec son installateur, Studio Visuel et la documentation complète du workflow.</p></div>
+      <div class="cta-actions"><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/latest">GitHub Release <span aria-hidden="true">→</span></a><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio">Code source <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
