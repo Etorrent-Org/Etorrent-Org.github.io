@@ -56,30 +56,56 @@
 
     <section class="section" id="products">
       <div class="section-heading">
-        <div><p class="section-kicker">PRODUCTS</p><h2>Quatre outils, quatre rôles.</h2><p class="lead">Chaque application possède son propre cycle de vie. Les pages produit expliquent la valeur et montrent le résultat ; le processus n'est décrit qu'une seule fois.</p></div>
+        <div>
+          <p class="section-kicker">PRODUCT LANDSCAPE</p>
+          <h2>Trois produits publics. Un studio personnel.</h2>
+          <p class="lead">AI Process Studio, Visual AI Studio et Infographic Lab sont présentés comme des produits publics. IA-Art reste mon environnement personnel de création et de publication.</p>
+        </div>
       </div>
 
-      <div class="cards">
+      <div class="product-group-title">
+        <span>PUBLIC PRODUCTS</span>
+        <small>Produits disponibles, documentés ou distribués publiquement</small>
+      </div>
+
+      <div class="cards public-product-grid">
         <article class="product-card product-accent-process">
-          <div class="card-media"><img src="assets/notion-hub/ai-process-studio.svg" alt="AI Process Studio"><span class="card-monogram">APS</span><span class="card-state">Actif · 1.0.0</span></div>
+          <div class="card-media public-cover"><img src="assets/notion-hub/ai-process-studio.svg" alt="Identité visuelle AI Process Studio"><span class="card-state state-public">PUBLIC · 1.0.0</span></div>
           <div class="card-body"><p class="card-kicker">Process intelligence</p><h3>AI Process Studio</h3><p>Comprendre un processus métier, qualifier les opportunités IA et transformer l'analyse en priorités exploitables.</p><div class="card-meta"><div class="tags"><span class="tag">Local-first</span><span class="tag">Docker</span><span class="tag">Process</span></div><a class="card-link" href="ai-process-studio/">Découvrir ↗</a></div></div>
         </article>
 
-        <article class="product-card product-accent-visual">
-          <div class="card-media"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/projets.png" alt="Visual AI Studio"><span class="card-monogram">VAS</span><span class="card-state">Public · 0.1.1</span></div>
-          <div class="card-body"><p class="card-kicker">Visual workflow</p><h3>Visual AI Studio</h3><p>Structurer un brief, travailler avec Studio Visuel dans ChatGPT, contrôler les créations puis exporter localement.</p><div class="card-meta"><div class="tags"><span class="tag">Windows</span><span class="tag">MIT</span><span class="tag">Local-first</span></div><a class="card-link" href="visual-ai-studio/">Découvrir ↗</a></div></div>
+        <article class="product-card product-accent-visual visual-public-card">
+          <div class="card-media visual-product-cover" aria-label="Identité visuelle Visual AI Studio">
+            <div class="visual-cover-brand">
+              <img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/visual-ai-studio-icon.png" alt="">
+              <div><span>VISUAL AI</span><strong>STUDIO</strong></div>
+            </div>
+            <div class="visual-cover-flow" aria-hidden="true"><span><b>01</b>Brief</span><i></i><span><b>02</b>Create</span><i></i><span><b>03</b>Validate</span></div>
+            <span class="card-state state-free-pro">PUBLIC · FREE / PRO</span>
+          </div>
+          <div class="card-body"><p class="card-kicker">Visual workflow</p><h3>Visual AI Studio</h3><p>Un produit public pour cadrer, contrôler et exporter une création visuelle assistée, avec une offre Free / Pro clairement distincte.</p><div class="card-meta"><div class="tags"><span class="tag">Windows</span><span class="tag">Free / Pro</span><span class="tag">Local-first</span></div><a class="card-link" href="visual-ai-studio/">Découvrir ↗</a></div></div>
         </article>
 
         <article class="product-card product-accent-infographic">
-          <div class="card-media"><img src="infographic-lab/assets/infographic-lab-app.svg" alt="Infographic Lab"><span class="card-monogram">IL</span><span class="card-state">Actif · 1.0.0</span></div>
+          <div class="card-media public-cover"><img src="infographic-lab/assets/infographic-lab-app.svg" alt="Identité visuelle Infographic Lab"><span class="card-state state-public">PUBLIC · 1.0.0</span></div>
           <div class="card-body"><p class="card-kicker">Structured visuals</p><h3>Infographic Lab</h3><p>Transformer un texte en infographie éditable : Vibe structure, l'application valide, AntV ou le moteur SVG dessine.</p><div class="card-meta"><div class="tags"><span class="tag">Vibe</span><span class="tag">AntV</span><span class="tag">SVG</span></div><a class="card-link" href="infographic-lab/">Découvrir ↗</a></div></div>
         </article>
-
-        <article class="product-card product-accent-art">
-          <div class="card-media"><img src="assets/notion-hub/ia-art-studio.svg" alt="IA-Art"><span class="card-monogram">IA</span><span class="card-state">En ligne</span></div>
-          <div class="card-body"><p class="card-kicker">Visual publishing</p><h3>IA-Art</h3><p>Préparer, contrôler et publier des créations visuelles avec une validation humaine explicite avant automatisation.</p><div class="card-meta"><div class="tags"><span class="tag">Visuels</span><span class="tag">Pinterest</span><span class="tag">Automation</span></div><a class="card-link" href="https://etorrent-org.github.io/ia-art-automation/">Voir le projet ↗</a></div></div>
-        </article>
       </div>
+
+      <div class="product-group-title personal-group-title">
+        <span>PERSONAL STUDIO</span>
+        <small>Mon environnement de création : documenté, mais pas présenté comme un produit à distribuer</small>
+      </div>
+
+      <article class="private-studio-card product-accent-art">
+        <div class="private-studio-media"><img src="assets/notion-hub/ia-art-studio.svg" alt="Identité visuelle IA-Art Studio"><span class="card-state state-private">PRIVÉ · USAGE PERSONNEL</span></div>
+        <div class="private-studio-body">
+          <p class="card-kicker">Personal visual publishing</p>
+          <h3>IA-Art Studio</h3>
+          <p>Mon studio personnel pour préparer, contrôler et publier mes créations visuelles. Il reste volontairement séparé des produits publics : son workflow est conçu pour mon propre usage et mes automatisations.</p>
+          <div class="private-studio-footer"><div class="tags"><span class="tag">Usage personnel</span><span class="tag">Pinterest</span><span class="tag">Automation</span></div><a class="card-link" href="https://etorrent-org.github.io/ia-art-automation/">Voir la documentation ↗</a></div>
+        </div>
+      </article>
     </section>
 
     <section class="section" id="principles">
@@ -92,7 +118,7 @@
     </section>
 
     <section class="final-cta">
-      <div><p class="section-kicker">OPEN DEVELOPMENT</p><h2>Le code et les releases restent visibles.</h2><p>Les projets publics sont documentés séparément, avec leurs versions, leurs contraintes et leurs modes d'installation.</p></div>
+      <div><p class="section-kicker">OPEN DEVELOPMENT</p><h2>Le code et les releases restent visibles.</h2><p>Les produits publics sont documentés séparément, avec leurs versions, leurs contraintes et leurs modes d'installation.</p></div>
       <a class="button button-light" href="https://github.com/Etorrent-Org">Etorrent-Org sur GitHub ↗</a>
     </section>
   </main>
