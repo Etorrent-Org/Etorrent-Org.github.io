@@ -1,47 +1,46 @@
-# Publication sous Windows
+# Publication GitHub Pages
 
-Le contenu de cette archive doit être extrait dans :
+Le portail est publié depuis le dépôt public `Etorrent-Org/Etorrent-Org.github.io`.
 
-```text
-C:\h9-workspace\etorrent-org.github.io
-```
+## Source de publication
 
-Avant de créer le dossier, vérifier qu’il n’existe pas déjà.
+- branche publiée : `main` ;
+- site : <https://etorrent-org.github.io/> ;
+- publication : GitHub Pages ;
+- traitement Jekyll désactivé via `.nojekyll`.
 
-## Initialiser et publier le dépôt
+## Mettre à jour le portail
 
-Dans PowerShell :
+Depuis Windows :
 
 ```powershell
 Set-Location C:\h9-workspace\etorrent-org.github.io
 
-git init -b main
-git add .
-git status --short
-git commit -m "Initialiser le portail public Etorrent-Org"
-
-gh repo create Etorrent-Org/Etorrent-Org.github.io `
-  --public `
-  --description "Portail public des projets Etorrent-Org" `
-  --source . `
-  --remote origin `
-  --push
+git fetch origin
+git switch main
+git pull --ff-only
 ```
 
-## Activer GitHub Pages
+Créer ensuite une branche dédiée, modifier uniquement les fichiers concernés et vérifier le rendu avant fusion.
 
-```powershell
-gh api --method POST `
-  repos/Etorrent-Org/Etorrent-Org.github.io/pages `
-  -f "source[branch]=main" `
-  -f "source[path]=/"
-```
+Pour une page produit, contrôler au minimum :
 
-## Vérifier
+- les versions affichées ;
+- les liens vers le dépôt et la dernière release ;
+- les visuels et chemins relatifs ;
+- les métadonnées de la page ;
+- la date `lastmod` correspondante dans `sitemap.xml`.
 
-```powershell
-gh api repos/Etorrent-Org/Etorrent-Org.github.io/pages `
-  --jq '{status: .status, url: .html_url}'
-```
+Après fusion dans `main`, GitHub Pages publie la nouvelle version du site.
 
-Adresse attendue : <https://etorrent-org.github.io/>.
+## Vérification
+
+Contrôler après publication :
+
+- la page d’accueil ;
+- la ou les pages modifiées ;
+- les liens GitHub et Release ;
+- les images ;
+- <https://etorrent-org.github.io/sitemap.xml>.
+
+Ne jamais stocker de secret, token, fichier `.env`, clé privée ou donnée client dans ce dépôt public.

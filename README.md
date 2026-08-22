@@ -1,34 +1,30 @@
 # Etorrent-Org — portail GitHub Pages
 
-Portail public de l’organisation **Etorrent-Org**.
+Portail public de l’organisation **Etorrent-Org** : <https://etorrent-org.github.io/>.
 
-## Architecture publique
+## Pages publiques
 
-- portail : <https://etorrent-org.github.io/> ;
-- H9 Factory : <https://etorrent-org.github.io/h9-factory/> ;
-- AI Process Studio : future page `/ai-process-studio/` ;
-- IA-Art Automation : <https://etorrent-org.github.io/ia-art-automation/>.
+- AI Process Studio : <https://etorrent-org.github.io/ai-process-studio/> ;
+- Visual AI Studio : <https://etorrent-org.github.io/visual-ai-studio/> ;
+- Infographic Lab : <https://etorrent-org.github.io/infographic-lab/> ;
+- H9 Factory : <https://etorrent-org.github.io/h9-factory/>.
 
-## Contenu
+IA-Art Automation reste publié depuis un dépôt séparé.
 
-- `index.html` : portail et présentation de l’écosystème ;
-- `styles.css` : identité visuelle du portail ;
-- `404.html` : page d’erreur ;
-- `h9-factory/` : page produit et parcours mock de H9 Factory ;
+## Structure
+
+- `index.html` : portail principal ;
+- `ai-process-studio/` : page AI Process Studio et conditions Professional ;
+- `visual-ai-studio/` : page Visual AI Studio ;
+- `infographic-lab/` : page Infographic Lab ;
+- `h9-factory/` : page H9 Factory ;
+- `assets/` : visuels locaux du portail ;
+- `styles.css`, `v2.css`, `v2-adjustments.css` : styles du site ;
+- `sitemap.xml` et `robots.txt` : indexation ;
 - `.nojekyll` : publication statique sans traitement Jekyll.
 
-## Dépôt attendu
+## Publication
 
-Ces fichiers doivent être placés à la racine du dépôt public :
+Le dépôt public `Etorrent-Org/Etorrent-Org.github.io` est publié automatiquement par GitHub Pages depuis `main`.
 
-```text
-Etorrent-Org/Etorrent-Org.github.io
-```
-
-GitHub publiera automatiquement la branche configurée à l’adresse :
-
-```text
-https://etorrent-org.github.io/
-```
-
-Le dépôt `Etorrent-Org/ia-art-automation` reste séparé. Le portail contient uniquement un lien vers sa page GitHub Pages.
+Voir [`PUBLICATION.md`](PUBLICATION.md) pour la procédure de maintenance et [`ARCHITECTURE.md`](ARCHITECTURE.md) pour la structure du portail.
