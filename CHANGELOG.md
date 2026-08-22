@@ -6,7 +6,8 @@
 - documente la maintenance GitHub Pages et l’architecture du site ;
 - ajoute les règles de sécurité et de contribution ;
 - corrige la page Infographic Lab pour accepter une clé Mistral ou un profil Vibe existant ;
-- met à jour le sitemap pour Infographic Lab.
+- met à jour le sitemap pour Infographic Lab ;
+- corrige la date de dernière modification de Visual AI Studio dans le sitemap.
 
 ## 2026-08-21
 
