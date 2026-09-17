@@ -7,17 +7,17 @@ Portail public de l’organisation **Etorrent-Org** : <https://etorrent-org.gith
 - AI Process Studio : <https://etorrent-org.github.io/ai-process-studio/> ;
 - Visual AI Studio : <https://etorrent-org.github.io/visual-ai-studio/> ;
 - Infographic Lab : <https://etorrent-org.github.io/infographic-lab/> ;
-- H9 Factory : <https://etorrent-org.github.io/h9-factory/>.
+- H9 Factory : page historique conservée dans le portail.
 
-IA-Art Automation reste publié depuis un dépôt séparé.
+L’ancien site **IA-Art Automation / Pinterest** reste publié depuis `Etorrent-Org/ia-art-automation` uniquement comme archive historique. Le workflow IA-Art courant est centré sur Instagram et sa logique de préparation / packaging est maintenue avec Visual AI Studio, Studio Visuel et le Skill IA-Art.
 
 ## Structure
 
 - `index.html` : portail principal ;
 - `ai-process-studio/` : page AI Process Studio et conditions Professional ;
 - `visual-ai-studio/` : page Visual AI Studio ;
-- `infographic-lab/` : page Infographic Lab ;
-- `h9-factory/` : page H9 Factory ;
+- `infographic-lab/` : page Infographic Lab, stable 1.0.0 + préversion Augmented V2 ;
+- `h9-factory/` : page historique ;
 - `assets/` : visuels locaux du portail ;
 - `styles.css`, `v2.css`, `v2-adjustments.css` : styles du site ;
 - `sitemap.xml` et `robots.txt` : indexation ;
