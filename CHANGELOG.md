@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-17
+
+- aligne Visual AI Studio sur la version Web/Docker 0.3.0 et le workflow IA-Art 5.0.2 ;
+- aligne Infographic Lab sur la coexistence Stable 1.0.0 / Augmented V2 intégrée dans `main` ;
+- retire AI Process Studio du périmètre produit actif après confirmation de son retrait du 24 août 2026 ;
+- transforme la page AI Process Studio et les anciennes conditions Professional en archives explicites ;
+- retire AI Process Studio et H9 Factory du sitemap actif ;
+- positionne IA-Art comme studio personnel Instagram et l'ancien site Pinterest comme archive ;
+- met à jour README et architecture du portail pour séparer produits actifs, studio personnel et historiques.
+
 ## 2026-08-22
 
 - aligne la documentation racine avec le portail réellement publié ;
