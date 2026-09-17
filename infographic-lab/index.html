@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#08090e">
   <title>Infographic Lab · Etorrent-Org</title>
-  <meta name="description" content="Infographic Lab 1.0.0 transforme un texte en infographie éditable avec Mistral Vibe, AntV et un moteur SVG local.">
+  <meta name="description" content="Infographic Lab propose une stable 1.0.0 et une préversion Augmented V2 pour transformer une idée en infographie, Mermaid, Mindmap ou Markdown dans un environnement local-first.">
   <link rel="stylesheet" href="../v2.css">
   <link rel="stylesheet" href="../v2-adjustments.css">
 </head>
@@ -13,33 +13,34 @@
   <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div><div class="site-grid" aria-hidden="true"></div>
   <header class="topbar shell">
     <a class="brand" href="../"><span class="brand-mark">E9</span><span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span></a>
-    <nav class="nav-links"><a href="#overview">Vue d'ensemble</a><a href="#capabilities">Capacités</a><a href="#visuals">Visuels</a><a class="nav-cta" href="https://github.com/Etorrent-Org/infographic-lab">GitHub ↗</a></nav>
+    <nav class="nav-links"><a href="#overview">Vue d'ensemble</a><a href="#editions">Versions</a><a href="#capabilities">Capacités</a><a class="nav-cta" href="https://github.com/Etorrent-Org/infographic-lab">GitHub ↗</a></nav>
   </header>
 
   <main class="shell product-accent-infographic">
     <section class="product-hero">
-      <div><p class="eyebrow">LOCAL-FIRST · VIBE · ANTV · 1.0.0</p><h1>Infographic<br><em>Lab.</em></h1><p class="hero-lede">Du texte à une infographie éditable : l'IA structure l'information, l'application valide le JSON, puis le rendu et l'édition restent sous contrôle local.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/infographic-lab/releases/latest">Télécharger la V1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/infographic-lab">Code source ↗</a></div></div>
-      <div class="product-visual"><img src="./assets/infographic-lab-app.svg" alt="Aperçu d'Infographic Lab 1.0.0"><div class="visual-shade"></div><span class="visual-label">Studio local · édition visuelle</span></div>
+      <div><p class="eyebrow">LOCAL-FIRST · STABLE 1.0.0 · AUGMENTED V2</p><h1>Infographic<br><em>Lab.</em></h1><p class="hero-lede">Transformer une idée ou un texte en modèle structuré, puis choisir sa représentation : infographie, Mermaid, Mindmap ou Markdown. La stable 1.0.0 reste disponible séparément de la préversion Augmented V2.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/infographic-lab/releases/latest">Télécharger la stable</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/infographic-lab">Voir Augmented V2 ↗</a></div></div>
+      <div class="product-visual"><img src="./assets/infographic-lab-app.svg" alt="Aperçu d'Infographic Lab"><div class="visual-shade"></div><span class="visual-label">Structure → représentation</span></div>
     </section>
 
-    <div class="status-strip"><span class="status-chip"><i></i>Actif</span><span class="status-chip">Docker</span><span class="status-chip">MIT</span><span class="status-chip">Mistral requis pour les opérations IA</span></div>
+    <div class="status-strip"><span class="status-chip"><i></i>Stable 1.0.0</span><span class="status-chip">Augmented V2 en préversion</span><span class="status-chip">Docker</span><span class="status-chip">MIT</span></div>
 
-    <section class="section" id="overview"><div class="section-heading"><div><p class="section-kicker">OVERVIEW</p><h2>Une seule vue pour comprendre la chaîne.</h2><p class="lead">Le processus complet n'est plus répété ailleurs sur la page : cette infographie résume la séparation entre structuration IA, validation, rendu local, édition et export.</p></div></div><div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie du workflow Infographic Lab"></div></section>
+    <section class="section" id="overview"><div class="section-heading"><div><p class="section-kicker">OVERVIEW</p><h2>Une seule structure, plusieurs représentations.</h2><p class="lead">L'IA structure l'information dans un modèle contrôlé. Les moteurs de rendu locaux transforment ensuite ce modèle sans demander à l'IA de générer librement du SVG ou du HTML.</p></div></div><div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie du workflow Infographic Lab"></div></section>
 
-    <section class="section" id="capabilities"><div class="section-heading"><div><p class="section-kicker">CAPABILITIES</p><h2>Trois choix de conception font la différence.</h2></div></div><div class="capabilities">
-      <article class="capability-card"><span class="num">01</span><h3>IA cadrée</h3><p>Vibe ne dessine pas la page : il produit une structure JSON courte et contrôlée. La passerelle locale la valide avant tout rendu.</p></article>
-      <article class="capability-card"><span class="num">02</span><h3>Rendu local</h3><p>AntV Infographic ou le moteur SVG local transforme la structure validée en visuel, sans confier à l'IA du HTML ou du SVG libre.</p></article>
-      <article class="capability-card"><span class="num">03</span><h3>Édition libre</h3><p>Titres, blocs, ordre, pictogrammes, couleurs et densité restent modifiables localement sans nouvel appel IA.</p></article>
+    <section class="section" id="editions"><div class="section-heading"><div><p class="section-kicker">TWO TRACKS</p><h2>Stable et préversion restent distinctes.</h2></div></div><div class="decision-grid">
+      <article class="decision-card"><b>Stable · 1.0.0</b><h3>Infographie éditable</h3><p>Vibe structure le texte, AntV ou le moteur SVG local dessine, puis l'utilisateur édite et exporte localement. Runtime sur le port 3091.</p></article>
+      <article class="decision-card"><b>Augmented · V2</b><h3>Napkin light local-first</h3><p>Gateway Vibe / Codex, Infographie, Mermaid, Mindmap, Markdown, catalogue de représentations business, Quality Gate et Publication Pack. Préversion sur le port 3092.</p></article>
+      <article class="decision-card"><b>Contrôle humain</b><h3>Pas d'invention de données</h3><p>Les graphiques chiffrés ne sont proposés qu'avec des valeurs explicites. Une série incomplète reste incomplète.</p></article>
     </div></section>
 
-    <section class="section" id="visuals"><div class="section-heading"><div><p class="section-kicker">VISUAL SYSTEM</p><h2>Quelques styles, plusieurs formes utiles.</h2><p class="lead">La V1 privilégie un catalogue court et exploitable plutôt qu'une galerie infinie.</p></div></div>
-      <div class="style-row"><div class="style-chip" style="--chip:#315a78"><i></i><strong>Clean</strong><small>net</small></div><div class="style-chip" style="--chip:#8a6d55"><i></i><strong>Soft</strong><small>chaud</small></div><div class="style-chip" style="--chip:#111827"><i></i><strong>Dark</strong><small>contrasté</small></div><div class="style-chip" style="--chip:#596575"><i></i><strong>Sketch</strong><small>organique</small></div><div class="style-chip" style="--chip:#d9d2b7"><i></i><strong>Chalk</strong><small>texturé</small></div></div>
-      <div class="gallery"><figure><img src="./assets/infographic-lab-cycle.svg" alt="Infographie Cycle"><figcaption>Cycle · boucle d'amélioration continue</figcaption></figure><figure><img src="https://raw.githubusercontent.com/Etorrent-Org/infographic-lab/main/docs/images/infographic-lab-overview.svg" alt="Infographie processus"><figcaption>Processus · vue de synthèse</figcaption></figure></div>
-    </section>
+    <section class="section" id="capabilities"><div class="section-heading"><div><p class="section-kicker">CAPABILITIES</p><h2>Le produit sépare structuration et rendu.</h2></div></div><div class="capabilities">
+      <article class="capability-card"><span class="num">01</span><h3>Structurer</h3><p>Vibe ou Codex produit un modèle JSON canonique contrôlé par la passerelle locale.</p></article>
+      <article class="capability-card"><span class="num">02</span><h3>Représenter</h3><p>AntV et les moteurs SVG spécialisés produisent processus, matrices, SWOT, KPI, graphiques, hiérarchies, cycles et autres formats utiles.</p></article>
+      <article class="capability-card"><span class="num">03</span><h3>Décliner</h3><p>Le même modèle peut alimenter Infographie, Mermaid, Mindmap et Markdown sans repartir de zéro.</p></article>
+    </div></section>
 
-    <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Docker Desktop et un accès Mistral Vibe.</h2><p class="lead">Pour les opérations IA, utilisez soit une clé <code>MISTRAL_API_KEY</code>, soit un profil Vibe déjà authentifié. Aucun compte Infographic Lab ni base de données ne sont nécessaires.</p></div></div><div class="install-panel"><ol><li>Télécharger la dernière release publique.</li><li>Si vous utilisez une clé Mistral, copier <code>.env.example</code> vers <code>.env</code> et renseigner <code>MISTRAL_API_KEY</code>.</li><li>Sinon, conserver votre profil Vibe existant déjà authentifié.</li><li>Lancer <code>.\START-INFOGRAPHIC-LAB.ps1 -Build</code>.</li><li>Ouvrir <code>http://127.0.0.1:3091</code>.</li></ol></div></section>
+    <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Deux Docker Compose, deux usages.</h2></div></div><div class="install-panel"><ol><li>Pour la stable, utiliser <code>.\START-INFOGRAPHIC-LAB.ps1</code> puis ouvrir <code>http://127.0.0.1:3091</code>.</li><li>Pour Augmented, utiliser <code>docker compose -f docker-compose.augmented.yml up -d --build</code>.</li><li>Ouvrir ensuite <code>http://127.0.0.1:3092</code>.</li></ol></div></section>
 
-    <section class="final-cta"><div><p class="section-kicker">INFOGRAPHIC LAB 1.0.0</p><h2>L'IA structure. Le produit dessine.</h2><p>Cette séparation garde l'expérience éditable, prévisible et compréhensible sans transformer le moteur IA en générateur de code visuel libre.</p></div><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab/releases/latest">Dernière release ↗</a></section>
+    <section class="final-cta"><div><p class="section-kicker">INFOGRAPHIC LAB</p><h2>L'IA structure. Le produit représente.</h2><p>La stable reste utilisable telle quelle ; Augmented V2 étend le même principe vers un studio de représentations plus large.</p></div><a class="button button-light" href="https://github.com/Etorrent-Org/infographic-lab">Documentation et code ↗</a></section>
   </main>
 
   <footer class="footer shell"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="../visual-ai-studio/">Visual AI Studio</a><a href="../ai-process-studio/">AI Process Studio</a></div></footer>
