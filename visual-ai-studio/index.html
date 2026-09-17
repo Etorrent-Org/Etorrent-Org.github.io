@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#121724">
   <title>Visual AI Studio · Etorrent-Org</title>
-  <meta name="description" content="Visual AI Studio v0.1.1 est une application Windows local-first pour structurer un brief, travailler avec Studio Visuel dans ChatGPT, contrôler les créations et exporter les livrables.">
+  <meta name="description" content="Visual AI Studio 0.3.0 est un studio web Docker local-first pour structurer un brief, travailler avec Studio Visuel dans ChatGPT, contrôler les créations et exporter les livrables.">
   <link rel="stylesheet" href="../v2.css">
   <link rel="stylesheet" href="../v2-adjustments.css">
 </head>
@@ -13,34 +13,32 @@
   <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div><div class="site-grid" aria-hidden="true"></div>
   <header class="topbar shell">
     <a class="brand" href="../"><span class="brand-mark">E9</span><span class="brand-copy"><strong>ETORRENT</strong><small>AI PRODUCT STUDIO</small></span></a>
-    <nav class="nav-links"><a href="#overview">Vue d'ensemble</a><a href="#capabilities">Capacités</a><a href="#screens">Écrans</a><a class="nav-cta" href="https://github.com/Etorrent-Org/visual-ai-studio">GitHub ↗</a></nav>
+    <nav class="nav-links"><a href="#overview">Vue d'ensemble</a><a href="#capabilities">Capacités</a><a href="#workflow">Workflow</a><a class="nav-cta" href="https://github.com/Etorrent-Org/visual-ai-studio">GitHub ↗</a></nav>
   </header>
 
   <main class="shell product-accent-visual">
     <section class="product-hero">
-      <div><p class="eyebrow">PUBLIC · FREE / PRO · WINDOWS · V0.1.1</p><h1>Visual AI<br><em>Studio.</em></h1><p class="hero-lede">Un cockpit local pour cadrer une création visuelle, travailler avec Studio Visuel dans ChatGPT puis reprendre la main au moment du contrôle et de l'export.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/latest">Télécharger v0.1.1</a><a class="button button-secondary" href="https://github.com/Etorrent-Org/visual-ai-studio">Code source ↗</a></div></div>
-      <div class="product-visual"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/projets.png" alt="Écran Projets de Visual AI Studio"><div class="visual-shade"></div><span class="visual-label">Projets · application Windows</span></div>
+      <div><p class="eyebrow">PUBLIC · WEB DOCKER · LOCAL-FIRST · 0.3.0</p><h1>Visual AI<br><em>Studio.</em></h1><p class="hero-lede">Un cockpit web local pour cadrer une création visuelle, préparer le travail avec Studio Visuel dans ChatGPT puis reprendre la main pour l'import, le contrôle et l'export.</p><div class="hero-actions"><a class="button button-primary" href="https://github.com/Etorrent-Org/visual-ai-studio">Voir le dépôt ↗</a><a class="button button-secondary" href="#install">Installation Docker ↓</a></div></div>
+      <div class="product-visual"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/projets.png" alt="Écran Projets de Visual AI Studio"><div class="visual-shade"></div><span class="visual-label">Projets · application web Docker</span></div>
     </section>
 
-    <div class="status-strip"><span class="status-chip"><i></i>Public · Free / Pro</span><span class="status-chip">Windows</span><span class="status-chip">MIT</span><span class="status-chip">Aucun appel direct API OpenAI</span></div>
+    <div class="status-strip"><span class="status-chip"><i></i>Version web 0.3.0</span><span class="status-chip">Docker / Compose</span><span class="status-chip">MIT</span><span class="status-chip">Aucun appel direct API OpenAI</span></div>
 
-    <section class="section" id="overview"><div class="section-heading"><div><p class="section-kicker">OVERVIEW</p><h2>Le processus tient dans une seule vue.</h2><p class="lead">L'infographie est désormais l'unique explication du parcours complet. Le reste de la page se concentre sur ce que l'application apporte réellement.</p></div></div><div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/visual-ai-studio-infographic.svg" alt="Infographie du workflow Visual AI Studio"></div></section>
+    <section class="section" id="overview"><div class="section-heading"><div><p class="section-kicker">OVERVIEW</p><h2>Du brief au livrable, avec contrôle humain.</h2><p class="lead">Visual AI Studio structure la demande et les livrables ; Studio Visuel et IA-Art restent séparés de l'application et travaillent dans ChatGPT.</p></div></div><div class="infographic-frame"><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/visual-ai-studio-infographic.svg" alt="Infographie du workflow Visual AI Studio"></div></section>
 
-    <section class="section" id="capabilities"><div class="section-heading"><div><p class="section-kicker">CAPABILITIES</p><h2>Trois responsabilités, pas davantage.</h2></div></div><div class="capabilities">
-      <article class="capability-card"><span class="num">01</span><h3>Cadrer</h3><p>Formaliser l'objectif, l'audience, le style, le texte, le format et les contraintes avant de lancer la création.</p></article>
-      <article class="capability-card"><span class="num">02</span><h3>Contrôler</h3><p>Rassembler les fichiers produits, les parcourir dans une galerie locale et conserver une validation humaine explicite.</p></article>
-      <article class="capability-card"><span class="num">03</span><h3>Exporter</h3><p>Conserver les livrables validés dans un dossier local, sans compte cloud obligatoire ni dépendance technique supplémentaire.</p></article>
+    <section class="section" id="capabilities"><div class="section-heading"><div><p class="section-kicker">CAPABILITIES</p><h2>Trois responsabilités, clairement séparées.</h2></div></div><div class="capabilities">
+      <article class="capability-card"><span class="num">01</span><h3>Cadrer</h3><p>Formaliser objectif, audience, style, texte, format et contraintes. Le mode Instagram gère de 1 à 10 visuels principaux en 1080 × 1350.</p></article>
+      <article class="capability-card"><span class="num">02</span><h3>Contrôler</h3><p>Importer les fichiers produits, vérifier leur intégrité, les parcourir dans une galerie locale et conserver une validation humaine explicite.</p></article>
+      <article class="capability-card"><span class="num">03</span><h3>Exporter</h3><p>Télécharger l'archive du projet validé ou transmettre le paquet au webhook n8n existant, sans clé API OpenAI dans l'application.</p></article>
     </div></section>
 
-    <section class="section" id="screens"><div class="section-heading"><div><p class="section-kicker">PRODUCT SCREENS</p><h2>Voir le produit plutôt que répéter le process.</h2></div></div><div class="gallery">
-      <figure><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/brief.png" alt="Brief créatif"><figcaption>Brief créatif · cadrer la demande</figcaption></figure>
-      <figure><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/studio-visuel.png" alt="Préparation Studio Visuel"><figcaption>Préparation · prompt de lancement</figcaption></figure>
-      <figure><img src="https://raw.githubusercontent.com/Etorrent-Org/visual-ai-studio/main/docs/images/validation.png" alt="Validation des créations"><figcaption>Validation · galerie multi-images</figcaption></figure>
+    <section class="section" id="workflow"><div class="section-heading"><div><p class="section-kicker">WORKFLOW</p><h2>Une application web, un agent conversationnel séparé.</h2><p class="lead">Le dépôt ne contient plus l'ancienne application desktop PySide6 ni sa chaîne Windows. Le runtime courant est React/Vite + FastAPI/Python, SQLite et Docker Compose.</p></div></div><div class="process-flow">
+      <div><span>01</span><strong>Préparer le brief</strong></div><div><span>02</span><strong>Générer le prompt</strong></div><div><span>03</span><strong>Créer dans ChatGPT</strong></div><div><span>04</span><strong>Importer et valider</strong></div><div><span>05</span><strong>Exporter / n8n</strong></div>
     </div></section>
 
-    <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Un installateur Windows, puis Studio Visuel.</h2><p class="lead">La release officielle fournit l'installateur, le package Studio Visuel et les empreintes SHA-256. Python, Git et Docker ne sont pas nécessaires côté utilisateur final.</p></div></div><div class="install-panel"><ol><li>Télécharger <code>Visual-AI-Studio-Setup-0.1.1.exe</code>.</li><li>Lancer l'installateur Windows.</li><li>Préparer Studio Visuel dans ChatGPT à partir du package fourni.</li><li>Créer un premier brief et démarrer le workflow.</li></ol></div></section>
+    <section class="section" id="install"><div class="section-heading"><div><p class="section-kicker">INSTALL</p><h2>Docker Compose, puis ouverture du studio web.</h2><p class="lead">Créer le fichier <code>.env</code> depuis <code>.env.example</code>, construire les conteneurs et ouvrir le port local 3093.</p></div></div><div class="install-panel"><ol><li>Cloner <code>Etorrent-Org/visual-ai-studio</code>.</li><li>Créer <code>.env</code> à partir de <code>.env.example</code>.</li><li>Lancer <code>docker compose up -d --build</code>.</li><li>Ouvrir <code>http://localhost:3093</code>.</li></ol></div></section>
 
-    <section class="final-cta"><div><p class="section-kicker">VISUAL AI STUDIO 0.1.1</p><h2>Créer avec l'IA, garder le contrôle.</h2><p>Le produit reste volontairement simple : l'application structure et contrôle ; la génération se déroule séparément dans ChatGPT.</p></div><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio/releases/latest">Dernière release ↗</a></section>
+    <section class="final-cta"><div><p class="section-kicker">VISUAL AI STUDIO 0.3.0</p><h2>Créer avec l'IA, garder le contrôle.</h2><p>Le produit reste volontairement simple : l'application structure et contrôle ; la génération se déroule séparément dans ChatGPT.</p></div><a class="button button-light" href="https://github.com/Etorrent-Org/visual-ai-studio">Code et documentation ↗</a></section>
   </main>
 
   <footer class="footer shell"><p>© 2026 R1-Torrent · Etorrent-Org</p><div><a href="../">Portail</a><a href="../infographic-lab/">Infographic Lab</a><a href="../ai-process-studio/">AI Process Studio</a></div></footer>
