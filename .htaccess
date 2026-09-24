@@ -3,6 +3,10 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Canonicalise le domaine technique OVH vers le domaine public.
+  RewriteCond %{HTTP_HOST} ^senscudb\.cluster015\.ovh\.net$ [NC]
+  RewriteRule ^ https://7-sens.fr%{REQUEST_URI} [R=301,L]
+
   # Defense en profondeur : ne jamais exposer les fichiers techniques du depot.
   # .well-known reste volontairement accessible pour les mecanismes SSL/ACME.
   RewriteRule (^|/)\.(git|github)(/|$) - [F,L,NC]
