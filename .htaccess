@@ -2,6 +2,14 @@ Options -Indexes
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Defense en profondeur : ne jamais exposer les fichiers techniques du depot.
+  # .well-known reste volontairement accessible pour les mecanismes SSL/ACME.
+  RewriteRule (^|/)\.(git|github)(/|$) - [F,L,NC]
+  RewriteRule (^|/)\.env(?:$|\.) - [F,L,NC]
+  RewriteRule (^|/)README-OVH\.md$ - [F,L,NC]
+  RewriteRule \.(pem|key|p12|pfx)$ - [F,L,NC]
+
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
