@@ -3,6 +3,10 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Site statique : seules les methodes de lecture sont autorisees.
+  RewriteCond %{REQUEST_METHOD} !^(GET|HEAD)$ [NC]
+  RewriteRule ^ - [F,L]
+
   # Canonicalise le domaine technique OVH vers le domaine public.
   RewriteCond %{HTTP_HOST} ^senscudb\.cluster015\.ovh\.net$ [NC]
   RewriteRule ^ https://7-sens.fr%{REQUEST_URI} [R=301,L]
