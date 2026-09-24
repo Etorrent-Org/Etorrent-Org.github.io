@@ -1,0 +1,124 @@
+name: OVH Static CI
+
+on:
+  push:
+    branches:
+      - ovh-7-sens
+  pull_request:
+    branches:
+      - ovh-7-sens
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate static site
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -s styles.css
+          test -s .htaccess
+          test -s robots.txt
+
+      - name: Reject sensitive files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '(^|/)(\.env($|\.)|.*\.(pem|key|p12|pfx)$)' ; then
+            echo "Sensitive file detected in repository"
+            exit 1
+          fi
+
+      - name: Validate HTML and local references
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          root = Path(".")
+          source = (root / "index.html").read_text(encoding="utf-8")
+
+          class SiteParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.ids = set()
+                  self.refs = []
+                  self.duplicates = []
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  value = attrs.get("id")
+                  if value:
+                      if value in self.ids:
+                          self.duplicates.append(value)
+                      self.ids.add(value)
+
+                  if tag in {"a", "link"} and attrs.get("href"):
+                      self.refs.append(attrs["href"])
+                  if tag in {"img", "script"} and attrs.get("src"):
+                      self.refs.append(attrs["src"])
+
+          parser = SiteParser()
+          parser.feed(source)
+
+          if parser.duplicates:
+              raise SystemExit(f"Duplicate HTML ids: {sorted(set(parser.duplicates))}")
+
+          missing = []
+          for ref in parser.refs:
+              if ref.startswith(("#", "mailto:", "tel:", "data:")):
+                  if ref.startswith("#") and ref[1:] and ref[1:] not in parser.ids:
+                      missing.append(f"missing fragment {ref}")
+                  continue
+
+              parsed = urlsplit(ref)
+              if parsed.scheme or parsed.netloc:
+                  continue
+
+              path = parsed.path
+              if not path or path == "/":
+                  continue
+
+              target = root / path.lstrip("/")
+              if not target.exists():
+                  missing.append(f"missing local file {path}")
+
+          if missing:
+              raise SystemExit("\n".join(missing))
+
+          print(f"HTML OK: {len(parser.ids)} ids, {len(parser.refs)} references checked")
+          PY
+
+      - name: Check OVH security rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'Options -Indexes' .htaccess
+          grep -q 'RewriteCond %{HTTPS} !=on' .htaccess
+          grep -q 'X-Content-Type-Options' .htaccess
+          grep -q 'Content-Security-Policy' .htaccess
+
+      - name: Static smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8080 >/tmp/ovh-static-ci.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          sleep 1
+          curl --fail --silent --show-error http://127.0.0.1:8080/ | grep -q '<title>Etorrent-Org'
+          curl --fail --silent --show-error http://127.0.0.1:8080/styles.css >/dev/null
+          echo "Static smoke test OK"
