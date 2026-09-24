@@ -3,175 +3,298 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Etorrent-Org — laboratoire numérique autour de l'IA, de l'automatisation, de la visualisation et d'outils utiles.">
-  <meta name="theme-color" content="#f3f0ea">
+  <meta name="description" content="Etorrent-Org — laboratoire personnel d'outils, d'intelligence artificielle, de création visuelle et d'automatisation.">
+  <meta name="theme-color" content="#101014">
+  <meta name="color-scheme" content="dark">
   <title>Etorrent-Org — laboratoire numérique</title>
   <link rel="preload" as="image" href="assets/hero-orb.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#contenu">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="header">
-    <div class="shell nav">
+  <header class="topbar">
+    <div class="page nav">
       <a class="brand" href="#accueil" aria-label="Etorrent-Org — accueil">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>Etorrent-Org</span>
+        <span class="brand-icon">⛩️</span>
+        <span>
+          <strong>Etorrent-Org</strong>
+          <small>laboratoire numérique</small>
+        </span>
       </a>
-      <nav class="menu" aria-label="Navigation principale">
-        <a href="#projets">Projets</a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
         <a href="#univers">Univers</a>
-        <a href="#demarche">Démarche</a>
-        <a href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#focus">Projets actifs</a>
+        <a href="#studio">Studio créatif</a>
+        <a class="nav-github" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
     </div>
   </header>
 
-  <main id="contenu">
-    <section id="accueil" class="hero shell">
-      <div class="hero-copy">
-        <p class="surline"><span>01</span> Laboratoire numérique personnel</p>
-        <h1>Créer des outils<br>qui donnent envie<br>d’être utilisés.</h1>
-        <p class="lead">Je conçois des outils mêlant intelligence artificielle, automatisation, visualisation et usages concrets — avec une obsession simple : faire utile, clair et agréable.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projets">Voir les projets</a>
-          <a class="button secondary" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">Explorer GitHub ↗</a>
-        </div>
-        <div class="hero-facts" aria-label="Principes">
-          <span>Usage réel</span>
-          <span>Local quand c’est pertinent</span>
-          <span>Code et données maîtrisés</span>
-        </div>
+  <main id="contenu" class="page">
+    <section id="accueil" class="home-grid">
+      <div class="home-left">
+        <article class="callout callout-main">
+          <div class="callout-heading">
+            <span class="callout-icon">⛩️</span>
+            <div>
+              <p class="label accent-purple">ETORRENT-ORG · ACCUEIL</p>
+              <p class="japanese">考える · 創る · 整える</p>
+            </div>
+          </div>
+          <h1>Concevoir · décider · créer · simplifier.</h1>
+          <p class="muted">Un espace personnel pour transformer une idée en outil réellement utilisable.</p>
+        </article>
+
+        <article class="callout">
+          <div class="callout-heading">
+            <span class="callout-icon">⚡</span>
+            <p class="label accent-blue">ACCÈS RAPIDE</p>
+          </div>
+          <div class="quick-links">
+            <a href="#focus">Projets actifs <span>↗</span></a>
+            <a href="#univers">Mes univers <span>↗</span></a>
+            <a href="#studio">Studio créatif <span>↗</span></a>
+            <a href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="callout callout-soft">
+          <div class="callout-heading">
+            <span class="callout-icon">🧭</span>
+            <p class="label accent-gray">3 RÉFLEXES</p>
+          </div>
+          <ol class="reflexes">
+            <li>Partir du <strong>besoin réel</strong>.</li>
+            <li>Supprimer ce qui crée du <strong>bruit</strong>.</li>
+            <li>Ne garder que l’<strong>outil utile</strong>.</li>
+          </ol>
+        </article>
       </div>
 
-      <figure class="hero-visual">
-        <img src="assets/hero-orb.webp" alt="Espace futuriste sombre éclairé de nuances violettes.">
-        <div class="visual-caption">
-          <span>Expérimentation visuelle</span>
-          <span>IA générative</span>
-        </div>
-        <img class="signature" src="assets/signature.webp" alt="Signature Elwan">
-      </figure>
-    </section>
+      <div class="home-right">
+        <figure class="hero-card">
+          <img src="assets/hero-orb.webp" alt="Espace futuriste sombre aux lumières violettes.">
+          <div class="hero-overlay"></div>
+          <figcaption>
+            <span>Laboratoire visuel</span>
+            <span>IA · outils · création</span>
+          </figcaption>
+          <img class="signature" src="assets/signature.webp" alt="Signature Elwan">
+        </figure>
 
-    <section class="manifest shell" aria-label="Positionnement">
-      <p class="manifest-kicker">Ce que je cherche</p>
-      <p class="manifest-text">Moins d’outils qui promettent tout. Plus d’outils qui font vraiment une chose, au bon endroit, de la bonne manière.</p>
-    </section>
-
-    <section id="projets" class="projects">
-      <div class="shell">
-        <div class="section-heading light">
-          <p class="section-no">02</p>
-          <div>
-            <p class="eyebrow">Projets sélectionnés</p>
-            <h2>Des produits qui partent d’un usage.</h2>
+        <article class="callout current-card">
+          <div class="callout-heading">
+            <span class="callout-icon">🌊</span>
+            <p class="label accent-purple">EN COURS · VISUAL AI STUDIO</p>
           </div>
-        </div>
-
-        <div class="project-stack">
-          <article class="project-item">
-            <div class="project-index">01</div>
-            <div class="project-copy">
-              <p class="project-kind">Création visuelle assistée par IA</p>
-              <h3>Visual AI Studio</h3>
-              <p>Préparer un brief, contrôler un rendu, organiser les livrables et structurer un flux de production visuelle cohérent.</p>
+          <div class="current-grid">
+            <div>
+              <strong>Créer · contrôler · organiser</strong>
+              <p class="muted">Un studio pour préparer les visuels, piloter les rendus et structurer les livrables.</p>
             </div>
-            <div class="project-tech">Python · FastAPI · Vite · Docker</div>
-            <a class="project-link" href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer" aria-label="Visual AI Studio sur GitHub">↗</a>
-          </article>
-
-          <article class="project-item">
-            <div class="project-index">02</div>
-            <div class="project-copy">
-              <p class="project-kind">Visualisation de l’information</p>
-              <h3>Infographic Lab</h3>
-              <p>Transformer une idée ou un contenu en infographies, schémas, cartes mentales et exports visuels réutilisables.</p>
-            </div>
-            <div class="project-tech">React · Vite · Mermaid · Docker</div>
-            <a class="project-link" href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer" aria-label="Infographic Lab sur GitHub">↗</a>
-          </article>
-
-          <article class="project-item">
-            <div class="project-index">03</div>
-            <div class="project-copy">
-              <p class="project-kind">Collection personnelle</p>
-              <h3>BD Desk</h3>
-              <p>Une application web simple pour gérer une collection de bandes dessinées, comics et mangas, pensée aussi pour le mobile.</p>
-            </div>
-            <div class="project-tech">Node.js · PWA · API · Adaptatif</div>
-            <a class="project-link" href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer" aria-label="BD Desk sur GitHub">↗</a>
-          </article>
-        </div>
-
-        <div class="experiments">
-          <p class="experiments-label">En parallèle</p>
-          <div class="experiment-grid">
-            <article><strong>Life Desk</strong><span>Bureau personnel connecté à mes outils du quotidien.</span></article>
-            <article><strong>Solution AO autonome</strong><span>Qualification d’appels d’offres avec analyse IA contrôlée.</span></article>
-            <article><strong>IA-Art</strong><span>Flux créatif pour préparer, signer et publier des visuels.</span></article>
+            <a class="small-action" href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Ouvrir ↗</a>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section id="univers" class="universe shell">
-      <div class="section-heading dark">
-        <p class="section-no">03</p>
+    <section class="section callout wide-callout" aria-labelledby="pilotage-title">
+      <div class="wide-title">
+        <span class="callout-icon">🎯</span>
         <div>
-          <p class="eyebrow">Univers visuel</p>
-          <h2>La technologie peut aussi avoir une présence.</h2>
+          <p class="label accent-green">PILOTAGE · MAINTENANT</p>
+          <h2 id="pilotage-title">Construire moins. Construire mieux.</h2>
         </div>
+      </div>
+      <p class="wide-copy">Chaque projet doit répondre à un usage concret, rester compréhensible et pouvoir évoluer sans devenir une usine à gaz.</p>
+    </section>
+
+    <section id="univers" class="section">
+      <div class="section-title">
+        <div>
+          <p class="section-kicker accent-brown">🗺️ MES ESPACES</p>
+          <h2>4 univers</h2>
+        </div>
+        <p class="section-note">Une organisation volontairement proche de mon espace de travail quotidien.</p>
       </div>
 
       <div class="universe-grid">
-        <figure class="universe-image">
-          <img src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="Installation lumineuse dans un espace futuriste.">
-        </figure>
-        <div class="universe-copy">
-          <p>J’utilise aussi l’IA comme matière créative : lumière, architecture, textures, calme et tension visuelle.</p>
-          <p>Ces images ne décorent pas le site. Elles donnent une cohérence au laboratoire et une identité aux expérimentations.</p>
-          <div class="seal-line"><span class="seal">印</span><span>Une signature visuelle assumée.</span></div>
-        </div>
+        <article class="universe-card">
+          <div class="universe-top">
+            <span class="universe-icon">🧪</span>
+            <p class="label accent-purple">IA & LAB · 実験</p>
+          </div>
+          <p class="universe-subtitle">Tester · comprendre · construire</p>
+          <div class="universe-links">
+            <a href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Visual AI Studio</a>
+            <span>Solution AO autonome</span>
+          </div>
+        </article>
+
+        <article class="universe-card">
+          <div class="universe-top">
+            <span class="universe-icon">🎨</span>
+            <p class="label accent-purple">CRÉATION · 遊び</p>
+          </div>
+          <p class="universe-subtitle">Imaginer · visualiser · composer</p>
+          <div class="universe-links">
+            <a href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer">Infographic Lab</a>
+            <span>IA-Art</span>
+          </div>
+        </article>
+
+        <article class="universe-card">
+          <div class="universe-top">
+            <span class="universe-icon">🧰</span>
+            <p class="label accent-blue">OUTILS · 道具</p>
+          </div>
+          <p class="universe-subtitle">Simplifier · retrouver · utiliser</p>
+          <div class="universe-links">
+            <a href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer">BD Desk</a>
+            <span>Life Desk</span>
+          </div>
+        </article>
+
+        <article class="universe-card">
+          <div class="universe-top">
+            <span class="universe-icon">⚙️</span>
+            <p class="label accent-gray">AUTOMATISATION · 流れ</p>
+          </div>
+          <p class="universe-subtitle">Relier · déclencher · fiabiliser</p>
+          <div class="universe-links">
+            <span>n8n</span>
+            <span>Workflows</span>
+            <span>Docker</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="demarche" class="approach">
-      <div class="shell">
-        <div class="section-heading light">
-          <p class="section-no">04</p>
-          <div>
-            <p class="eyebrow">Ma démarche</p>
-            <h2>Une méthode simple, cinq exigences.</h2>
+    <section id="focus" class="section">
+      <div class="section-title">
+        <div>
+          <p class="section-kicker accent-blue">🎯 FOCUS ACTIFS</p>
+          <h2>3 projets à suivre</h2>
+        </div>
+      </div>
+
+      <div class="focus-grid">
+        <article class="focus-card">
+          <div class="focus-head">
+            <span>🎯</span>
+            <p class="label accent-blue">VISUAL AI STUDIO</p>
+          </div>
+          <p class="focus-verb">Créer · contrôler · publier</p>
+          <p>Préparation de briefs, contrôle visuel, organisation des rendus et chaîne de production créative.</p>
+          <a href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+        </article>
+
+        <article class="focus-card">
+          <div class="focus-head">
+            <span>🌱</span>
+            <p class="label accent-green">INFOGRAPHIC LAB</p>
+          </div>
+          <p class="focus-verb">Structurer · expliquer · montrer</p>
+          <p>Transformer une idée ou un texte en représentations visuelles claires et exportables.</p>
+          <a href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+        </article>
+
+        <article class="focus-card">
+          <div class="focus-head">
+            <span>📚</span>
+            <p class="label accent-brown">BD DESK</p>
+          </div>
+          <p class="focus-verb">Classer · retrouver · collectionner</p>
+          <p>Une bibliothèque web personnelle pour gérer simplement BD, comics et mangas.</p>
+          <a href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer">Voir le projet ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="studio" class="section">
+      <details class="fold" open>
+        <summary>
+          <span>🎨</span>
+          <strong>Studio créatif</strong>
+          <span class="summary-note">IA Art · Japon · expériences visuelles</span>
+        </summary>
+
+        <div class="studio-grid">
+          <article class="callout studio-note">
+            <div class="callout-heading">
+              <span class="callout-icon">⛩️</span>
+              <div>
+                <p class="label accent-brown">ATELIER VISUEL · 墨と光</p>
+                <p class="japanese">matière · lumière · calme · contraste</p>
+              </div>
+            </div>
+            <p>Le studio visuel sert de terrain d’essai : images, ambiances, signatures, compositions et préparation pour les réseaux sociaux.</p>
+            <div class="seal-row">
+              <span class="seal">印</span>
+              <span>Signature visuelle : エルワン</span>
+            </div>
+          </article>
+
+          <div class="studio-gallery">
+            <figure>
+              <img src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="Installation lumineuse futuriste dans un espace japonais contemporain.">
+              <figcaption>IA Art · sélection</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/gallery-cubes.webp" loading="lazy" decoding="async" alt="Cubes lumineux en suspension dans une architecture futuriste.">
+              <figcaption>Études d’ambiance</figcaption>
+            </figure>
           </div>
         </div>
-
-        <ol class="principles">
-          <li><span>01</span><strong>Partir du besoin</strong><p>Le problème avant l’outil.</p></li>
-          <li><span>02</span><strong>Élaguer</strong><p>Moins de couches, moins de friction.</p></li>
-          <li><span>03</span><strong>Automatiser juste</strong><p>Faire disparaître le répétitif, pas le contrôle.</p></li>
-          <li><span>04</span><strong>Rester maître</strong><p>Données, hébergement, formats et dépendances choisis.</p></li>
-          <li><span>05</span><strong>Soigner l’expérience</strong><p>Un outil utile doit être agréable à utiliser.</p></li>
-        </ol>
-      </div>
+      </details>
     </section>
 
-    <section class="finale shell">
-      <div class="finale-inner">
-        <div>
-          <p class="surline"><span>05</span> Etorrent-Org</p>
-          <h2>Une idée n’a de valeur que si elle devient utilisable.</h2>
-          <a class="button primary" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">Voir les projets sur GitHub ↗</a>
+    <section class="section">
+      <details class="fold backstage">
+        <summary>
+          <span>⚙️</span>
+          <strong>Backstage</strong>
+          <span class="summary-note">architecture · outils · déploiement</span>
+        </summary>
+
+        <div class="backstage-grid">
+          <article class="callout callout-soft">
+            <div class="callout-heading">
+              <span class="callout-icon">🧭</span>
+              <p class="label accent-gray">RÈGLE D’ARCHITECTURE</p>
+            </div>
+            <p>Avant d’ajouter un nouvel outil, vérifier si une brique existante suffit. Moins de doublons, moins de maintenance, plus de maîtrise.</p>
+          </article>
+
+          <article class="callout">
+            <div class="callout-heading">
+              <span class="callout-icon">🧱</span>
+              <p class="label accent-blue">BRIQUES UTILISÉES</p>
+            </div>
+            <div class="tech-list">
+              <span>GitHub</span>
+              <span>Docker</span>
+              <span>Notion</span>
+              <span>n8n</span>
+              <span>Python</span>
+              <span>Web</span>
+              <span>OVH</span>
+            </div>
+          </article>
         </div>
-        <img class="final-signature" src="assets/signature.webp" alt="Signature Elwan">
-      </div>
+      </details>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell footer-inner">
-      <span>Etorrent-Org</span>
-      <span>IA · automatisation · visualisation · outils numériques</span>
+    <div class="page footer-inner">
+      <div>
+        <strong>Etorrent-Org</strong>
+        <span>Construire · tester · apprendre</span>
+      </div>
+      <img src="assets/signature.webp" alt="Signature Elwan">
       <a href="#accueil">Haut de page ↑</a>
     </div>
   </footer>
