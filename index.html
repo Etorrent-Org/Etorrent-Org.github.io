@@ -3,231 +3,226 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Etorrent-Org — portfolio de projets IA, outils locaux, visualisation, automatisation et expérimentations produit.">
-  <meta name="theme-color" content="#090914">
-  <meta name="color-scheme" content="dark light">
-  <title>Etorrent-Org — IA, outils locaux & product experiments</title>
+  <meta name="description" content="Etorrent-Org — laboratoire d'outils, d'intelligence artificielle, d'automatisation et d'expérimentations visuelles.">
+  <meta name="theme-color" content="#08080b">
+  <meta name="color-scheme" content="dark">
+  <title>Etorrent-Org — laboratoire numérique</title>
   <link rel="preload" as="image" href="assets/hero-orb.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Etorrent-Org — accueil">
+      <a class="brand" href="#accueil" aria-label="Etorrent-Org — accueil">
         <span class="brand-mark">E9</span>
-        <span class="brand-text">
-          <strong>Etorrent-Org</strong>
-          <small>labs & product experiments</small>
-        </span>
+        <span>Etorrent-Org</span>
       </a>
-
       <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#projects">Projets</a>
-        <a href="#gallery">Ambiances</a>
-        <a href="#system">Approche</a>
-        <a href="#ops">Ops</a>
-        <a class="nav-cta" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#projets">Projets</a>
+        <a href="#univers">Univers visuel</a>
+        <a href="#demarche">Démarche</a>
+        <a class="nav-github" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section id="top" class="hero-shell">
-      <div class="hero-backdrop">
-        <img src="assets/hero-orb.webp" alt="Sanctuaire futuriste violet avec sphère lumineuse en suspension.">
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-grid wrap">
-        <div class="hero-copy glass-panel">
-          <p class="eyebrow">Portfolio technique · IA appliquée · outils locaux · open source</p>
-          <h1>Des outils utiles, beaux, pilotables et pensés pour durer.</h1>
-          <p class="hero-lead">
-            Etorrent-Org rassemble des projets qui relient IA, visualisation, productivité personnelle,
-            automatisation et contrôle local. Le principe reste le même : produire quelque chose de concret,
-            testable, maintenable et réellement utilisable.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">Explorer les projets</a>
-            <a class="button ghost" href="#gallery">Voir les ambiances</a>
-          </div>
-
-          <ul class="hero-pills" aria-label="Focus">
-            <li>Local-first</li>
-            <li>CI légère</li>
-            <li>Docker & Web</li>
-            <li>Design fonctionnel</li>
-            <li>Open source</li>
-          </ul>
-        </div>
-
-        <aside class="hero-aside glass-panel" aria-label="Synthèse">
-          <img class="signature-float" src="assets/signature.webp" alt="Signature Elwan.">
-          <div class="stat-card">
-            <span class="stat-label">Axes principaux</span>
-            <strong>IA · visualisation · automation</strong>
-          </div>
-          <div class="stat-grid">
-            <article><span>Format</span><strong>Apps · workflows · labs</strong></article>
-            <article><span>Stack</span><strong>Web · Python · Docker</strong></article>
-            <article><span>Déploiement</span><strong>Local / Git / OVH</strong></article>
-            <article><span>Philosophie</span><strong>Small builds, real use</strong></article>
-          </div>
-          <div class="terminal" aria-label="Résumé technique">
-            <span>&gt; stack --focus</span>
-            <strong>React · Vite · Node · Python · Rust · Docker</strong>
-            <span>&gt; principle</span>
-            <strong>design → build → secure → document → ship</strong>
-            <span>&gt; current-mode</span>
-            <strong>simple, usable, local-first</strong>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section wrap intro-strip" aria-label="Résumé de l'écosystème">
-      <article>
-        <span class="mini-label">Projet vitrine</span>
-        <h2>Un écosystème personnel, pas une collection de buzzwords.</h2>
-        <p>
-          Chaque brique répond à un usage réel : créer des visuels, piloter une base personnelle,
-          structurer de l'information, ou réduire le travail manuel sur des tâches répétitives.
+  <main id="contenu">
+    <section id="accueil" class="hero">
+      <img class="hero-image" src="assets/hero-orb.webp" alt="Architecture futuriste aux lumières violettes et sphère lumineuse.">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <p class="kicker">Laboratoire numérique personnel</p>
+        <h1>Etorrent-Org</h1>
+        <p class="hero-title">Outils, IA et expérimentations numériques.</p>
+        <p class="hero-text">
+          Je conçois des outils utiles, des interfaces claires et des expériences mêlant
+          intelligence artificielle, automatisation, visualisation et usages concrets.
         </p>
-      </article>
-      <div class="intro-metrics">
-        <div><strong>6</strong><span>projets et workflows présentés</span></div>
-        <div><strong>100%</strong><span>orientation usage concret</span></div>
-        <div><strong>0 blabla</strong><span>priorité au livrable</span></div>
-      </div>
-    </section>
-
-    <section id="projects" class="section wrap">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Sélection active</p>
-          <h2>Les projets à mettre en avant</h2>
+        <div class="hero-actions">
+          <a class="button button-light" href="#projets">Découvrir les projets</a>
+          <a class="text-link" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">Voir GitHub ↗</a>
         </div>
-        <p>Une lecture simple du portefeuille : ce qui est visible, utile ou structurant aujourd'hui.</p>
+        <img class="hero-signature" src="assets/signature.webp" alt="Signature Elwan.">
       </div>
-
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="card-topline"><span class="badge live">Actif</span><span class="badge public">Public</span></div>
-          <h3>Visual AI Studio</h3>
-          <p>Studio web pour préparer des briefs visuels, contrôler les rendus, organiser les livrables et alimenter un flux social.</p>
-          <div class="tags"><span>Python</span><span>FastAPI</span><span>Vite</span><span>SQLite</span><span>Docker</span></div>
-          <a class="project-link" href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Voir le dépôt ↗</a>
-        </article>
-
-        <article class="project-card">
-          <div class="card-topline"><span class="badge live">Actif</span><span class="badge public">Public</span></div>
-          <h3>Infographic Lab</h3>
-          <p>Transforme une idée ou un texte en infographies, Mermaid, mindmaps, Markdown et exports autonomes HTML/SVG/PNG.</p>
-          <div class="tags"><span>React</span><span>Vite</span><span>AntV</span><span>Mermaid</span><span>Docker</span></div>
-          <a class="project-link" href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer">Voir le dépôt ↗</a>
-        </article>
-
-        <article class="project-card">
-          <div class="card-topline"><span class="badge live">Actif</span><span class="badge public">Public</span></div>
-          <h3>BD Desk</h3>
-          <p>Application web/PWA de gestion de collection BD, comics et manga, pensée pour rester dense, claire et mobile-friendly.</p>
-          <div class="tags"><span>Node.js</span><span>PWA</span><span>API</span><span>Responsive</span></div>
-          <a class="project-link" href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer">Voir le dépôt ↗</a>
-        </article>
-
-        <article class="project-card muted-card">
-          <div class="card-topline"><span class="badge private">Privé</span><span class="badge lab">Personal lab</span></div>
-          <h3>Life Desk</h3>
-          <p>Bureau personnel local-first : dashboard, agenda, Notion, météo, Spotify, galerie IA-Art et accès rapide à l'écosystème local.</p>
-          <div class="tags"><span>Next.js</span><span>Rust</span><span>Axum</span><span>Notion</span><span>Spotify</span></div>
-          <div class="project-note">Projet privé — démonstrateur personnel</div>
-        </article>
-
-        <article class="project-card muted-card">
-          <div class="card-topline"><span class="badge private">Privé</span><span class="badge lab">Expérimental</span></div>
-          <h3>Solution AO autonome</h3>
-          <p>Prototype mono-utilisateur pour rechercher, qualifier et piloter des appels d'offres avec analyse IA contrôlée.</p>
-          <div class="tags"><span>Python</span><span>PostgreSQL</span><span>Docker</span><span>M365</span><span>IA</span></div>
-          <div class="project-note">Projet privé — expérimentation métier</div>
-        </article>
-
-        <article class="project-card muted-card">
-          <div class="card-topline"><span class="badge workflow">Workflow</span><span class="badge public">Processus</span></div>
-          <h3>IA-Art</h3>
-          <p>Chaîne créative pour préparer, signer, packager et publier des visuels destinés aux réseaux sociaux.</p>
-          <div class="tags"><span>Instagram</span><span>Notion</span><span>n8n</span><span>Visual QA</span></div>
-          <div class="project-note">Workflow courant adossé à Visual AI Studio</div>
-        </article>
-      </div>
+      <a class="scroll-cue" href="#projets" aria-label="Aller aux projets">↓</a>
     </section>
 
-    <section id="gallery" class="section wrap">
-      <div class="section-heading">
+    <section id="projets" class="section projects wrap">
+      <header class="section-head">
+        <p class="section-index">01</p>
         <div>
-          <p class="eyebrow">Direction artistique</p>
-          <h2>Ambiances générées et intégrées</h2>
+          <p class="kicker">Projets sélectionnés</p>
+          <h2>Des outils pensés pour servir un usage réel.</h2>
         </div>
-        <p>Une couche visuelle plus forte pour donner au site une personnalité cohérente et mémorable.</p>
+      </header>
+
+      <div class="project-list">
+        <article class="project-row">
+          <div class="project-number">01</div>
+          <div class="project-main">
+            <p class="project-state">Actif · public</p>
+            <h3>Visual AI Studio</h3>
+            <p>Préparer des briefs visuels, contrôler les rendus, organiser les livrables et structurer une production créative assistée par IA.</p>
+          </div>
+          <div class="project-meta">
+            <span>Python</span><span>FastAPI</span><span>Vite</span><span>Docker</span>
+          </div>
+          <a class="project-arrow" href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer" aria-label="Voir Visual AI Studio sur GitHub">↗</a>
+        </article>
+
+        <article class="project-row">
+          <div class="project-number">02</div>
+          <div class="project-main">
+            <p class="project-state">Actif · public</p>
+            <h3>Infographic Lab</h3>
+            <p>Transformer un contenu en représentations visuelles structurées : infographies, schémas, cartes mentales et exports autonomes.</p>
+          </div>
+          <div class="project-meta">
+            <span>React</span><span>Vite</span><span>Mermaid</span><span>Docker</span>
+          </div>
+          <a class="project-arrow" href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer" aria-label="Voir Infographic Lab sur GitHub">↗</a>
+        </article>
+
+        <article class="project-row">
+          <div class="project-number">03</div>
+          <div class="project-main">
+            <p class="project-state">Actif · public</p>
+            <h3>BD Desk</h3>
+            <p>Gérer simplement une collection de bandes dessinées, comics et mangas dans une application web adaptée au mobile.</p>
+          </div>
+          <div class="project-meta">
+            <span>Node.js</span><span>PWA</span><span>API</span><span>Responsive</span>
+          </div>
+          <a class="project-arrow" href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer" aria-label="Voir BD Desk sur GitHub">↗</a>
+        </article>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-card large">
-          <img src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="Hall futuriste avec structure lumineuse orbitale.">
-          <figcaption><strong>Atmosphère 01 — Holographic Tree</strong><span>Pour des zones immersives, éditoriales ou hero secondaires.</span></figcaption>
+      <div class="other-projects">
+        <p class="kicker">Autres expérimentations</p>
+        <div class="other-grid">
+          <article>
+            <span class="small-index">04</span>
+            <h3>Life Desk</h3>
+            <p>Bureau personnel pour réunir agenda, notes, musique, météo, galerie et outils du quotidien.</p>
+            <span class="project-private">Projet privé</span>
+          </article>
+          <article>
+            <span class="small-index">05</span>
+            <h3>Solution AO autonome</h3>
+            <p>Prototype de recherche, qualification et pilotage d'appels d'offres avec analyse IA contrôlée.</p>
+            <span class="project-private">Projet privé</span>
+          </article>
+          <article>
+            <span class="small-index">06</span>
+            <h3>IA-Art</h3>
+            <p>Chaîne créative pour préparer, signer, organiser et publier des productions visuelles.</p>
+            <span class="project-private">Flux créatif</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="univers" class="visual-section">
+      <div class="wrap visual-intro">
+        <p class="section-index">02</p>
+        <div>
+          <p class="kicker">Univers visuel</p>
+          <h2>Explorer aussi l'IA comme matière créative.</h2>
+          <p>Des images utilisées comme ambiance, terrain d'expérimentation et langage visuel.</p>
+        </div>
+      </div>
+
+      <div class="visual-gallery wrap">
+        <figure class="visual-large">
+          <img src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="Sanctuaire futuriste avec structure lumineuse orbitale.">
         </figure>
-
-        <figure class="gallery-card">
-          <img src="assets/gallery-cubes.webp" loading="lazy" decoding="async" alt="Temple futuriste avec cubes translucides flottants.">
-          <figcaption><strong>Atmosphère 02 — Floating Cubes</strong><span>Idéale pour illustrer structure, données et expérimentation.</span></figcaption>
+        <figure class="visual-small">
+          <img src="assets/gallery-cubes.webp" loading="lazy" decoding="async" alt="Architecture futuriste avec cubes lumineux en suspension.">
         </figure>
+        <div class="visual-note">
+          <span class="red-seal" aria-hidden="true">印</span>
+          <p>Une identité sombre, calme et lumineuse : entre technologie, espace, matière et imaginaire japonais.</p>
+        </div>
       </div>
     </section>
 
-    <section id="system" class="section wrap system-grid">
-      <div class="section-heading section-heading-stacked">
-        <div><p class="eyebrow">Approche</p><h2>Un système de travail simple et robuste</h2></div>
-      </div>
-      <div class="principles-grid">
-        <article><span class="principle-index">01</span><h3>Local-first</h3><p>Les données sensibles restent côté serveur ou localement dès que c'est possible.</p></article>
-        <article><span class="principle-index">02</span><h3>Pragmatisme</h3><p>Le bon outil est celui qui enlève du travail manuel, pas celui qui complexifie le quotidien.</p></article>
-        <article><span class="principle-index">03</span><h3>Interopérabilité</h3><p>GitHub, Docker, Notion, n8n et des exports standards servent de briques, pas de silos.</p></article>
-        <article><span class="principle-index">04</span><h3>Traçabilité</h3><p>README, règles de sécurité, CI et documentation font partie intégrante du produit.</p></article>
+    <section id="demarche" class="section approach wrap">
+      <header class="section-head">
+        <p class="section-index">03</p>
+        <div>
+          <p class="kicker">Ma démarche</p>
+          <h2>Faire moins, mais le faire mieux.</h2>
+        </div>
+      </header>
+
+      <div class="approach-list">
+        <article>
+          <span>01</span>
+          <h3>Concevoir utile</h3>
+          <p>Partir d'un besoin réel avant de choisir une technologie.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Rester simple</h3>
+          <p>Limiter les couches inutiles et garder des outils compréhensibles.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Automatiser intelligemment</h3>
+          <p>Faire disparaître les tâches répétitives sans perdre la maîtrise.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Garder le contrôle</h3>
+          <p>Privilégier le local, le code ouvert et les formats standards lorsque c'est pertinent.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Soigner l'expérience</h3>
+          <p>Un outil utile peut aussi être agréable, lisible et beau.</p>
+        </article>
       </div>
     </section>
 
-    <section id="ops" class="section wrap ops-panel">
-      <div>
-        <p class="eyebrow">Ops statiques</p>
-        <h2>Une base propre pour OVH</h2>
-        <p>Cette version du site reste purement statique pour simplifier le déploiement : intégration Git, HTTPS, règles de durcissement côté hébergement, et visuels embarqués directement dans le code.</p>
+    <section class="lab-section">
+      <div class="wrap lab-grid">
+        <div>
+          <p class="section-index">04</p>
+          <p class="kicker">Le laboratoire</p>
+          <h2>Un espace pour essayer, apprendre et construire.</h2>
+        </div>
+        <div class="lab-copy">
+          <p>
+            Etorrent-Org est mon espace d'expérimentation. J'y teste des idées, des interfaces,
+            des usages de l'intelligence artificielle et des façons différentes de construire
+            des outils numériques.
+          </p>
+          <div class="lab-tags" aria-label="Technologies et outils">
+            <span>GitHub</span><span>Docker</span><span>Notion</span><span>n8n</span><span>IA</span><span>Web</span>
+          </div>
+        </div>
       </div>
-      <ul class="ops-list">
-        <li><strong>Static-first</strong><span>HTML/CSS + assets embarqués</span></li>
-        <li><strong>Secure basics</strong><span>HTTPS, headers, blocage des fichiers techniques</span></li>
-        <li><strong>Easy deploy</strong><span>compatible hébergement web OVH sans runtime</span></li>
-        <li><strong>Visual identity</strong><span>signature intégrée et direction artistique cohérente</span></li>
-      </ul>
     </section>
 
-    <section class="section wrap callout">
-      <div>
-        <p class="eyebrow">Etorrent-Org</p>
-        <h2>Un laboratoire personnel, visuel et fonctionnel.</h2>
-        <p>Le but n'est pas d'impressionner artificiellement, mais de montrer une capacité à concevoir, construire, déployer et faire évoluer des outils utiles.</p>
+    <section class="closing">
+      <img class="closing-image" src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="">
+      <div class="closing-shade"></div>
+      <div class="wrap closing-content">
+        <p class="kicker">Etorrent-Org</p>
+        <h2>Une idée mérite mieux qu'un prototype oublié.</h2>
+        <a class="button button-light" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">Explorer les projets sur GitHub ↗</a>
+        <img class="closing-signature" src="assets/signature.webp" alt="Signature Elwan.">
       </div>
-      <a class="button primary" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">Explorer GitHub ↗</a>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div><strong>Etorrent-Org</strong><p>IA appliquée · outils locaux · productivité · visualisation</p></div>
-      <img class="footer-signature" src="assets/signature.webp" alt="Signature Elwan.">
-      <div class="footer-links">
-        <a href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#top">Haut de page ↑</a>
-      </div>
+      <strong>Etorrent-Org</strong>
+      <p>Intelligence artificielle · outils numériques · visualisation · automatisation</p>
+      <a href="#accueil">Haut de page ↑</a>
     </div>
   </footer>
 </body>
