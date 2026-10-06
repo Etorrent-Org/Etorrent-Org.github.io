@@ -27,7 +27,11 @@ jobs:
         run: |
           set -euo pipefail
           test -s index.html
-          test -s styles.css
+          test -s atelier.css
+          test -s ia-art-studio/index.html
+          test -s ia-art-studio/free/index.html
+          test -s ia-art-studio/free/app.js
+          test -s ia-art-studio/free/styles.css
           test -s .htaccess
           test -s robots.txt
 
@@ -119,6 +123,6 @@ jobs:
           SERVER_PID=$!
           trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
           sleep 1
-          curl --fail --silent --show-error http://127.0.0.1:8080/ | grep -q '<title>Etorrent-Org'
+          curl --fail --silent --show-error http://127.0.0.1:8080/ | grep -q '<title>ATELIER 7S'
           curl --fail --silent --show-error http://127.0.0.1:8080/styles.css >/dev/null
           echo "Static smoke test OK"
