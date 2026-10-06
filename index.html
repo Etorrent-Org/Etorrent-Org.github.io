@@ -2,301 +2,129 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Etorrent-Org — laboratoire personnel d'outils, d'intelligence artificielle, de création visuelle et d'automatisation.">
-  <meta name="theme-color" content="#101014">
-  <meta name="color-scheme" content="dark">
-  <title>Etorrent-Org — laboratoire numérique</title>
-  <link rel="preload" as="image" href="assets/hero-orb.webp">
-  <link rel="stylesheet" href="styles-second-brain-v2.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <title>ATELIER 7S · Produits numériques utiles</title>
+  <meta name="description" content="ATELIER 7S conçoit des outils numériques spécialisés. Premier produit : IA Art Studio, du brief créatif au workflow complet Notion et n8n.">
+  <link rel="stylesheet" href="v2.css">
+  <link rel="stylesheet" href="atelier.css">
 </head>
-<body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
+<body class="atelier-home">
+  <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="site-grid" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <div class="page nav">
-      <a class="brand" href="#accueil" aria-label="Etorrent-Org — accueil">
-        <span class="brand-icon">⛩️</span>
-        <span>
-          <strong>Etorrent-Org</strong>
-          <small>laboratoire numérique</small>
-        </span>
-      </a>
-
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#univers">Univers</a>
-        <a href="#focus">Projets actifs</a>
-        <a href="#studio">Studio créatif</a>
-        <a class="nav-github" href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </nav>
-    </div>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="ATELIER 7S">
+      <span class="brand-mark">7S</span>
+      <span class="brand-copy"><strong>ATELIER 7S</strong><small>OUTILS NUMÉRIQUES SPÉCIALISÉS</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#atelier">L'atelier</a>
+      <a href="#produit">IA Art Studio</a>
+      <a href="#approche">Approche</a>
+      <a class="nav-cta" href="ia-art-studio/free/">Essayer gratuitement</a>
+    </nav>
   </header>
 
-  <main id="contenu" class="page">
-    <section id="accueil" class="home-grid">
-      <div class="home-left">
-        <article class="callout callout-main">
-          <div class="callout-heading">
-            <span class="callout-icon">⛩️</span>
-            <div>
-              <p class="label accent-purple">ETORRENT-ORG · ACCUEIL</p>
-              <p class="japanese">考える · 創る · 整える</p>
-            </div>
-          </div>
-          <h1>Concevoir · décider · créer · simplifier.</h1>
-          <p class="muted">Un espace personnel pour transformer une idée en outil réellement utilisable.</p>
-        </article>
-
-        <article class="callout">
-          <div class="callout-heading">
-            <span class="callout-icon">⚡</span>
-            <p class="label accent-blue">ACCÈS RAPIDE</p>
-          </div>
-          <div class="quick-links">
-            <a href="#focus">Projets actifs <span>↗</span></a>
-            <a href="#univers">Mes univers <span>↗</span></a>
-            <a href="#studio">Studio créatif <span>↗</span></a>
-            <a href="https://github.com/Etorrent-Org" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="callout callout-soft">
-          <div class="callout-heading">
-            <span class="callout-icon">🧭</span>
-            <p class="label accent-gray">3 RÉFLEXES</p>
-          </div>
-          <ol class="reflexes">
-            <li>Partir du <strong>besoin réel</strong>.</li>
-            <li>Supprimer ce qui crée du <strong>bruit</strong>.</li>
-            <li>Ne garder que l’<strong>outil utile</strong>.</li>
-          </ol>
-        </article>
+  <main class="shell" id="top">
+    <section class="atelier-hero">
+      <div class="atelier-hero-copy">
+        <p class="eyebrow">ATELIER 7S · CRÉER DES OUTILS QUI SERVENT VRAIMENT</p>
+        <h1>Moins de plateformes.<br><em>Plus d’outils utiles.</em></h1>
+        <p class="hero-lede">ATELIER 7S transforme des workflows réellement utilisés en produits numériques simples, spécialisés et maîtrisables.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="ia-art-studio/">Découvrir IA Art Studio <span>→</span></a>
+          <a class="button button-secondary" href="ia-art-studio/free/">Tester la version Free</a>
+        </div>
       </div>
 
-      <div class="home-right">
-        <figure class="hero-card">
-          <img src="assets/hero-orb.webp" alt="Espace futuriste sombre aux lumières violettes.">
-          <div class="hero-overlay"></div>
-          <figcaption>
-            <span>Laboratoire visuel</span>
-            <span>IA · outils · création</span>
-          </figcaption>
-          <img class="signature" src="assets/signature.webp" alt="Signature Elwan">
-        </figure>
-
-        <article class="callout current-card">
-          <div class="callout-heading">
-            <span class="callout-icon">🌊</span>
-            <p class="label accent-purple">EN COURS · VISUAL AI STUDIO</p>
-          </div>
-          <div class="current-grid">
-            <div>
-              <strong>Créer · contrôler · organiser</strong>
-              <p class="muted">Un studio pour préparer les visuels, piloter les rendus et structurer les livrables.</p>
-            </div>
-            <a class="small-action" href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Ouvrir ↗</a>
-          </div>
-        </article>
+      <div class="atelier-manifesto-card" aria-label="Positionnement ATELIER 7S">
+        <div class="manifesto-top"><span class="manifesto-dot"></span><small>EN CONSTRUCTION ACTIVE</small></div>
+        <div class="manifesto-lines">
+          <div><span>01</span><strong>Un besoin précis</strong><small>Pas de suite logicielle inutile.</small></div>
+          <div><span>02</span><strong>Une version simple d’abord</strong><small>Utilisable immédiatement.</small></div>
+          <div><span>03</span><strong>L’automatisation ensuite</strong><small>Notion, n8n ou self-hosted quand ça apporte une vraie valeur.</small></div>
+        </div>
       </div>
     </section>
 
-    <section class="section callout wide-callout" aria-labelledby="pilotage-title">
-      <div class="wide-title">
-        <span class="callout-icon">🎯</span>
+    <div class="status-strip atelier-status">
+      <span class="status-chip"><i></i>Premier produit en lancement</span>
+      <span class="status-chip">Free sans compte</span>
+      <span class="status-chip">Pro self-hosted</span>
+      <span class="status-chip">Données maîtrisées</span>
+    </div>
+
+    <section class="section atelier-intro" id="atelier">
+      <div class="section-heading">
         <div>
-          <p class="label accent-green">PILOTAGE · MAINTENANT</p>
-          <h2 id="pilotage-title">Construire moins. Construire mieux.</h2>
+          <p class="section-kicker">L’ATELIER</p>
+          <h2>Des systèmes personnels transformés en produits.</h2>
+          <p class="lead">ATELIER 7S part d’usages réels : un problème, un workflow éprouvé, puis seulement le produit. L’objectif n’est pas de vendre des templates génériques, mais des outils spécialisés qui font gagner du temps ou structurent mieux un travail.</p>
         </div>
       </div>
-      <p class="wide-copy">Chaque projet doit répondre à un usage concret, rester compréhensible et pouvoir évoluer sans devenir une usine à gaz.</p>
     </section>
 
-    <section id="univers" class="section">
-      <div class="section-title">
+    <section class="section" id="produit">
+      <div class="section-heading">
         <div>
-          <p class="section-kicker accent-brown">🗺️ MES ESPACES</p>
-          <h2>4 univers</h2>
+          <p class="section-kicker">PREMIER PRODUIT</p>
+          <h2>IA Art Studio.</h2>
+          <p class="lead">Du brief créatif au prompt, puis jusqu’au suivi de projet, aux livrables et aux automatisations. Deux niveaux pour commencer simplement ou aller jusqu’au workflow complet.</p>
         </div>
-        <p class="section-note">Une organisation volontairement proche de mon espace de travail quotidien.</p>
       </div>
 
-      <div class="universe-grid">
-        <article class="universe-card">
-          <div class="universe-top">
-            <span class="universe-icon">🧪</span>
-            <p class="label accent-purple">IA & LAB · 実験</p>
-          </div>
-          <p class="universe-subtitle">Tester · comprendre · construire</p>
-          <div class="universe-links">
-            <a href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Visual AI Studio</a>
-            <span>Solution AO autonome</span>
-          </div>
-        </article>
+      <div class="atelier-product">
+        <div class="atelier-product-media">
+          <img src="assets/hero-orb.webp" alt="Univers visuel IA Art Studio" loading="eager">
+          <span class="atelier-product-badge">IA ART STUDIO · ATELIER 7S</span>
+        </div>
 
-        <article class="universe-card">
-          <div class="universe-top">
-            <span class="universe-icon">🎨</span>
-            <p class="label accent-purple">CRÉATION · 遊び</p>
-          </div>
-          <p class="universe-subtitle">Imaginer · visualiser · composer</p>
-          <div class="universe-links">
-            <a href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer">Infographic Lab</a>
-            <span>IA-Art</span>
-          </div>
-        </article>
+        <div class="atelier-product-copy">
+          <p class="card-kicker">CREATIVE WORKFLOW</p>
+          <h3>De l’idée à un processus créatif maîtrisé.</h3>
+          <p>IA Art Studio structure un brief, prépare un prompt exploitable et, dans sa version Pro, conserve les projets, contrôle les livrables et s’intègre à Notion et n8n.</p>
 
-        <article class="universe-card">
-          <div class="universe-top">
-            <span class="universe-icon">🧰</span>
-            <p class="label accent-blue">OUTILS · 道具</p>
+          <div class="edition-grid">
+            <article>
+              <span>FREE</span>
+              <strong>Créer le brief et le prompt</strong>
+              <p>100 % navigateur. Aucun compte, aucune API, aucune donnée envoyée.</p>
+              <a href="ia-art-studio/free/">Essayer maintenant →</a>
+            </article>
+            <article class="edition-pro">
+              <span>PRO · EN PRÉPARATION</span>
+              <strong>Piloter tout le workflow</strong>
+              <p>Projets, historique, fichiers, validation, export, Notion, n8n et sauvegardes dans une édition Docker self-hosted.</p>
+              <a href="ia-art-studio/">Voir l’offre →</a>
+            </article>
           </div>
-          <p class="universe-subtitle">Simplifier · retrouver · utiliser</p>
-          <div class="universe-links">
-            <a href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer">BD Desk</a>
-            <span>Life Desk</span>
-          </div>
-        </article>
-
-        <article class="universe-card">
-          <div class="universe-top">
-            <span class="universe-icon">⚙️</span>
-            <p class="label accent-gray">AUTOMATISATION · 流れ</p>
-          </div>
-          <p class="universe-subtitle">Relier · déclencher · fiabiliser</p>
-          <div class="universe-links">
-            <span>n8n</span>
-            <span>Workflows</span>
-            <span>Docker</span>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section id="focus" class="section">
-      <div class="section-title">
-        <div>
-          <p class="section-kicker accent-blue">🎯 FOCUS ACTIFS</p>
-          <h2>3 projets à suivre</h2>
-        </div>
+    <section class="section" id="approche">
+      <div class="section-heading">
+        <div><p class="section-kicker">PRINCIPES</p><h2>Trois choix assumés.</h2></div>
       </div>
-
-      <div class="focus-grid">
-        <article class="focus-card">
-          <div class="focus-head">
-            <span>🎯</span>
-            <p class="label accent-blue">VISUAL AI STUDIO</p>
-          </div>
-          <p class="focus-verb">Créer · contrôler · publier</p>
-          <p>Préparation de briefs, contrôle visuel, organisation des rendus et chaîne de production créative.</p>
-          <a href="https://github.com/Etorrent-Org/visual-ai-studio" target="_blank" rel="noreferrer">Voir le projet ↗</a>
-        </article>
-
-        <article class="focus-card">
-          <div class="focus-head">
-            <span>🌱</span>
-            <p class="label accent-green">INFOGRAPHIC LAB</p>
-          </div>
-          <p class="focus-verb">Structurer · expliquer · montrer</p>
-          <p>Transformer une idée ou un texte en représentations visuelles claires et exportables.</p>
-          <a href="https://github.com/Etorrent-Org/infographic-lab" target="_blank" rel="noreferrer">Voir le projet ↗</a>
-        </article>
-
-        <article class="focus-card">
-          <div class="focus-head">
-            <span>📚</span>
-            <p class="label accent-brown">BD DESK</p>
-          </div>
-          <p class="focus-verb">Classer · retrouver · collectionner</p>
-          <p>Une bibliothèque web personnelle pour gérer simplement BD, comics et mangas.</p>
-          <a href="https://github.com/Etorrent-Org/Bd-desk" target="_blank" rel="noreferrer">Voir le projet ↗</a>
-        </article>
+      <div class="principles">
+        <article class="signal-card"><span>01</span><h3>Simple avant puissant</h3><p>Une version gratuite doit déjà résoudre quelque chose. Les fonctions avancées viennent ensuite, pas l’inverse.</p></article>
+        <article class="signal-card"><span>02</span><h3>Automatiser seulement si utile</h3><p>Notion, n8n et Docker sont des moyens. Ils ne sont ajoutés que lorsqu’ils simplifient réellement le workflow.</p></article>
+        <article class="signal-card"><span>03</span><h3>Garder le contrôle</h3><p>Pas d’API imposée pour IA Art Studio Free. La version Pro reste self-hosted afin de conserver ses données et ses fichiers.</p></article>
       </div>
     </section>
 
-    <section id="studio" class="section">
-      <details class="fold" open>
-        <summary>
-          <span>🎨</span>
-          <strong>Studio créatif</strong>
-          <span class="summary-note">IA Art · Japon · expériences visuelles</span>
-        </summary>
-
-        <div class="studio-grid">
-          <article class="callout studio-note">
-            <div class="callout-heading">
-              <span class="callout-icon">⛩️</span>
-              <div>
-                <p class="label accent-brown">ATELIER VISUEL · 墨と光</p>
-                <p class="japanese">matière · lumière · calme · contraste</p>
-              </div>
-            </div>
-            <p>Le studio visuel sert de terrain d’essai : images, ambiances, signatures, compositions et préparation pour les réseaux sociaux.</p>
-            <div class="seal-row">
-              <span class="seal">印</span>
-              <span>Signature visuelle : エルワン</span>
-            </div>
-          </article>
-
-          <div class="studio-gallery">
-            <figure>
-              <img src="assets/gallery-tree.webp" loading="lazy" decoding="async" alt="Installation lumineuse futuriste dans un espace japonais contemporain.">
-              <figcaption>IA Art · sélection</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-cubes.webp" loading="lazy" decoding="async" alt="Cubes lumineux en suspension dans une architecture futuriste.">
-              <figcaption>Études d’ambiance</figcaption>
-            </figure>
-          </div>
-        </div>
-      </details>
-    </section>
-
-    <section class="section">
-      <details class="fold backstage">
-        <summary>
-          <span>⚙️</span>
-          <strong>Backstage</strong>
-          <span class="summary-note">architecture · outils · déploiement</span>
-        </summary>
-
-        <div class="backstage-grid">
-          <article class="callout callout-soft">
-            <div class="callout-heading">
-              <span class="callout-icon">🧭</span>
-              <p class="label accent-gray">RÈGLE D’ARCHITECTURE</p>
-            </div>
-            <p>Avant d’ajouter un nouvel outil, vérifier si une brique existante suffit. Moins de doublons, moins de maintenance, plus de maîtrise.</p>
-          </article>
-
-          <article class="callout">
-            <div class="callout-heading">
-              <span class="callout-icon">🧱</span>
-              <p class="label accent-blue">BRIQUES UTILISÉES</p>
-            </div>
-            <div class="tech-list">
-              <span>GitHub</span>
-              <span>Docker</span>
-              <span>Notion</span>
-              <span>n8n</span>
-              <span>Python</span>
-              <span>Web</span>
-              <span>OVH</span>
-            </div>
-          </article>
-        </div>
-      </details>
+    <section class="atelier-next">
+      <p class="section-kicker">ATELIER 7S</p>
+      <h2>Un premier outil aujourd’hui.<br>D’autres seulement s’ils méritent d’exister.</h2>
+      <p>Music Desk et Job Search OS sont en préparation, mais ne sont pas encore exposés publiquement. Pour l’instant, toute l’attention est portée sur IA Art Studio.</p>
+      <a class="button button-light" href="ia-art-studio/free/">Tester IA Art Studio Free →</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="page footer-inner">
-      <div>
-        <strong>Etorrent-Org</strong>
-        <span>Construire · tester · apprendre</span>
-      </div>
-      <img src="assets/signature.webp" alt="Signature Elwan">
-      <a href="#accueil">Haut de page ↑</a>
-    </div>
+  <footer class="footer shell">
+    <p>© 2026 ATELIER 7S · 7-sens.fr</p>
+    <div><a href="ia-art-studio/">IA Art Studio</a><a href="ia-art-studio/free/">Version Free</a><a href="https://github.com/Etorrent-Org">GitHub</a></div>
   </footer>
 </body>
 </html>
