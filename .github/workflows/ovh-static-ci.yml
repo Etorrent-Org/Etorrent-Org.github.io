@@ -27,7 +27,7 @@ jobs:
         run: |
           set -euo pipefail
           test -s index.html
-          test -s atelier-2026.css
+          test -s atelier-2026-v2.css
           test -s ia-art-studio/index.html
           test -s ia-art-studio/free/index.html
           test -s ia-art-studio/free/app.js
@@ -124,5 +124,5 @@ jobs:
           trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
           sleep 1
           curl --fail --silent --show-error http://127.0.0.1:8080/ | grep -q '<title>ATELIER 7S'
-          curl --fail --silent --show-error http://127.0.0.1:8080/atelier-2026.css >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8080/atelier-2026-v2.css >/dev/null
           echo "Static smoke test OK"
