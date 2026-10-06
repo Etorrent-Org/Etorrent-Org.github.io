@@ -3,128 +3,214 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#09090d">
-  <title>ATELIER 7S · Produits numériques utiles</title>
-  <meta name="description" content="ATELIER 7S conçoit des outils numériques spécialisés. Premier produit : IA Art Studio, du brief créatif au workflow complet Notion et n8n.">
-  <link rel="stylesheet" href="v2.css">
-  <link rel="stylesheet" href="atelier.css">
+  <meta name="theme-color" content="#f1eee7">
+  <title>ATELIER 7S · Outils numériques reliés</title>
+  <meta name="description" content="ATELIER 7S conçoit des outils numériques qui relient création, organisation et automatisation. Premier produit : IA Art Studio.">
+  <link rel="stylesheet" href="atelier-2026.css">
 </head>
-<body class="atelier-home">
-  <div class="site-ambient" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div class="site-grid" aria-hidden="true"></div>
-
-  <header class="topbar shell">
-    <a class="brand" href="#top" aria-label="ATELIER 7S">
-      <span class="brand-mark">7S</span>
-      <span class="brand-copy"><strong>ATELIER 7S</strong><small>OUTILS NUMÉRIQUES SPÉCIALISÉS</small></span>
+<body>
+  <header class="site-header">
+    <a class="identity" href="#top" aria-label="ATELIER 7S">
+      <span class="mark">7S</span>
+      <span class="identity-copy"><strong>ATELIER 7S</strong><small>CRÉATION · STRUCTURE · AUTOMATISATION</small></span>
     </a>
-    <nav class="nav-links" aria-label="Navigation principale">
-      <a href="#atelier">L'atelier</a>
-      <a href="#produit">IA Art Studio</a>
-      <a href="#approche">Approche</a>
-      <a class="nav-cta" href="ia-art-studio/free/">Essayer gratuitement</a>
+    <nav aria-label="Navigation principale">
+      <a href="#atelier">L’atelier</a>
+      <a href="#stack">Le système</a>
+      <a href="#ia-art">IA Art Studio</a>
+      <a class="nav-button" href="ia-art-studio/free/">Essayer la Free</a>
     </nav>
   </header>
 
-  <main class="shell" id="top">
-    <section class="atelier-hero">
-      <div class="atelier-hero-copy">
-        <p class="eyebrow">ATELIER 7S · CRÉER DES OUTILS QUI SERVENT VRAIMENT</p>
-        <h1>Moins de plateformes.<br><em>Plus d’outils utiles.</em></h1>
-        <p class="hero-lede">ATELIER 7S transforme des workflows réellement utilisés en produits numériques simples, spécialisés et maîtrisables.</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ATELIER 7S / DIGITAL WORKBENCH</p>
+        <h1>Créer.<br>Structurer.<br><span>Relier.</span></h1>
+        <p class="hero-text">Des outils numériques spécialisés qui combinent la souplesse de <strong>Notion</strong>, la logique visuelle de <strong>n8n</strong> et des interfaces pensées pour un usage réel.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="ia-art-studio/">Découvrir IA Art Studio <span>→</span></a>
-          <a class="button button-secondary" href="ia-art-studio/free/">Tester la version Free</a>
+          <a class="button button-dark" href="#ia-art">Découvrir IA Art Studio</a>
+          <a class="button button-light" href="ia-art-studio/free/">Tester gratuitement</a>
+        </div>
+        <div class="hero-meta">
+          <span>01 produit actif</span>
+          <span>Self-hosted quand utile</span>
+          <span>Pas d’API imposée</span>
         </div>
       </div>
 
-      <div class="atelier-manifesto-card" aria-label="Positionnement ATELIER 7S">
-        <div class="manifesto-top"><span class="manifesto-dot"></span><small>EN CONSTRUCTION ACTIVE</small></div>
-        <div class="manifesto-lines">
-          <div><span>01</span><strong>Un besoin précis</strong><small>Pas de suite logicielle inutile.</small></div>
-          <div><span>02</span><strong>Une version simple d’abord</strong><small>Utilisable immédiatement.</small></div>
-          <div><span>03</span><strong>L’automatisation ensuite</strong><small>Notion, n8n ou self-hosted quand ça apporte une vraie valeur.</small></div>
+      <div class="workbench" aria-label="Workflow visuel ATELIER 7S">
+        <div class="workbench-top">
+          <span class="window-dots"><i></i><i></i><i></i></span>
+          <span>atelier-7s / workflow.canvas</span>
+          <span class="live-state"><i></i>live</span>
+        </div>
+
+        <div class="canvas">
+          <svg class="flow-lines" viewBox="0 0 700 520" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M135 126 C230 126, 215 255, 310 255" />
+            <path d="M310 255 C420 255, 405 128, 505 128" />
+            <path d="M310 255 C425 255, 430 384, 535 384" />
+          </svg>
+
+          <article class="flow-node node-brief">
+            <span class="node-index">01</span>
+            <small>INPUT</small>
+            <strong>Brief créatif</strong>
+            <p>idée, format, style, contraintes</p>
+          </article>
+
+          <article class="flow-node node-notion">
+            <span class="node-index">02</span>
+            <div class="node-brand notion-brand">N</div>
+            <small>STRUCTURE</small>
+            <strong>Notion</strong>
+            <p>projets, données, suivi</p>
+          </article>
+
+          <article class="flow-node node-n8n">
+            <span class="node-index">03</span>
+            <div class="mini-flow"><i></i><i></i><i></i><b></b><b></b></div>
+            <small>ORCHESTRATION</small>
+            <strong>n8n</strong>
+            <p>flows, logique, automatisation</p>
+          </article>
+
+          <article class="flow-node node-art">
+            <span class="node-index">04</span>
+            <div class="art-swatch"></div>
+            <small>CREATION</small>
+            <strong>IA Art Studio</strong>
+            <p>prompt, livrables, validation</p>
+          </article>
+
+          <div class="canvas-note note-a">simple<br>d’abord</div>
+          <div class="canvas-note note-b">automatiser<br>si utile</div>
         </div>
       </div>
     </section>
 
-    <div class="status-strip atelier-status">
-      <span class="status-chip"><i></i>Premier produit en lancement</span>
-      <span class="status-chip">Free sans compte</span>
-      <span class="status-chip">Pro self-hosted</span>
-      <span class="status-chip">Données maîtrisées</span>
-    </div>
-
-    <section class="section atelier-intro" id="atelier">
-      <div class="section-heading">
+    <section class="atelier-section" id="atelier">
+      <div class="section-label">01 — L’ATELIER</div>
+      <div class="atelier-grid">
         <div>
-          <p class="section-kicker">L’ATELIER</p>
-          <h2>Des systèmes personnels transformés en produits.</h2>
-          <p class="lead">ATELIER 7S part d’usages réels : un problème, un workflow éprouvé, puis seulement le produit. L’objectif n’est pas de vendre des templates génériques, mais des outils spécialisés qui font gagner du temps ou structurent mieux un travail.</p>
+          <h2>Pas un catalogue.<br>Un <em>système de fabrication.</em></h2>
+        </div>
+        <div class="atelier-copy">
+          <p>ATELIER 7S part de workflows réellement utilisés. On observe ce qui fonctionne, on simplifie, puis on transforme le tout en produit autonome.</p>
+          <p>Le design reflète cette logique : <strong>des blocs pour structurer, des connexions pour automatiser, des surfaces créatives pour produire.</strong></p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="produit">
+    <section class="stack-section" id="stack">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">PREMIER PRODUIT</p>
-          <h2>IA Art Studio.</h2>
-          <p class="lead">Du brief créatif au prompt, puis jusqu’au suivi de projet, aux livrables et aux automatisations. Deux niveaux pour commencer simplement ou aller jusqu’au workflow complet.</p>
+          <p class="section-label">02 — LE SYSTÈME</p>
+          <h2>Trois univers.<br>Une seule logique.</h2>
         </div>
+        <p>Chaque couche garde son rôle. Rien n’est ajouté juste pour faire “tech”.</p>
       </div>
 
-      <div class="atelier-product">
-        <div class="atelier-product-media">
-          <img src="assets/product-covers/ia-art-studio.webp" alt="Univers visuel IA Art Studio" loading="eager">
-          <span class="atelier-product-badge">IA ART STUDIO · ATELIER 7S</span>
-        </div>
-
-        <div class="atelier-product-copy">
-          <p class="card-kicker">CREATIVE WORKFLOW</p>
-          <h3>De l’idée à un processus créatif maîtrisé.</h3>
-          <p>IA Art Studio structure un brief, prépare un prompt exploitable et, dans sa version Pro, conserve les projets, contrôle les livrables et s’intègre à Notion et n8n.</p>
-
-          <div class="edition-grid">
-            <article>
-              <span>FREE</span>
-              <strong>Créer le brief et le prompt</strong>
-              <p>100 % navigateur. Aucun compte, aucune API, aucune donnée envoyée.</p>
-              <a href="ia-art-studio/free/">Essayer maintenant →</a>
-            </article>
-            <article class="edition-pro">
-              <span>PRO · EN PRÉPARATION</span>
-              <strong>Piloter tout le workflow</strong>
-              <p>Projets, historique, fichiers, validation, export, Notion, n8n et sauvegardes dans une édition Docker self-hosted.</p>
-              <a href="ia-art-studio/">Voir l’offre →</a>
-            </article>
+      <div class="bento">
+        <article class="tile tile-notion">
+          <div class="tile-top"><span class="brand-square notion-square">N</span><span>NOTION</span></div>
+          <h3>Le cockpit.</h3>
+          <p>Données, projets, vues, documentation. Lisible et modulaire.</p>
+          <div class="notion-mock">
+            <span class="line w70"></span><span class="line w45"></span>
+            <div class="mock-columns"><i></i><i></i><i></i></div>
           </div>
+        </article>
+
+        <article class="tile tile-n8n">
+          <div class="tile-top"><span class="brand-square n8n-square">●</span><span>n8n</span></div>
+          <h3>La circulation.</h3>
+          <p>Les données passent, se transforment et déclenchent des actions visibles.</p>
+          <div class="n8n-mock">
+            <span class="n n1"></span><span class="n n2"></span><span class="n n3"></span><span class="n n4"></span>
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i>
+          </div>
+        </article>
+
+        <article class="tile tile-art" id="ia-art">
+          <div class="tile-art-copy">
+            <div class="tile-top"><span class="brand-square art-square">✦</span><span>IA ART STUDIO</span></div>
+            <h3>Le premier produit ATELIER 7S.</h3>
+            <p>Un studio pour passer d’une idée brute à un prompt exploitable, puis à un workflow complet avec projets, validation, Notion et n8n.</p>
+            <div class="product-buttons">
+              <a class="button button-dark" href="ia-art-studio/free/">Ouvrir la Free</a>
+              <a class="text-link" href="ia-art-studio/">Voir l’offre Pro →</a>
+            </div>
+          </div>
+          <div class="art-panel" aria-label="Aperçu abstrait IA Art Studio">
+            <div class="art-orb orb-a"></div>
+            <div class="art-orb orb-b"></div>
+            <div class="art-orb orb-c"></div>
+            <div class="art-gridlines"></div>
+            <div class="art-ui-card">
+              <span>PROJECT / 014</span>
+              <strong>Urban Nocturne</strong>
+              <small>4:5 · editorial · neon / graphite</small>
+            </div>
+            <span class="art-caption">brief → prompt → création → validation → publication</span>
+          </div>
+        </article>
+
+        <article class="tile tile-local">
+          <div class="tile-top"><span class="brand-square local-square">◎</span><span>SELF-HOSTED</span></div>
+          <h3>Le contrôle reste chez vous.</h3>
+          <p>Docker quand c’est pertinent, stockage local et pas de dépendance SaaS imposée.</p>
+          <div class="terminal">
+            <span>$ docker compose up -d</span>
+            <span class="terminal-ok">✓ atelier ready</span>
+          </div>
+        </article>
+
+        <article class="tile tile-rule">
+          <span class="rule-num">7S / 01</span>
+          <blockquote>“Simple avant puissant.”</blockquote>
+          <p>Une version gratuite doit déjà résoudre un vrai problème.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-focus">
+      <div class="product-focus-head">
+        <p class="section-label">03 — IA ART STUDIO</p>
+        <span class="availability"><i></i> Free disponible</span>
+      </div>
+      <div class="product-focus-grid">
+        <div>
+          <h2>De l’idée au prompt.<br>Puis beaucoup plus loin.</h2>
+          <p>La Free se concentre sur l’essentiel : structurer un brief et construire un prompt localement dans le navigateur.</p>
+        </div>
+        <div class="edition-card free-card">
+          <span>FREE / 0 €</span>
+          <h3>Brief + prompt</h3>
+          <ul><li>Sans compte</li><li>Sans API</li><li>Sans stockage serveur</li></ul>
+          <a href="ia-art-studio/free/">Essayer maintenant →</a>
+        </div>
+        <div class="edition-card pro-card">
+          <span>PRO / 49 € LANCEMENT</span>
+          <h3>Studio complet</h3>
+          <ul><li>Projets & historique</li><li>Notion + n8n</li><li>Docker self-hosted</li></ul>
+          <a href="ia-art-studio/">Découvrir la Pro →</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="approche">
-      <div class="section-heading">
-        <div><p class="section-kicker">PRINCIPES</p><h2>Trois choix assumés.</h2></div>
-      </div>
-      <div class="principles">
-        <article class="signal-card"><span>01</span><h3>Simple avant puissant</h3><p>Une version gratuite doit déjà résoudre quelque chose. Les fonctions avancées viennent ensuite, pas l’inverse.</p></article>
-        <article class="signal-card"><span>02</span><h3>Automatiser seulement si utile</h3><p>Notion, n8n et Docker sont des moyens. Ils ne sont ajoutés que lorsqu’ils simplifient réellement le workflow.</p></article>
-        <article class="signal-card"><span>03</span><h3>Garder le contrôle</h3><p>Pas d’API imposée pour IA Art Studio Free. La version Pro reste self-hosted afin de conserver ses données et ses fichiers.</p></article>
-      </div>
-    </section>
-
-    <section class="atelier-next">
-      <p class="section-kicker">ATELIER 7S</p>
-      <h2>Un premier outil aujourd’hui.<br>D’autres seulement s’ils méritent d’exister.</h2>
-      <p>Music Desk et Job Search OS sont en préparation, mais ne sont pas encore exposés publiquement. Pour l’instant, toute l’attention est portée sur IA Art Studio.</p>
-      <a class="button button-light" href="ia-art-studio/free/">Tester IA Art Studio Free →</a>
+    <section class="closing">
+      <div class="closing-label">ATELIER 7S</div>
+      <h2>Des outils qui se voient.<br><span>Des workflows qui se comprennent.</span></h2>
+      <p>Music Desk et Job Search OS viendront ensuite. Pas avant d’être assez bons pour rejoindre l’atelier.</p>
+      <a class="button button-accent" href="ia-art-studio/free/">Tester IA Art Studio Free</a>
     </section>
   </main>
 
-  <footer class="footer shell">
-    <p>© 2026 ATELIER 7S · 7-sens.fr</p>
-    <div><a href="ia-art-studio/">IA Art Studio</a><a href="ia-art-studio/free/">Version Free</a><a href="https://github.com/Etorrent-Org">GitHub</a></div>
+  <footer>
+    <div><strong>ATELIER 7S</strong><span>7-sens.fr</span></div>
+    <div><a href="ia-art-studio/">IA Art Studio</a><a href="https://github.com/Etorrent-Org">GitHub</a></div>
   </footer>
 </body>
 </html>
