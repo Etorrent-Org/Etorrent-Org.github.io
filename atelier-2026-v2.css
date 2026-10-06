@@ -97,3 +97,54 @@ footer{width:min(1400px,calc(100% - 44px));margin:auto;padding:26px 0 40px;borde
 .job-stage{height:90px;min-height:90px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px;background:linear-gradient(145deg,#dce7f7,#c5d7f0)}.job-stage>div{padding:6px;border:1px solid rgba(61,101,168,.24);border-radius:7px;background:rgba(255,255,255,.58)}.job-stage small{display:block;margin-bottom:5px;color:#4f6f9e;font:600 6px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.job-stage i{display:block;height:16px;margin-bottom:4px;border-radius:4px;background:#fff;border:1px solid rgba(61,101,168,.17)}.job-stage i.ok{background:#c9ead9;border-color:#79b896}
 .showcase-tools{min-height:58px;padding:10px 14px;display:flex;align-items:center;gap:8px;border-top:1px solid #bbb4a8;background:#dcd6cc}.tools-label{margin-right:auto;color:#77736d;font:600 7.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em}.tool-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid rgba(23,24,23,.18);border-radius:9px;background:#f6f3ec;font-size:9px;font-weight:700}.tool-chip b{width:19px;height:19px;display:grid;place-items:center;border-radius:5px;border:1px solid currentColor;font:700 9px Georgia,serif}.n8n-chip{color:#c9512e}.docker-chip{color:#276a5a}
 @media(max-width:760px){.showcase-grid{grid-template-columns:1fr;grid-template-rows:auto}.showcase-art{grid-row:auto;min-height:380px}.showcase-tools{flex-wrap:wrap}.tools-label{width:100%;margin:0 0 2px}.product-showcase{box-shadow:7px 7px 0 #cbc3b4}}
+
+
+/* Visuels produits générés — 2026-10-06 */
+.showcase-image,
+.family-product-image,
+.system-visual{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.showcase-image,
+.family-product-image{
+  transition:transform .35s ease, filter .35s ease;
+}
+.showcase-card:hover .showcase-image,
+.family-card:hover .family-product-image{
+  transform:scale(1.018);
+}
+.art-stage,
+.music-stage,
+.family-visual{
+  overflow:hidden;
+}
+.art-stage .showcase-image{
+  object-position:center;
+}
+.music-stage .showcase-image{
+  object-position:center;
+}
+.n8n-visual{
+  height:126px;
+  margin-top:24px;
+  border:1px solid rgba(221,90,49,.22);
+  border-radius:12px;
+  object-position:center;
+  background:#fff8f4;
+}
+.tile-n8n{
+  display:flex;
+  flex-direction:column;
+}
+.tile-n8n .n8n-visual{
+  margin-top:auto;
+}
+@media(max-width:760px){
+  .n8n-visual{height:150px}
+}
+@media(prefers-reduced-motion:reduce){
+  .showcase-image,.family-product-image{transition:none}
+}
