@@ -1,0 +1,70 @@
+name: Deploy ATELIER 7S to OVH
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "atelier.css"
+      - "v2.css"
+      - "v2-adjustments.css"
+      - "assets/**"
+      - "ia-art-studio/**"
+      - "robots.txt"
+      - "sitemap.xml"
+      - ".github/workflows/deploy-ovh.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      OVH_FTP_SERVER: ${{ secrets.OVH_FTP_SERVER }}
+      OVH_FTP_USERNAME: ${{ secrets.OVH_FTP_USERNAME }}
+      OVH_FTP_PASSWORD: ${{ secrets.OVH_FTP_PASSWORD }}
+      OVH_FTP_TARGET: ${{ secrets.OVH_FTP_TARGET }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate public site
+        run: |
+          test -f index.html
+          test -f atelier.css
+          test -f ia-art-studio/index.html
+          test -f ia-art-studio/free/index.html
+          test -f ia-art-studio/free/app.js
+          test -f ia-art-studio/free/styles.css
+
+      - name: Deployment not configured
+        if: ${{ env.OVH_FTP_SERVER == '' || env.OVH_FTP_USERNAME == '' || env.OVH_FTP_PASSWORD == '' || env.OVH_FTP_TARGET == '' }}
+        run: echo "OVH FTP secrets are not configured. Site validation passed; deployment skipped."
+
+      - name: Deploy to OVH
+        if: ${{ env.OVH_FTP_SERVER != '' && env.OVH_FTP_USERNAME != '' && env.OVH_FTP_PASSWORD != '' && env.OVH_FTP_TARGET != '' }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.OVH_FTP_SERVER }}
+          username: ${{ secrets.OVH_FTP_USERNAME }}
+          password: ${{ secrets.OVH_FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ${{ secrets.OVH_FTP_TARGET }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            **/README.md
+            **/ARCHITECTURE.md
+            **/CHANGELOG.md
+            **/COMMIT_CONVENTION.md
+            **/CONTRIBUTING.md
+            **/PUBLICATION.md
+            **/SECURITY.md
+            ai-process-studio/**
+            h9-factory/**
+            visual-ai-studio/**
+            infographic-lab/**

@@ -1,41 +1,38 @@
-# Etorrent-Org — portail GitHub Pages
+# ATELIER 7S — site public
 
-Portail public de l’organisation **Etorrent-Org** : <https://etorrent-org.github.io/>.
+Source du site public **7-sens.fr**.
 
-## Produits publics actifs
+## Positionnement
 
-- Visual AI Studio : <https://etorrent-org.github.io/visual-ai-studio/> ;
-- Infographic Lab : <https://etorrent-org.github.io/infographic-lab/>.
+ATELIER 7S transforme des workflows réellement utilisés en produits numériques spécialisés.
 
-## Studio personnel
+### Produit actuellement exposé
 
-IA-Art est présenté comme environnement personnel de création/publication, centré sur Instagram et maintenu avec Visual AI Studio, Studio Visuel et le Skill IA-Art.
+- **IA Art Studio**
+  - page produit : `/ia-art-studio/`
+  - version Free : `/ia-art-studio/free/`
+  - version Pro : en préparation, self-hosted Docker
 
-L’ancien site **IA-Art Automation / Pinterest** reste publié depuis `Etorrent-Org/ia-art-automation` uniquement comme archive historique.
-
-## Archives conservées
-
-- AI Process Studio : <https://etorrent-org.github.io/ai-process-studio/> — projet retiré le 24 août 2026, page conservée pour la baseline historique 1.1.2 ;
-- H9 Factory : ancienne page H9 conservée pour traçabilité, non promue comme produit actif.
-
-Les archives ne figurent plus dans le sitemap actif.
-
-## Structure
-
-- `index.html` : portail principal ;
-- `visual-ai-studio/` : page produit Visual AI Studio ;
-- `infographic-lab/` : page produit Infographic Lab, Stable 1.0.0 + Augmented V2 ;
-- `ai-process-studio/` : archive AI Process Studio et anciennes conditions Professional ;
-- `h9-factory/` : archive H9 ;
-- `assets/` : visuels locaux ;
-- `styles.css`, `v2.css`, `v2-adjustments.css` : styles ;
-- `sitemap.xml` et `robots.txt` : indexation ;
-- `.nojekyll` : publication statique sans traitement Jekyll.
+Music Desk et Job Search OS restent hors de la vitrine publique tant qu’ils ne sont pas prêts à être commercialisés.
 
 ## Publication
 
-Le dépôt public `Etorrent-Org/Etorrent-Org.github.io` est publié automatiquement par GitHub Pages depuis `main`.
+Le site reste compatible GitHub Pages, mais la cible commerciale est `https://7-sens.fr/` sur OVH.
 
-Après toute modification d'une page active, vérifier les liens, images, métadonnées et la date `lastmod` correspondante dans `sitemap.xml`.
+Le workflow `.github/workflows/deploy-ovh.yml` publie automatiquement la vitrine après fusion sur `main` lorsque les secrets suivants sont configurés :
 
-Voir [`PUBLICATION.md`](PUBLICATION.md) pour la procédure de maintenance et [`ARCHITECTURE.md`](ARCHITECTURE.md) pour la structure du portail.
+- `OVH_FTP_SERVER`
+- `OVH_FTP_USERNAME`
+- `OVH_FTP_PASSWORD`
+- `OVH_FTP_TARGET`
+
+## Structure active
+
+- `index.html` : accueil ATELIER 7S ;
+- `atelier.css` : identité spécifique de la vitrine ;
+- `ia-art-studio/index.html` : page produit ;
+- `ia-art-studio/free/` : application statique Free ;
+- `assets/product-covers/` : visuels produits ;
+- `sitemap.xml` : URLs publiques 7-sens.fr.
+
+Les anciennes pages de démonstration restent dans le dépôt pour historique mais ne sont plus promues depuis la home.
