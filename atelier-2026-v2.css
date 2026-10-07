@@ -305,3 +305,84 @@ body{
     transition:none;
   }
 }
+
+
+/* Showcase alignment — 2026-10-07
+   Géométrie stricte : la grande carte = les deux cartes de droite + le gap.
+   Le visuel IA Art est ancré par le bas pour supprimer proprement son bandeau source. */
+.showcase-grid{
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+}
+.showcase-card{
+  min-height:0;
+  height:100%;
+}
+.showcase-art{
+  min-height:0;
+  height:100%;
+}
+.showcase-card-head{
+  flex:0 0 39px;
+}
+.showcase-card-copy{
+  flex:0 0 auto;
+}
+.art-stage{
+  position:relative;
+  flex:1 1 auto;
+  min-height:0;
+}
+.art-stage .showcase-image{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:128.2%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center bottom;
+  transform:none;
+  transform-origin:center bottom;
+}
+.showcase-card:hover .art-stage .showcase-image{
+  transform:scale(1.012);
+}
+
+/* Même cadrage déterministe pour la tuile IA Art de la section Produits. */
+.family-art .family-visual{
+  position:relative;
+}
+.family-art .family-product-image{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:128.2%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center bottom;
+  transform:none;
+  transform-origin:center bottom;
+}
+.family-card:hover .family-art .family-product-image{
+  transform:scale(1.012);
+}
+
+@media(max-width:760px){
+  .showcase-grid{
+    grid-template-rows:auto;
+  }
+  .showcase-card{
+    height:auto;
+  }
+  .showcase-art{
+    min-height:380px;
+  }
+  .art-stage .showcase-image{
+    height:128.2%;
+  }
+  .family-art .family-product-image{
+    height:128.2%;
+  }
+}
