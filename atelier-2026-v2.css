@@ -77,3 +77,231 @@ footer{width:min(1400px,calc(100% - 44px));margin:auto;padding:26px 0 40px;borde
 .job-glyph{display:flex;gap:3px;width:44px;height:24px;margin-bottom:8px}.job-glyph i{flex:1;border:1px solid #3d64a8;border-radius:3px;background:#fff}.job-glyph i:nth-child(2){background:#ccebdc}
 @media(max-width:1050px){.product-family{grid-template-columns:1fr}.family-card{min-height:0}.family-visual{height:250px}}
 @media(max-width:760px){.ecosystem-canvas{height:560px}.notion-tool{left:15px;top:35px}.n8n-tool{left:15px;top:360px}.atelier-core{left:48%;top:50%;transform:translate(-50%,-50%) scale(.82)}.product-node{right:-12px;transform:scale(.78);transform-origin:top right}.art-node{top:28px}.music-node{top:205px}.job-node{bottom:25px}.ecosystem-lines{opacity:.55}}
+
+
+/* Hero V3 — produit d'abord, outils ensuite */
+.product-showcase{border:1.5px solid var(--ink);border-radius:20px;background:#e6e1d7;box-shadow:14px 14px 0 #cbc3b4;overflow:hidden}
+.showcase-topbar{height:43px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 15px;border-bottom:1px solid #bbb4a8;background:#dcd6cc;color:#67655f;font:500 9px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.showcase-topbar>span:nth-child(2){justify-self:center}.showcase-status{justify-self:end;display:flex;align-items:center;gap:7px}.showcase-status i{width:7px;height:7px;border-radius:50%;background:#2faa70}
+.showcase-grid{display:grid;grid-template-columns:1.35fr .85fr;grid-template-rows:1fr 1fr;gap:12px;padding:14px;background:linear-gradient(180deg,#ebe7df,#e2ddd3)}
+.showcase-card{position:relative;display:flex;flex-direction:column;min-width:0;border:1.5px solid var(--ink);border-radius:15px;overflow:hidden;background:var(--white);box-shadow:5px 5px 0 rgba(23,24,23,.09)}
+.showcase-art{grid-row:1/3;min-height:430px;border-color:#5d47db;background:#f2edff}.showcase-music{border-color:#177d70;background:#eef9f5}.showcase-job{border-color:#3e65a8;background:#eef3fb}
+.showcase-card-head{height:39px;padding:0 13px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(23,24,23,.12)}
+.showcase-index{font:700 8px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.showcase-state{padding:5px 7px;border-radius:999px;background:rgba(23,24,23,.07);color:#77756f;font:600 7px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-transform:uppercase}.showcase-state.live{background:#c9f0df;color:#176748}
+.art-stage{position:relative;flex:1;min-height:270px;overflow:hidden;background:radial-gradient(circle at 22% 22%,#8467ff 0 9%,transparent 30%),radial-gradient(circle at 78% 30%,#ff7651 0 8%,transparent 28%),linear-gradient(145deg,#151021,#33204f 58%,#151522)}
+.art-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:31px 31px}
+.art-glow{position:absolute;border-radius:50%;filter:blur(3px);mix-blend-mode:screen}.art-glow-a{width:190px;height:190px;left:6%;bottom:-35px;background:radial-gradient(circle at 40% 35%,#8ff0d4,#26735f 42%,transparent 70%)}.art-glow-b{width:130px;height:130px;right:5%;bottom:10px;background:radial-gradient(circle at 35% 30%,#ffc9f9,#9a66ff 44%,transparent 72%)}
+.art-window{position:absolute;left:18px;top:18px;width:220px;padding:15px;border:1px solid rgba(255,255,255,.24);border-radius:11px;background:rgba(15,10,28,.68);backdrop-filter:blur(12px);color:#fff}.art-window span,.art-window small{display:block;color:#d7cfef;font:500 8px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.art-window strong{display:block;margin:9px 0 6px;font-size:17px}
+.showcase-card-copy{padding:15px 16px 17px}.showcase-card-copy>span{font:600 7.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.09em;color:#77736d}.showcase-card-copy h3{margin:7px 0 5px;font-size:23px;letter-spacing:-.04em}.showcase-card-copy p{margin:0;color:#66655f;font-size:11px;line-height:1.5}
+.music-stage{position:relative;height:88px;min-height:88px;background:linear-gradient(145deg,#d5eee5,#a6d8ca);overflow:hidden}.mini-record{position:absolute;width:82px;height:82px;left:16px;top:3px;border-radius:50%;background:repeating-radial-gradient(circle,#173d37 0 2px,#244e46 3px 5px)}.mini-record i{position:absolute;inset:37%;border-radius:50%;background:#f2b960;border:4px solid #e6d9b0}.mini-wave{position:absolute;right:15px;bottom:14px;height:42px;display:flex;align-items:end;gap:4px}.mini-wave i{width:5px;border-radius:99px;background:#177d70}.mini-wave i:nth-child(1){height:13px}.mini-wave i:nth-child(2){height:31px}.mini-wave i:nth-child(3){height:22px}.mini-wave i:nth-child(4){height:39px}.mini-wave i:nth-child(5){height:26px}.mini-wave i:nth-child(6){height:16px}
+.job-stage{height:90px;min-height:90px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px;background:linear-gradient(145deg,#dce7f7,#c5d7f0)}.job-stage>div{padding:6px;border:1px solid rgba(61,101,168,.24);border-radius:7px;background:rgba(255,255,255,.58)}.job-stage small{display:block;margin-bottom:5px;color:#4f6f9e;font:600 6px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.job-stage i{display:block;height:16px;margin-bottom:4px;border-radius:4px;background:#fff;border:1px solid rgba(61,101,168,.17)}.job-stage i.ok{background:#c9ead9;border-color:#79b896}
+.showcase-tools{min-height:58px;padding:10px 14px;display:flex;align-items:center;gap:8px;border-top:1px solid #bbb4a8;background:#dcd6cc}.tools-label{margin-right:auto;color:#77736d;font:600 7.5px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.1em}.tool-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid rgba(23,24,23,.18);border-radius:9px;background:#f6f3ec;font-size:9px;font-weight:700}.tool-chip b{width:19px;height:19px;display:grid;place-items:center;border-radius:5px;border:1px solid currentColor;font:700 9px Georgia,serif}.n8n-chip{color:#c9512e}.docker-chip{color:#276a5a}
+@media(max-width:760px){.showcase-grid{grid-template-columns:1fr;grid-template-rows:auto}.showcase-art{grid-row:auto;min-height:380px}.showcase-tools{flex-wrap:wrap}.tools-label{width:100%;margin:0 0 2px}.product-showcase{box-shadow:7px 7px 0 #cbc3b4}}
+
+
+/* Visuels produits générés — 2026-10-06 */
+.showcase-image,
+.family-product-image,
+.system-visual{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.showcase-image,
+.family-product-image{
+  transition:transform .35s ease, filter .35s ease;
+}
+.showcase-card:hover .showcase-image,
+.family-card:hover .family-product-image{
+  transform:scale(1.018);
+}
+.art-stage,
+.music-stage,
+.family-visual{
+  overflow:hidden;
+}
+.art-stage .showcase-image{
+  object-position:center;
+}
+.music-stage .showcase-image{
+  object-position:center;
+}
+.n8n-visual{
+  height:126px;
+  margin-top:24px;
+  border:1px solid rgba(221,90,49,.22);
+  border-radius:12px;
+  object-position:center;
+  background:#fff8f4;
+}
+.tile-n8n{
+  display:flex;
+  flex-direction:column;
+}
+.tile-n8n .n8n-visual{
+  margin-top:auto;
+}
+@media(max-width:760px){
+  .n8n-visual{height:150px}
+}
+@media(prefers-reduced-motion:reduce){
+  .showcase-image,.family-product-image{transition:none}
+}
+
+
+/* Visual polish — 2026-10-07
+   Recadre les visuels générés pour éviter les bandeaux/titres dupliqués
+   et allège la typographie de la vitrine. */
+body{
+  font-family:Manrope,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.identity-copy strong,
+.site-header nav a,
+.button,
+.text-link,
+.showcase-card-copy h3,
+.family-copy h3,
+.tile h3,
+.edition-card h3,
+.atelier-grid h2,
+.section-heading h2,
+.product-focus h2,
+.closing h2{
+  font-weight:600;
+}
+.hero h1{
+  font-weight:600;
+  letter-spacing:-.065em;
+}
+.hero-text,
+.atelier-copy p,
+.section-heading>p,
+.tile p,
+.showcase-card-copy p,
+.family-copy p,
+.product-focus-grid>div:first-child p,
+.closing p{
+  font-weight:400;
+}
+.eyebrow,
+.section-label,
+.hero-meta,
+.showcase-card-copy>span,
+.family-kicker,
+.tools-label,
+.tile-top{
+  font-weight:500;
+}
+.button{font-weight:600}
+.text-link{font-weight:500}
+
+/* Hero produit : conserver le bandeau HTML et masquer le bandeau intégré dans l'image. */
+.art-stage,
+.music-stage{
+  overflow:hidden;
+}
+.art-stage .showcase-image{
+  width:100%;
+  height:calc(100% + 24%);
+  max-width:none;
+  object-fit:cover;
+  object-position:center 32%;
+  transform:translateY(-17%);
+}
+.music-stage .showcase-image{
+  width:100%;
+  height:150%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center 46%;
+  transform:translateY(-22%);
+}
+.showcase-card:hover .art-stage .showcase-image,
+.showcase-card:hover .music-stage .showcase-image{
+  transform:translateY(-17%) scale(1.012);
+}
+.showcase-card:hover .music-stage .showcase-image{
+  transform:translateY(-22%) scale(1.012);
+}
+
+/* Tuiles produits : même principe, image sans son bandeau intégré. */
+.family-visual{
+  height:250px;
+}
+.family-product-image{
+  width:100%;
+  height:145%;
+  max-width:none;
+  object-fit:cover;
+}
+.family-art .family-product-image{
+  object-position:center 35%;
+  transform:translateY(-18%);
+}
+.family-music .family-product-image{
+  object-position:center 44%;
+  transform:translateY(-20%);
+}
+.family-card:hover .family-art .family-product-image{
+  transform:translateY(-18%) scale(1.012);
+}
+.family-card:hover .family-music .family-product-image{
+  transform:translateY(-20%) scale(1.012);
+}
+
+/* n8n : le titre et le descriptif restent en HTML ; on ne montre que l'illustration du workflow. */
+.n8n-visual{
+  height:122px;
+  margin-top:20px;
+  object-fit:cover;
+  object-position:center 82%;
+  transform:scale(1.14);
+  transform-origin:center 78%;
+  border-radius:12px;
+}
+.tile-n8n{
+  padding-bottom:18px;
+}
+
+/* Un peu plus d'air et moins de masse visuelle dans les cartes. */
+.showcase-card-copy h3{font-size:22px;letter-spacing:-.025em}
+.family-copy h3{font-size:27px;letter-spacing:-.025em}
+.family-copy{padding:21px 22px 24px}
+.tile h3{font-size:26px;letter-spacing:-.025em}
+.atelier-grid h2,
+.section-heading h2,
+.product-focus h2,
+.closing h2{
+  letter-spacing:-.045em;
+}
+
+@media(max-width:760px){
+  .art-stage .showcase-image{
+    height:135%;
+    object-position:center 34%;
+    transform:translateY(-14%);
+  }
+  .music-stage .showcase-image{
+    height:140%;
+    object-position:center 46%;
+    transform:translateY(-18%);
+  }
+  .family-visual{height:225px}
+  .family-art .family-product-image{transform:translateY(-15%)}
+  .family-music .family-product-image{transform:translateY(-17%)}
+  .n8n-visual{
+    height:135px;
+    transform:scale(1.12);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .art-stage .showcase-image,
+  .music-stage .showcase-image,
+  .family-product-image{
+    transition:none;
+  }
+}
