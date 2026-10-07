@@ -39,68 +39,67 @@
         </div>
       </div>
 
-      <div class="workbench" aria-label="Écosystème ATELIER 7S">
-        <div class="workbench-top">
+      <div class="product-showcase" aria-label="Les produits ATELIER 7S">
+        <div class="showcase-topbar">
           <span class="window-dots"><i></i><i></i><i></i></span>
-          <span>atelier-7s / ecosystem.canvas</span>
-          <span class="live-state"><i></i>live</span>
+          <span>atelier-7s / product.shelf</span>
+          <span class="showcase-status"><i></i>01 live · 02 building</span>
         </div>
 
-        <div class="canvas ecosystem-canvas">
-          <svg class="flow-lines ecosystem-lines" viewBox="0 0 700 520" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M128 120 C220 120, 220 245, 318 245" />
-            <path d="M128 395 C220 395, 215 276, 318 276" />
-            <path d="M386 250 C470 250, 455 105, 535 105" />
-            <path d="M386 260 C480 260, 470 255, 555 255" />
-            <path d="M386 270 C475 270, 470 410, 535 410" />
-          </svg>
-
-          <article class="flow-node node-notion ecosystem-tool notion-tool">
-            <div class="node-brand notion-brand">N</div>
-            <small>STRUCTURE</small>
-            <strong>Notion</strong>
-            <p>données, vues, documentation</p>
+        <div class="showcase-grid">
+          <article class="showcase-card showcase-art">
+            <div class="showcase-card-head">
+              <span class="showcase-index">01</span>
+              <span class="showcase-state live">disponible</span>
+            </div>
+            <div class="art-stage">
+              <img class="showcase-image" src="assets/atelier7s/ia-art-studio.webp" alt="IA Art Studio — interface de création visuelle">
+            </div>
+            <div class="showcase-card-copy">
+              <span>CREATIVE WORKFLOW</span>
+              <h3>IA Art Studio</h3>
+              <p>Transformer une idée en workflow créatif structuré.</p>
+            </div>
           </article>
 
-          <article class="flow-node node-n8n ecosystem-tool n8n-tool">
-            <div class="mini-flow"><i></i><i></i><i></i><b></b><b></b></div>
-            <small>ORCHESTRATION</small>
-            <strong>n8n</strong>
-            <p>flows, logique, automatisation</p>
+          <article class="showcase-card showcase-music">
+            <div class="showcase-card-head">
+              <span class="showcase-index">02</span>
+              <span class="showcase-state">préparation</span>
+            </div>
+            <div class="music-stage">
+              <img class="showcase-image" src="assets/atelier7s/music-desk.webp" alt="Music Desk — suivi artistes, sorties et concerts">
+            </div>
+            <div class="showcase-card-copy">
+              <span>MUSIC INTELLIGENCE</span>
+              <h3>Music Desk</h3>
+              <p>Artistes, sorties, écoute et concerts.</p>
+            </div>
           </article>
 
-          <article class="atelier-core">
-            <span>7S</span>
-            <strong>ATELIER</strong>
-            <small>concevoir · relier · simplifier</small>
+          <article class="showcase-card showcase-job">
+            <div class="showcase-card-head">
+              <span class="showcase-index">03</span>
+              <span class="showcase-state">préparation</span>
+            </div>
+            <div class="job-stage">
+              <div><small>QUALIFIER</small><i></i><i></i></div>
+              <div><small>DÉCIDER</small><i class="ok"></i><i></i></div>
+              <div><small>SUIVRE</small><i></i><i class="ok"></i></div>
+            </div>
+            <div class="showcase-card-copy">
+              <span>CAREER DECISION</span>
+              <h3>Job Search OS</h3>
+              <p>Qualifier, décider, candidater, relancer.</p>
+            </div>
           </article>
+        </div>
 
-          <article class="flow-node product-node art-node">
-            <span class="node-status active">disponible</span>
-            <div class="art-swatch"></div>
-            <small>CREATION</small>
-            <strong>IA Art Studio</strong>
-            <p>brief, prompt, livrables</p>
-          </article>
-
-          <article class="flow-node product-node music-node">
-            <span class="node-status soon">préparation</span>
-            <div class="music-glyph"><i></i><i></i><i></i><i></i></div>
-            <small>MUSIC</small>
-            <strong>Music Desk</strong>
-            <p>artistes, sorties, concerts</p>
-          </article>
-
-          <article class="flow-node product-node job-node">
-            <span class="node-status soon">préparation</span>
-            <div class="job-glyph"><i></i><i></i><i></i></div>
-            <small>CAREER</small>
-            <strong>Job Search OS</strong>
-            <p>qualifier, décider, relancer</p>
-          </article>
-
-          <div class="canvas-note note-a">un besoin<br>précis</div>
-          <div class="canvas-note note-b">un système<br>réutilisable</div>
+        <div class="showcase-tools">
+          <span class="tools-label">OUTILS DE L’ATELIER</span>
+          <span class="tool-chip notion-chip"><b>N</b> Notion</span>
+          <span class="tool-chip n8n-chip"><b>●</b> n8n</span>
+          <span class="tool-chip docker-chip"><b>◎</b> Self-hosted</span>
         </div>
       </div>
     </section>
@@ -142,10 +141,7 @@
           <div class="tile-top"><span class="brand-square n8n-square">●</span><span>n8n</span></div>
           <h3>La circulation.</h3>
           <p>Les données passent, se transforment et déclenchent des actions visibles.</p>
-          <div class="n8n-mock">
-            <span class="n n1"></span><span class="n n2"></span><span class="n n3"></span><span class="n n4"></span>
-            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i>
-          </div>
+          <img class="system-visual n8n-visual" src="assets/atelier7s/n8n-workflow.webp" alt="n8n — orchestration visuelle des automatisations">
         </article>
 
         <article class="tile tile-local">
@@ -176,14 +172,7 @@
             <span class="family-status active">Free disponible</span>
           </div>
           <div class="family-visual art-family-visual">
-            <div class="art-orb orb-a"></div>
-            <div class="art-orb orb-b"></div>
-            <div class="art-gridlines"></div>
-            <div class="mini-ui">
-              <span>PROJECT / 014</span>
-              <strong>Urban Nocturne</strong>
-              <small>brief → prompt → création</small>
-            </div>
+            <img class="family-product-image" src="assets/atelier7s/ia-art-studio.webp" alt="Aperçu IA Art Studio">
           </div>
           <div class="family-copy">
             <span class="family-kicker">CREATION · NOTION · N8N · DOCKER</span>
@@ -202,10 +191,7 @@
             <span class="family-status soon">En préparation</span>
           </div>
           <div class="family-visual music-family-visual">
-            <div class="record record-a"><i></i></div>
-            <div class="record record-b"><i></i></div>
-            <div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="now-playing">following → releases → live</span>
+            <img class="family-product-image" src="assets/atelier7s/music-desk.webp" alt="Aperçu Music Desk">
           </div>
           <div class="family-copy">
             <span class="family-kicker">MUSIC · NOTION · SPOTIFY · N8N</span>
