@@ -209,8 +209,8 @@ body{
   height:calc(100% + 24%);
   max-width:none;
   object-fit:cover;
-  object-position:center 32%;
-  transform:translateY(-17%);
+  object-position:center 34%;
+  transform:translateY(-22%);
 }
 .music-stage .showcase-image{
   width:100%;
@@ -222,7 +222,7 @@ body{
 }
 .showcase-card:hover .art-stage .showcase-image,
 .showcase-card:hover .music-stage .showcase-image{
-  transform:translateY(-17%) scale(1.012);
+  transform:translateY(-22%) scale(1.012);
 }
 .showcase-card:hover .music-stage .showcase-image{
   transform:translateY(-22%) scale(1.012);
@@ -239,15 +239,15 @@ body{
   object-fit:cover;
 }
 .family-art .family-product-image{
-  object-position:center 35%;
-  transform:translateY(-18%);
+  object-position:center 37%;
+  transform:translateY(-22%);
 }
 .family-music .family-product-image{
   object-position:center 44%;
   transform:translateY(-20%);
 }
 .family-card:hover .family-art .family-product-image{
-  transform:translateY(-18%) scale(1.012);
+  transform:translateY(-22%) scale(1.012);
 }
 .family-card:hover .family-music .family-product-image{
   transform:translateY(-20%) scale(1.012);
@@ -282,8 +282,8 @@ body{
 @media(max-width:760px){
   .art-stage .showcase-image{
     height:135%;
-    object-position:center 34%;
-    transform:translateY(-14%);
+    object-position:center 36%;
+    transform:translateY(-20%);
   }
   .music-stage .showcase-image{
     height:140%;
@@ -291,7 +291,7 @@ body{
     transform:translateY(-18%);
   }
   .family-visual{height:225px}
-  .family-art .family-product-image{transform:translateY(-15%)}
+  .family-art .family-product-image{transform:translateY(-20%)}
   .family-music .family-product-image{transform:translateY(-17%)}
   .n8n-visual{
     height:135px;
