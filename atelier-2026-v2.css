@@ -148,3 +148,160 @@ footer{width:min(1400px,calc(100% - 44px));margin:auto;padding:26px 0 40px;borde
 @media(prefers-reduced-motion:reduce){
   .showcase-image,.family-product-image{transition:none}
 }
+
+
+/* Visual polish — 2026-10-07
+   Recadre les visuels générés pour éviter les bandeaux/titres dupliqués
+   et allège la typographie de la vitrine. */
+body{
+  font-family:Manrope,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.identity-copy strong,
+.site-header nav a,
+.button,
+.text-link,
+.showcase-card-copy h3,
+.family-copy h3,
+.tile h3,
+.edition-card h3,
+.atelier-grid h2,
+.section-heading h2,
+.product-focus h2,
+.closing h2{
+  font-weight:600;
+}
+.hero h1{
+  font-weight:600;
+  letter-spacing:-.065em;
+}
+.hero-text,
+.atelier-copy p,
+.section-heading>p,
+.tile p,
+.showcase-card-copy p,
+.family-copy p,
+.product-focus-grid>div:first-child p,
+.closing p{
+  font-weight:400;
+}
+.eyebrow,
+.section-label,
+.hero-meta,
+.showcase-card-copy>span,
+.family-kicker,
+.tools-label,
+.tile-top{
+  font-weight:500;
+}
+.button{font-weight:600}
+.text-link{font-weight:500}
+
+/* Hero produit : conserver le bandeau HTML et masquer le bandeau intégré dans l'image. */
+.art-stage,
+.music-stage{
+  overflow:hidden;
+}
+.art-stage .showcase-image{
+  width:100%;
+  height:calc(100% + 24%);
+  max-width:none;
+  object-fit:cover;
+  object-position:center 32%;
+  transform:translateY(-17%);
+}
+.music-stage .showcase-image{
+  width:100%;
+  height:150%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center 46%;
+  transform:translateY(-22%);
+}
+.showcase-card:hover .art-stage .showcase-image,
+.showcase-card:hover .music-stage .showcase-image{
+  transform:translateY(-17%) scale(1.012);
+}
+.showcase-card:hover .music-stage .showcase-image{
+  transform:translateY(-22%) scale(1.012);
+}
+
+/* Tuiles produits : même principe, image sans son bandeau intégré. */
+.family-visual{
+  height:250px;
+}
+.family-product-image{
+  width:100%;
+  height:145%;
+  max-width:none;
+  object-fit:cover;
+}
+.family-art .family-product-image{
+  object-position:center 35%;
+  transform:translateY(-18%);
+}
+.family-music .family-product-image{
+  object-position:center 44%;
+  transform:translateY(-20%);
+}
+.family-card:hover .family-art .family-product-image{
+  transform:translateY(-18%) scale(1.012);
+}
+.family-card:hover .family-music .family-product-image{
+  transform:translateY(-20%) scale(1.012);
+}
+
+/* n8n : le titre et le descriptif restent en HTML ; on ne montre que l'illustration du workflow. */
+.n8n-visual{
+  height:122px;
+  margin-top:20px;
+  object-fit:cover;
+  object-position:center 82%;
+  transform:scale(1.14);
+  transform-origin:center 78%;
+  border-radius:12px;
+}
+.tile-n8n{
+  padding-bottom:18px;
+}
+
+/* Un peu plus d'air et moins de masse visuelle dans les cartes. */
+.showcase-card-copy h3{font-size:22px;letter-spacing:-.025em}
+.family-copy h3{font-size:27px;letter-spacing:-.025em}
+.family-copy{padding:21px 22px 24px}
+.tile h3{font-size:26px;letter-spacing:-.025em}
+.atelier-grid h2,
+.section-heading h2,
+.product-focus h2,
+.closing h2{
+  letter-spacing:-.045em;
+}
+
+@media(max-width:760px){
+  .art-stage .showcase-image{
+    height:135%;
+    object-position:center 34%;
+    transform:translateY(-14%);
+  }
+  .music-stage .showcase-image{
+    height:140%;
+    object-position:center 46%;
+    transform:translateY(-18%);
+  }
+  .family-visual{height:225px}
+  .family-art .family-product-image{transform:translateY(-15%)}
+  .family-music .family-product-image{transform:translateY(-17%)}
+  .n8n-visual{
+    height:135px;
+    transform:scale(1.12);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .art-stage .showcase-image,
+  .music-stage .showcase-image,
+  .family-product-image{
+    transition:none;
+  }
+}
