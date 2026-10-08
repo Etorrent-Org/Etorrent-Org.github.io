@@ -74,3 +74,11 @@ jobs:
             infographic-lab/**
             ia-art/**
             preview-v3/**
+
+
+      - name: Post-deploy HTTP diagnostics
+        run: |
+          for url in             "https://7-sens.fr/"             "https://7-sens.fr/cv/"             "https://7-sens.fr/cv/index.html"             "https://etorrent-org.github.io/cv/"; do
+            code=$(curl -L -sS -o /dev/null -w "%{http_code}" "$url" || true)
+            echo "$code $url"
+          done
