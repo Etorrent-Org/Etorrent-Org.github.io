@@ -3,266 +3,181 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f1eee7">
-  <title>ATELIER 7S · Trois produits, un même atelier numérique</title>
-  <meta name="description" content="ATELIER 7S conçoit trois produits numériques spécialisés : IA Art Studio, Music Desk et Job Search OS, autour de Notion, n8n et du self-hosted.">
-  <link rel="stylesheet" href="atelier-2026-v2.css?v=20261007-0840">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>ATELIER 7S · Des outils numériques simples pour des usages réels</title>
+  <meta name="description" content="ATELIER 7S transforme des usages réels en outils numériques simples, visuels et autonomes. IA Art Studio est disponible, Music Desk arrive ensuite.">
+  <meta property="og:title" content="ATELIER 7S">
+  <meta property="og:description" content="Des outils numériques simples pour des usages réels.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://7-sens.fr/">
+  <link rel="canonical" href="https://7-sens.fr/">
+  <link rel="stylesheet" href="atelier-2026-v3.css?v=20261008">
 </head>
 <body>
   <header class="site-header">
-    <a class="identity" href="#top" aria-label="ATELIER 7S">
-      <span class="mark">7S</span>
-      <span class="identity-copy"><strong>ATELIER 7S</strong><small>CRÉATION · STRUCTURE · AUTOMATISATION</small></span>
-    </a>
-    <nav aria-label="Navigation principale">
-      <a href="#atelier">L’atelier</a>
-      <a href="#stack">Le système</a>
-      <a href="#products">Les produits</a>
-      <a class="nav-button" href="ia-art-studio/free/">Essayer IA Art</a>
-    </nav>
+    <div class="header-inner shell">
+      <a class="brand" href="#top" aria-label="ATELIER 7S">
+        <span class="brand-mark">7S</span>
+        <span class="brand-copy"><strong>ATELIER 7S</strong><small>Créer · structurer · automatiser</small></span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="#atelier">L’atelier</a>
+        <a href="#produits">Les produits</a>
+        <a href="#methode">La méthode</a>
+        <a class="nav-cta" href="https://ia-art.7-sens.fr/">Essayer IA Art</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
+  <main id="top" class="shell">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">ATELIER 7S / DIGITAL WORKBENCH</p>
-        <h1>Créer.<br>Structurer.<br><span>Relier.</span></h1>
-        <p class="hero-text">Un atelier numérique pour fabriquer des outils spécialisés. Aujourd’hui : <strong>IA Art Studio</strong>, <strong>Music Desk</strong> et <strong>Job Search OS</strong>, reliés par une même logique : Notion pour structurer, n8n pour automatiser, du self-hosted quand c’est utile.</p>
+      <div>
+        <p class="kicker">Atelier numérique indépendant</p>
+        <h1>Des outils qui partent du <em>besoin.</em></h1>
+        <p class="hero-lede">ATELIER 7S transforme des usages réellement vécus en outils numériques simples, visuels et autonomes. Pas de catalogue générique : chaque produit résout un problème précis.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#products">Voir les 3 produits</a>
-          <a class="button button-light" href="ia-art-studio/free/">Tester IA Art Studio Free</a>
+          <a class="button button-primary" href="https://ia-art.7-sens.fr/">Essayer IA Art Studio</a>
+          <a class="button button-secondary" href="#atelier">Découvrir l’atelier</a>
         </div>
-        <div class="hero-meta">
-          <span>03 produits</span>
-          <span>01 disponible</span>
-          <span>Notion + n8n + self-hosted</span>
+        <div class="hero-note">
+          <span>IA Art Studio disponible</span>
+          <span>Music Desk en préparation</span>
+          <span>Notion · n8n · Docker</span>
         </div>
       </div>
 
-      <div class="product-showcase" aria-label="Les produits ATELIER 7S">
-        <div class="showcase-topbar">
-          <span class="window-dots"><i></i><i></i><i></i></span>
-          <span>atelier-7s / product.shelf</span>
-          <span class="showcase-status"><i></i>01 live · 02 building</span>
+      <article class="hero-card">
+        <div class="hero-card-top">
+          <span>Produit disponible</span>
+          <span class="live"><i></i>En ligne</span>
         </div>
-
-        <div class="showcase-grid">
-          <article class="showcase-card showcase-art">
-            <div class="showcase-card-head">
-              <span class="showcase-index">01</span>
-              <span class="showcase-state live">disponible</span>
-            </div>
-            <div class="art-stage">
-              <img class="showcase-image" src="assets/atelier7s/ia-art-studio.webp" alt="IA Art Studio — interface de création visuelle">
-            </div>
-            <div class="showcase-card-copy">
-              <span>CREATIVE WORKFLOW</span>
-              <h3>IA Art Studio</h3>
-              <p>Transformer une idée en workflow créatif structuré.</p>
-            </div>
-          </article>
-
-          <article class="showcase-card showcase-music">
-            <div class="showcase-card-head">
-              <span class="showcase-index">02</span>
-              <span class="showcase-state">préparation</span>
-            </div>
-            <div class="music-stage">
-              <img class="showcase-image" src="assets/atelier7s/music-desk.webp" alt="Music Desk — suivi artistes, sorties et concerts">
-            </div>
-            <div class="showcase-card-copy">
-              <span>MUSIC INTELLIGENCE</span>
-              <h3>Music Desk</h3>
-              <p>Artistes, sorties, écoute et concerts.</p>
-            </div>
-          </article>
-
-          <article class="showcase-card showcase-job">
-            <div class="showcase-card-head">
-              <span class="showcase-index">03</span>
-              <span class="showcase-state">préparation</span>
-            </div>
-            <div class="job-stage">
-              <div><small>QUALIFIER</small><i></i><i></i></div>
-              <div><small>DÉCIDER</small><i class="ok"></i><i></i></div>
-              <div><small>SUIVRE</small><i></i><i class="ok"></i></div>
-            </div>
-            <div class="showcase-card-copy">
-              <span>CAREER DECISION</span>
-              <h3>Job Search OS</h3>
-              <p>Qualifier, décider, candidater, relancer.</p>
-            </div>
-          </article>
+        <div class="hero-image">
+          <img src="assets/atelier7s/ia-art-studio.webp" alt="Aperçu de IA Art Studio">
         </div>
-
-        <div class="showcase-tools">
-          <span class="tools-label">OUTILS DE L’ATELIER</span>
-          <span class="tool-chip notion-chip"><b>N</b> Notion</span>
-          <span class="tool-chip n8n-chip"><b>●</b> n8n</span>
-          <span class="tool-chip docker-chip"><b>◎</b> Self-hosted</span>
+        <div class="hero-card-copy">
+          <div>
+            <span>Création visuelle</span>
+            <h2>IA Art Studio</h2>
+            <p>Structurer une idée, construire un brief et obtenir un prompt exploitable sans compte ni API.</p>
+          </div>
+          <a href="https://ia-art.7-sens.fr/">Ouvrir →</a>
         </div>
+      </article>
+    </section>
+
+    <section class="section" id="atelier">
+      <div class="section-head">
+        <div>
+          <p class="section-index">01 — L’atelier</p>
+          <h2>On part du quotidien.<br>Pas de la technologie.</h2>
+        </div>
+        <p>Un outil n’a d’intérêt que s’il simplifie vraiment quelque chose. Chaque produit commence donc par un usage concret, puis la technique est choisie en fonction du besoin.</p>
+      </div>
+      <div class="method-grid">
+        <article class="method-card">
+          <span>01</span>
+          <h3>Observer</h3>
+          <p>Repérer un vrai irritant, un geste répétitif ou une information difficile à suivre.</p>
+        </article>
+        <article class="method-card">
+          <span>02</span>
+          <h3>Simplifier</h3>
+          <p>Réduire le parcours au strict nécessaire et rendre les étapes visibles et compréhensibles.</p>
+        </article>
+        <article class="method-card">
+          <span>03</span>
+          <h3>Automatiser</h3>
+          <p>Ajouter Notion, n8n ou Docker seulement quand ils apportent une valeur réelle.</p>
+        </article>
       </div>
     </section>
 
-    <section class="atelier-section" id="atelier">
-      <div class="section-label">01 — L’ATELIER</div>
-      <div class="atelier-grid">
+    <section class="section" id="produits">
+      <div class="section-head">
         <div>
-          <h2>Pas un catalogue.<br>Un <em>système de fabrication.</em></h2>
+          <p class="section-index">02 — Les produits</p>
+          <h2>Peu de produits.<br>Mais finis et utiles.</h2>
         </div>
-        <div class="atelier-copy">
-          <p>ATELIER 7S part de workflows réellement utilisés. On observe ce qui fonctionne, on simplifie, puis on transforme le tout en produit autonome.</p>
-          <p>Les produits sont différents, mais la méthode reste la même : <strong>des blocs pour structurer, des connexions pour automatiser, et une interface dédiée au vrai besoin.</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="stack-section" id="stack">
-      <div class="section-heading">
-        <div>
-          <p class="section-label">02 — LE SYSTÈME</p>
-          <h2>Trois briques.<br>Une même méthode.</h2>
-        </div>
-        <p>Les outils techniques ne sont pas les produits. Ils forment la base commune sur laquelle chaque produit est construit.</p>
+        <p>IA Art Studio ouvre la gamme. Music Desk suivra une fois son installation et son automatisation suffisamment documentées.</p>
       </div>
 
-      <div class="bento">
-        <article class="tile tile-notion">
-          <div class="tile-top"><span class="brand-square notion-square">N</span><span>NOTION</span></div>
-          <h3>Le cockpit.</h3>
-          <p>Données, projets, vues et documentation. La partie lisible et modulaire du système.</p>
-          <div class="notion-mock">
-            <span class="line w70"></span><span class="line w45"></span>
-            <div class="mock-columns"><i></i><i></i><i></i></div>
+      <div class="products">
+        <article class="product product-main">
+          <div class="product-head">
+            <span>IA Art Studio</span>
+            <span class="status">Disponible</span>
+          </div>
+          <div class="product-visual">
+            <img src="assets/atelier7s/ia-art-studio.webp" alt="IA Art Studio">
+          </div>
+          <div class="product-copy">
+            <h3>Créer sans partir d’une page blanche.</h3>
+            <p>Un parcours guidé pour transformer une idée en brief créatif puis en prompt complet. La version gratuite fonctionne directement dans le navigateur, sans compte, sans clé API et sans stockage serveur.</p>
+            <div class="product-actions">
+              <a class="button button-primary" href="https://ia-art.7-sens.fr/">Essayer gratuitement</a>
+              <a class="text-link" href="ia-art-studio/">Découvrir le produit →</a>
+            </div>
           </div>
         </article>
 
-        <article class="tile tile-n8n">
-          <div class="tile-top"><span class="brand-square n8n-square">●</span><span>n8n</span></div>
-          <h3>La circulation.</h3>
-          <p>Les données passent, se transforment et déclenchent des actions visibles.</p>
-          <img class="system-visual n8n-visual" src="assets/atelier7s/n8n-workflow.webp" alt="n8n — orchestration visuelle des automatisations">
-        </article>
-
-        <article class="tile tile-local">
-          <div class="tile-top"><span class="brand-square local-square">◎</span><span>SELF-HOSTED</span></div>
-          <h3>Le contrôle.</h3>
-          <p>Docker, stockage local et autonomie quand un simple template ne suffit plus.</p>
-          <div class="terminal">
-            <span>$ docker compose up -d</span>
-            <span class="terminal-ok">✓ atelier ready</span>
+        <article class="product product-side">
+          <div class="product-head">
+            <span>Music Desk</span>
+            <span class="status soon">En préparation</span>
+          </div>
+          <div class="product-visual">
+            <img src="assets/atelier7s/music-desk.webp" alt="Aperçu de Music Desk">
+          </div>
+          <div class="product-copy">
+            <h3>Votre musique, enfin au même endroit.</h3>
+            <p>Artistes suivis, sorties, file d’écoute et concerts dans Notion, avec une automatisation Spotify et Ticketmaster facultative.</p>
+            <div class="product-tags">
+              <span>Notion</span><span>Spotify</span><span>Concerts</span><span>n8n en option</span>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="products-section" id="products">
-      <div class="section-heading">
+    <section class="section" id="methode">
+      <div class="section-head">
         <div>
-          <p class="section-label">03 — LES PRODUITS</p>
-          <h2>Trois usages.<br>Trois identités.</h2>
+          <p class="section-index">03 — La méthode</p>
+          <h2>Les bons outils,<br>au bon endroit.</h2>
         </div>
-        <p>IA Art Studio ouvre l’atelier. Music Desk et Job Search OS sont déjà dans la gamme, mais restent en préparation avant publication.</p>
+        <p>Le produit reste au centre. Notion, n8n et Docker ne sont que les briques utilisées quand elles simplifient réellement le fonctionnement.</p>
       </div>
 
-      <div class="product-family">
-        <article class="family-card family-art">
-          <div class="family-card-head">
-            <span class="family-number">01</span>
-            <span class="family-status active">Free disponible</span>
-          </div>
-          <div class="family-visual art-family-visual">
-            <img class="family-product-image" src="assets/atelier7s/ia-art-studio.webp" alt="Aperçu IA Art Studio">
-          </div>
-          <div class="family-copy">
-            <span class="family-kicker">CREATION · NOTION · N8N · DOCKER</span>
-            <h3>IA Art Studio</h3>
-            <p>Structurer une idée, construire un prompt, suivre les projets et automatiser le workflow créatif.</p>
-            <div class="family-actions">
-              <a class="button button-dark" href="ia-art-studio/free/">Tester la Free</a>
-              <a class="text-link" href="ia-art-studio/">Voir la Pro →</a>
-            </div>
-          </div>
+      <div class="system">
+        <article class="system-card">
+          <span class="system-logo">N</span>
+          <strong>Notion structure.</strong>
+          <p>Les données, les vues, la documentation et le suivi restent lisibles et modifiables.</p>
         </article>
-
-        <article class="family-card family-music">
-          <div class="family-card-head">
-            <span class="family-number">02</span>
-            <span class="family-status soon">En préparation</span>
-          </div>
-          <div class="family-visual music-family-visual">
-            <img class="family-product-image" src="assets/atelier7s/music-desk.webp" alt="Aperçu Music Desk">
-          </div>
-          <div class="family-copy">
-            <span class="family-kicker">MUSIC · NOTION · SPOTIFY · N8N</span>
-            <h3>Music Desk</h3>
-            <p>Suivre ses artistes, détecter les nouvelles sorties, alimenter sa file d’écoute et repérer les concerts.</p>
-            <div class="family-tags"><span>Artistes</span><span>Sorties</span><span>À écouter</span><span>Concerts</span></div>
-          </div>
+        <article class="system-card">
+          <span class="system-logo">●</span>
+          <strong>n8n automatise.</strong>
+          <p>Les tâches répétitives circulent d’un outil à l’autre sans ajouter une nouvelle application à gérer.</p>
         </article>
-
-        <article class="family-card family-job">
-          <div class="family-card-head">
-            <span class="family-number">03</span>
-            <span class="family-status soon">En préparation</span>
-          </div>
-          <div class="family-visual job-family-visual">
-            <div class="pipeline-col">
-              <small>QUALIFIER</small><i></i><i></i><i></i>
-            </div>
-            <div class="pipeline-col">
-              <small>DÉCIDER</small><i class="good"></i><i></i>
-            </div>
-            <div class="pipeline-col">
-              <small>SUIVRE</small><i></i><i class="good"></i>
-            </div>
-          </div>
-          <div class="family-copy">
-            <span class="family-kicker">CAREER · NOTION · N8N · DECISION</span>
-            <h3>Job Search OS</h3>
-            <p>Qualifier une offre avant de candidater, décider vite, suivre les candidatures et ne plus rater les relances.</p>
-            <div class="family-tags"><span>Scoring</span><span>Postuler ?</span><span>Pipeline</span><span>Relances</span></div>
-          </div>
+        <article class="system-card">
+          <span class="system-logo">◎</span>
+          <strong>Docker garde le contrôle.</strong>
+          <p>Quand une vraie application est nécessaire, elle peut rester autonome et hébergée chez son utilisateur.</p>
         </article>
-      </div>
-    </section>
-
-    <section class="product-focus" id="ia-art">
-      <div class="product-focus-head">
-        <p class="section-label">04 — PRODUIT DISPONIBLE · IA ART STUDIO</p>
-        <span class="availability"><i></i> Free disponible</span>
-      </div>
-      <div class="product-focus-grid">
-        <div>
-          <h2>De l’idée au prompt.<br>Puis beaucoup plus loin.</h2>
-          <p>IA Art Studio est le premier produit publié parce que sa version Free apporte déjà une valeur immédiate, tandis que la Pro étend le workflow vers Notion, n8n et le self-hosted.</p>
-        </div>
-        <div class="edition-card free-card">
-          <span>FREE / 0 €</span>
-          <h3>Brief + prompt</h3>
-          <ul><li>Sans compte</li><li>Sans API</li><li>Sans stockage serveur</li></ul>
-          <a href="ia-art-studio/free/">Essayer maintenant →</a>
-        </div>
-        <div class="edition-card pro-card">
-          <span>PRO / 49 € LANCEMENT</span>
-          <h3>Studio complet</h3>
-          <ul><li>Projets & historique</li><li>Notion + n8n</li><li>Docker self-hosted</li></ul>
-          <a href="ia-art-studio/">Découvrir la Pro →</a>
-        </div>
       </div>
     </section>
 
     <section class="closing">
-      <div class="closing-label">ATELIER 7S · 3 PRODUITS</div>
-      <h2>Un atelier.<br><span>Trois problèmes à résoudre.</span></h2>
-      <p>Créer avec IA Art Studio. Organiser sa musique avec Music Desk. Piloter sa recherche d’emploi avec Job Search OS. Des produits différents, mais la même philosophie : rendre un workflow complexe simple et visible.</p>
-      <a class="button button-accent" href="#products">Explorer les produits</a>
+      <p class="kicker">Premier produit disponible</p>
+      <h2>Commencer par <em>IA Art Studio.</em></h2>
+      <p>La version gratuite est en ligne maintenant. Saisissez votre idée, structurez votre brief, récupérez votre prompt : rien d’autre à installer.</p>
+      <a class="button" href="https://ia-art.7-sens.fr/">Ouvrir IA Art Studio →</a>
     </section>
   </main>
 
-  <footer>
-    <div><strong>ATELIER 7S</strong><span>7-sens.fr</span></div>
-    <div><a href="#products">Les produits</a><a href="ia-art-studio/">IA Art Studio</a><a href="https://github.com/Etorrent-Org">GitHub</a></div>
+  <footer class="shell">
+    <div><strong>ATELIER 7S</strong><span>© 2026</span></div>
+    <div><a href="#produits">Produits</a><a href="ia-art-studio/">IA Art Studio</a><a href="https://github.com/Etorrent-Org">GitHub</a></div>
   </footer>
 </body>
 </html>
