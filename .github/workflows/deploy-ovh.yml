@@ -12,6 +12,7 @@ on:
       - "v2-adjustments.css"
       - "assets/**"
       - "ia-art-studio/**"
+      - "cv/**"
       - "robots.txt"
       - "sitemap.xml"
       - ".github/workflows/deploy-ovh.yml"
@@ -33,6 +34,9 @@ jobs:
           test -f atelier-2026-v3.css
           test -f ia-art-studio/index.html
           test -f ia-art-studio/free/index.html
+          test -f cv/index.html
+          test -f cv/cv.css
+          test -f cv/cv.js
 
       - name: Check OVH credentials
         env:
