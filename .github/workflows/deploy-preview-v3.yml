@@ -1,38 +1,35 @@
-name: Deploy ATELIER 7S to OVH
+name: Deploy 7S Preview V3
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - feature/refonte-7-sens-2026
     paths:
       - "index.html"
-      - "atelier.css"
       - "atelier-2026-v3.css"
-      - "v2.css"
-      - "v2-adjustments.css"
       - "assets/**"
       - "ia-art-studio/**"
-      - "robots.txt"
-      - "sitemap.xml"
-      - ".github/workflows/deploy-ovh.yml"
+      - ".github/workflows/deploy-preview-v3.yml"
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  deploy-preview:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate public site
+      - name: Validate preview
         run: |
           test -f index.html
           test -f atelier-2026-v3.css
+          test -f assets/atelier7s/ia-art-studio.webp
+          test -f assets/atelier7s/music-desk.webp
           test -f ia-art-studio/index.html
-          test -f ia-art-studio/free/index.html
 
       - name: Check OVH credentials
         env:
@@ -44,15 +41,15 @@ jobs:
           test -n "$OVH_FTP_USERNAME"
           test -n "$OVH_FTP_PASSWORD"
 
-      - name: Deploy to OVH
+      - name: Deploy preview to OVH
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.OVH_FTP_SERVER }}
           username: ${{ secrets.OVH_FTP_USERNAME }}
           password: ${{ secrets.OVH_FTP_PASSWORD }}
           local-dir: ./
-          server-dir: public_html/
-          dangerous-clean-slate: false
+          server-dir: public_html/preview-v3/
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
@@ -68,5 +65,3 @@ jobs:
             h9-factory/**
             visual-ai-studio/**
             infographic-lab/**
-            ia-art/**
-            preview-v3/**

@@ -4,20 +4,23 @@ Source du site public **7-sens.fr**.
 
 ## Positionnement
 
-ATELIER 7S transforme des workflows réellement utilisés en produits numériques spécialisés.
+ATELIER 7S transforme des usages réellement vécus en outils numériques simples, visuels et autonomes.
 
-### Produit actuellement exposé
+### Produits actuellement exposés
 
 - **IA Art Studio**
   - page produit : `/ia-art-studio/`
-  - version Free : `/ia-art-studio/free/`
-  - version Pro : en préparation, self-hosted Docker
+  - version Free : `https://ia-art.7-sens.fr/`
+  - version Pro : en préparation, auto-hébergée avec Docker
+- **Music Desk**
+  - présenté comme prochain produit
+  - publication complète après validation du template Notion et de l’Automation Pack n8n
 
-Music Desk et Job Search OS restent hors de la vitrine publique tant qu’ils ne sont pas prêts à être commercialisés.
+Job Search OS reste hors de la vitrine publique tant que sa productisation n’est pas prioritaire.
 
 ## Publication
 
-Le site reste compatible GitHub Pages, mais la cible commerciale est `https://7-sens.fr/` sur OVH.
+La cible commerciale est `https://7-sens.fr/` sur OVH.
 
 Le workflow `.github/workflows/deploy-ovh.yml` publie automatiquement la vitrine après fusion sur `main` lorsque les secrets suivants sont configurés :
 
@@ -29,10 +32,10 @@ Le workflow `.github/workflows/deploy-ovh.yml` publie automatiquement la vitrine
 ## Structure active
 
 - `index.html` : accueil ATELIER 7S ;
-- `atelier.css` : identité spécifique de la vitrine ;
+- `atelier-2026-v3.css` : identité de la vitrine ;
 - `ia-art-studio/index.html` : page produit ;
-- `ia-art-studio/free/` : application statique Free ;
-- `assets/product-covers/` : visuels produits ;
-- `sitemap.xml` : URLs publiques 7-sens.fr.
+- `ia-art-studio/free/index.html` : redirection historique vers `ia-art.7-sens.fr` ;
+- `assets/atelier7s/` : visuels de la vitrine ;
+- `sitemap.xml` : URLs publiques de `7-sens.fr`.
 
-Les anciennes pages de démonstration restent dans le dépôt pour historique mais ne sont plus promues depuis la home.
+Les anciennes pages de démonstration restent dans le dépôt pour historique mais ne sont plus promues depuis l’accueil.
