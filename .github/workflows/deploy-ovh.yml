@@ -22,11 +22,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      OVH_FTP_SERVER: ${{ secrets.OVH_FTP_SERVER }}
-      OVH_FTP_USERNAME: ${{ secrets.OVH_FTP_USERNAME }}
-      OVH_FTP_PASSWORD: ${{ secrets.OVH_FTP_PASSWORD }}
-      OVH_FTP_TARGET: ${{ secrets.OVH_FTP_TARGET }}
 
     steps:
       - name: Checkout
@@ -35,25 +30,29 @@ jobs:
       - name: Validate public site
         run: |
           test -f index.html
-          test -f atelier.css
+          test -f atelier-2026-v3.css
           test -f ia-art-studio/index.html
           test -f ia-art-studio/free/index.html
-          test -f ia-art-studio/free/app.js
-          test -f ia-art-studio/free/styles.css
 
-      - name: Deployment not configured
-        if: ${{ env.OVH_FTP_SERVER == '' || env.OVH_FTP_USERNAME == '' || env.OVH_FTP_PASSWORD == '' || env.OVH_FTP_TARGET == '' }}
-        run: echo "OVH FTP secrets are not configured. Site validation passed; deployment skipped."
+      - name: Check OVH credentials
+        env:
+          OVH_FTP_SERVER: ${{ secrets.OVH_FTP_SERVER }}
+          OVH_FTP_USERNAME: ${{ secrets.OVH_FTP_USERNAME }}
+          OVH_FTP_PASSWORD: ${{ secrets.OVH_FTP_PASSWORD }}
+        run: |
+          test -n "$OVH_FTP_SERVER"
+          test -n "$OVH_FTP_USERNAME"
+          test -n "$OVH_FTP_PASSWORD"
 
       - name: Deploy to OVH
-        if: ${{ env.OVH_FTP_SERVER != '' && env.OVH_FTP_USERNAME != '' && env.OVH_FTP_PASSWORD != '' && env.OVH_FTP_TARGET != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.OVH_FTP_SERVER }}
           username: ${{ secrets.OVH_FTP_USERNAME }}
           password: ${{ secrets.OVH_FTP_PASSWORD }}
           local-dir: ./
-          server-dir: ${{ secrets.OVH_FTP_TARGET }}
+          server-dir: public_html/
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
@@ -69,3 +68,5 @@ jobs:
             h9-factory/**
             visual-ai-studio/**
             infographic-lab/**
+            ia-art/**
+            preview-v3/**
